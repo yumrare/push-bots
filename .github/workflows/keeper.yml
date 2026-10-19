@@ -1,0 +1,26 @@
+name: Fleet keeper (daily report)
+on:
+  schedule:
+    - cron: "35 20 * * *"   # ~3:35 PM CT daily
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: push-bots-state
+  cancel-in-progress: false
+jobs:
+  keeper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 bot.py keeper
+      - name: Commit report
+        run: |
+          git config user.name "push-bots"
+          git config user.email "push-bots@users.noreply.github.com"
+          git add REPORT.md
+          git diff --cached --quiet || git commit -m "keeper report [skip ci]"
+          git push

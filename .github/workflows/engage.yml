@@ -1,0 +1,34 @@
+name: Daily reader engagement
+on:
+  schedule:
+    - cron: "20 19 * * *"   # ~2:20 PM CT daily
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: push-bots-state
+  cancel-in-progress: false
+jobs:
+  engage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Reader bots (capped likes/follows per site niche)
+        env:
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+        run: |
+          for s in churnmilk gravytoast overpepper; do
+            python3 bot.py reader --site $s || true
+            sleep 15
+          done
+      - name: Commit state
+        run: |
+          git config user.name "push-bots"
+          git config user.email "push-bots@users.noreply.github.com"
+          git add state
+          git diff --cached --quiet || git commit -m "reader run state [skip ci]"
+          git push

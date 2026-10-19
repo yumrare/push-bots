@@ -1,0 +1,34 @@
+name: Guide posts (Mon/Wed/Fri)
+on:
+  schedule:
+    - cron: "10 17 * * 1,3,5"   # ~12:10 PM CT Mon/Wed/Fri
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: push-bots-state
+  cancel-in-progress: false
+jobs:
+  guides:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Post guide features (all three sites)
+        env:
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+        run: |
+          for s in churnmilk gravytoast overpepper; do
+            python3 bot.py guide --site $s || true
+            sleep 20
+          done
+      - name: Commit state
+        run: |
+          git config user.name "push-bots"
+          git config user.email "push-bots@users.noreply.github.com"
+          git add state
+          git diff --cached --quiet || git commit -m "guide run state [skip ci]"
+          git push
