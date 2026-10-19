@@ -1,0 +1,27 @@
+{
+  "feature": {
+    "last_slug": "linghams-chilli-sauce",
+    "posted": {
+      "linghams-chilli-sauce": {
+        "at": "2026-10-19T22:22:41.404851+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myb5tvxy342l"
+      }
+    }
+  },
+  "guide": {
+    "last_label": null,
+    "posted": {}
+  },
+  "history": [
+    {
+      "kind": "feature",
+      "slug": "linghams-chilli-sauce",
+      "name": "Chilli Sauce (Original)",
+      "at": "2026-10-19T22:22:41.404871+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myb5tvxy342l"
+    }
+  ],
+  "reader": {
+    "days": {}
+  }
+}

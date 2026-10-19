@@ -1,0 +1,27 @@
+{
+  "feature": {
+    "last_slug": "cheddar",
+    "posted": {
+      "cheddar": {
+        "at": "2026-10-19T22:21:57.274877+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myb5slvb2l2o"
+      }
+    }
+  },
+  "guide": {
+    "last_label": null,
+    "posted": {}
+  },
+  "history": [
+    {
+      "kind": "feature",
+      "slug": "cheddar",
+      "name": "Cheddar",
+      "at": "2026-10-19T22:21:57.274897+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myb5slvb2l2o"
+    }
+  ],
+  "reader": {
+    "days": {}
+  }
+}
