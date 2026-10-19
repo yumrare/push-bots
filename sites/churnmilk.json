@@ -1,0 +1,912 @@
+{
+  "site": "churnmilk",
+  "brand": "ChurnMilk",
+  "tagline": "All things dairy.",
+  "base": "https://churnmilk.com",
+  "items": [
+    {
+      "slug": "cheddar",
+      "name": "Cheddar",
+      "hook": "A firm cow's-milk cheese from the village of Cheddar in Somerset, England.",
+      "url": "https://churnmilk.com/item-cheddar.html",
+      "photo_url": "https://churnmilk.com/photos/cheddar.jpg"
+    },
+    {
+      "slug": "mozzarella",
+      "name": "Mozzarella",
+      "hook": "A soft, stretchy Italian cheese from Campania, made by stretching curds in hot water.",
+      "url": "https://churnmilk.com/item-mozzarella.html",
+      "photo_url": "https://churnmilk.com/photos/mozzarella.jpg"
+    },
+    {
+      "slug": "parmesan",
+      "name": "Parmesan",
+      "hook": "A hard, granular Italian cheese from Emilia-Romagna, aged at least 12 months and often two to three years.",
+      "url": "https://churnmilk.com/item-parmesan.html",
+      "photo_url": "https://churnmilk.com/photos/parmesan.jpg"
+    },
+    {
+      "slug": "brie",
+      "name": "Brie",
+      "hook": "A soft, bloomy-rind cow's-milk cheese from the Île-de-France region of France.",
+      "url": "https://churnmilk.com/item-brie.html",
+      "photo_url": "https://churnmilk.com/photos/brie.jpg"
+    },
+    {
+      "slug": "gouda",
+      "name": "Gouda",
+      "hook": "A Dutch cow's-milk cheese named for the city of Gouda.",
+      "url": "https://churnmilk.com/item-gouda.html",
+      "photo_url": "https://churnmilk.com/photos/gouda.jpg"
+    },
+    {
+      "slug": "swiss-emmental",
+      "name": "Swiss (Emmental)",
+      "hook": "A firm Swiss cow's-milk cheese from the Emme Valley, famous for its cherry-sized holes, or eyes.",
+      "url": "https://churnmilk.com/item-swiss-emmental.html",
+      "photo_url": "https://churnmilk.com/photos/swiss-emmental.jpg"
+    },
+    {
+      "slug": "provolone",
+      "name": "Provolone",
+      "hook": "A stretched-curd Italian cheese from the south of Italy, aged from a few weeks to over a year.",
+      "url": "https://churnmilk.com/item-provolone.html",
+      "photo_url": "https://churnmilk.com/photos/provolone.jpg"
+    },
+    {
+      "slug": "feta",
+      "name": "Feta",
+      "hook": "A brined Greek cheese made from sheep's milk, sometimes with up to 30 percent goat's milk.",
+      "url": "https://churnmilk.com/item-feta.html",
+      "photo_url": "https://churnmilk.com/photos/feta.jpg"
+    },
+    {
+      "slug": "gruyere",
+      "name": "Gruyère",
+      "hook": "A firm Swiss alpine cheese from the Fribourg region, aged 5 to 12 months or more.",
+      "url": "https://churnmilk.com/item-gruyere.html",
+      "photo_url": "https://churnmilk.com/photos/gruyere.jpg"
+    },
+    {
+      "slug": "comte",
+      "name": "Comté",
+      "hook": "A firm French alpine cheese from the Jura mountains, made from raw cow's milk and aged from 4 months to over 2 years.",
+      "url": "https://churnmilk.com/item-comte.html",
+      "photo_url": "https://churnmilk.com/photos/comte.jpg"
+    },
+    {
+      "slug": "manchego",
+      "name": "Manchego",
+      "hook": "A firm Spanish cheese from La Mancha, made only from the milk of Manchega sheep.",
+      "url": "https://churnmilk.com/item-manchego.html",
+      "photo_url": "https://churnmilk.com/photos/manchego.jpg"
+    },
+    {
+      "slug": "pecorino-romano",
+      "name": "Pecorino Romano",
+      "hook": "A hard, salty Italian grating cheese made from sheep's milk, produced mainly in Sardinia and Lazio.",
+      "url": "https://churnmilk.com/item-pecorino-romano.html",
+      "photo_url": "https://churnmilk.com/photos/pecorino-romano.jpg"
+    },
+    {
+      "slug": "camembert",
+      "name": "Camembert",
+      "hook": "A soft French cheese from Normandy with a white bloomy rind and a creamy, yielding center.",
+      "url": "https://churnmilk.com/item-camembert.html",
+      "photo_url": "https://churnmilk.com/photos/camembert.jpg"
+    },
+    {
+      "slug": "gorgonzola",
+      "name": "Gorgonzola",
+      "hook": "An Italian blue cheese from Lombardy, made from cow's milk in two main styles: dolce, soft and sweet, and piccante, firm and sharp.",
+      "url": "https://churnmilk.com/item-gorgonzola.html",
+      "photo_url": "https://churnmilk.com/photos/gorgonzola.jpg"
+    },
+    {
+      "slug": "stilton",
+      "name": "Stilton",
+      "hook": "An English blue cheese made only in Derbyshire, Leicestershire, and Nottinghamshire.",
+      "url": "https://churnmilk.com/item-stilton.html",
+      "photo_url": "https://churnmilk.com/photos/stilton.jpg"
+    },
+    {
+      "slug": "roquefort",
+      "name": "Roquefort",
+      "hook": "A French blue cheese made from sheep's milk and aged in the natural caves of Roquefort-sur-Soulzon.",
+      "url": "https://churnmilk.com/item-roquefort.html",
+      "photo_url": "https://churnmilk.com/photos/roquefort.jpg"
+    },
+    {
+      "slug": "asiago",
+      "name": "Asiago",
+      "hook": "An Italian cow's-milk cheese from the Asiago plateau in Veneto.",
+      "url": "https://churnmilk.com/item-asiago.html",
+      "photo_url": "https://churnmilk.com/photos/asiago.jpg"
+    },
+    {
+      "slug": "fontina",
+      "name": "Fontina",
+      "hook": "A semi-soft Italian cheese from the Aosta Valley, made from raw cow's milk.",
+      "url": "https://churnmilk.com/item-fontina.html",
+      "photo_url": "https://churnmilk.com/photos/fontina.jpg"
+    },
+    {
+      "slug": "taleggio",
+      "name": "Taleggio",
+      "hook": "A soft Italian washed-rind cheese from Lombardy, square in shape with a rosy rind and a pale, creamy center.",
+      "url": "https://churnmilk.com/item-taleggio.html",
+      "photo_url": "https://churnmilk.com/photos/taleggio.jpg"
+    },
+    {
+      "slug": "burrata",
+      "name": "Burrata",
+      "hook": "A fresh Italian cheese from Puglia: a pouch of mozzarella filled with stracciatella, shreds of mozzarella soaked in cream.",
+      "url": "https://churnmilk.com/item-burrata.html",
+      "photo_url": "https://churnmilk.com/photos/burrata.jpg"
+    },
+    {
+      "slug": "halloumi",
+      "name": "Halloumi",
+      "hook": "A firm, brined cheese from Cyprus, traditionally made from sheep and goat milk, now often with cow's milk.",
+      "url": "https://churnmilk.com/item-halloumi.html",
+      "photo_url": "https://churnmilk.com/photos/halloumi.jpg"
+    },
+    {
+      "slug": "paneer",
+      "name": "Paneer",
+      "hook": "A fresh Indian cheese made by curdling hot milk with lemon juice or vinegar, then pressing the curds.",
+      "url": "https://churnmilk.com/item-paneer.html",
+      "photo_url": "https://churnmilk.com/photos/paneer.jpg"
+    },
+    {
+      "slug": "queso-fresco",
+      "name": "Queso Fresco",
+      "hook": "A fresh, soft Mexican cheese made from cow's milk, sometimes with goat's milk.",
+      "url": "https://churnmilk.com/item-queso-fresco.html",
+      "photo_url": "https://churnmilk.com/photos/queso-fresco.jpg"
+    },
+    {
+      "slug": "cotija",
+      "name": "Cotija",
+      "hook": "An aged Mexican cheese from Michoacán, made from cow's milk.",
+      "url": "https://churnmilk.com/item-cotija.html",
+      "photo_url": null
+    },
+    {
+      "slug": "oaxaca-cheese",
+      "name": "Oaxaca Cheese",
+      "hook": "A Mexican stretched-curd cheese from Oaxaca, sold as a ball wound from long ribbons of cheese.",
+      "url": "https://churnmilk.com/item-oaxaca-cheese.html",
+      "photo_url": "https://churnmilk.com/photos/oaxaca-cheese.jpg"
+    },
+    {
+      "slug": "havarti",
+      "name": "Havarti",
+      "hook": "A semi-soft Danish cheese with small irregular holes and a smooth, buttery paste.",
+      "url": "https://churnmilk.com/item-havarti.html",
+      "photo_url": null
+    },
+    {
+      "slug": "edam",
+      "name": "Edam",
+      "hook": "A semi-hard Dutch cheese named for the town of Edam, usually sold coated in red wax.",
+      "url": "https://churnmilk.com/item-edam.html",
+      "photo_url": "https://churnmilk.com/photos/edam.jpg"
+    },
+    {
+      "slug": "monterey-jack",
+      "name": "Monterey Jack",
+      "hook": "A semi-hard American cheese from Monterey County, California.",
+      "url": "https://churnmilk.com/item-monterey-jack.html",
+      "photo_url": null
+    },
+    {
+      "slug": "pepper-jack",
+      "name": "Pepper Jack",
+      "hook": "An American cheese made by flavoring Monterey Jack with spicy peppers, usually jalapeño, sometimes habanero and other chiles.",
+      "url": "https://churnmilk.com/item-pepper-jack.html",
+      "photo_url": null
+    },
+    {
+      "slug": "colby",
+      "name": "Colby",
+      "hook": "An American cheese from Wisconsin, made like cheddar but with a washed curd.",
+      "url": "https://churnmilk.com/item-colby.html",
+      "photo_url": null
+    },
+    {
+      "slug": "muenster",
+      "name": "Muenster",
+      "hook": "A semi-soft American deli cheese, pale and smooth with tiny holes and an edible orange rind.",
+      "url": "https://churnmilk.com/item-muenster.html",
+      "photo_url": "https://churnmilk.com/photos/muenster.jpg"
+    },
+    {
+      "slug": "raclette",
+      "name": "Raclette",
+      "hook": "A semi-hard Swiss alpine cheese from Valais, made from cow's milk and aged 3 to 6 months.",
+      "url": "https://churnmilk.com/item-raclette.html",
+      "photo_url": "https://churnmilk.com/photos/raclette.jpg"
+    },
+    {
+      "slug": "limburger",
+      "name": "Limburger",
+      "hook": "A washed-rind cheese from the Limburg region, now made mostly in Germany and Wisconsin.",
+      "url": "https://churnmilk.com/item-limburger.html",
+      "photo_url": "https://churnmilk.com/photos/limburger.jpg"
+    },
+    {
+      "slug": "smoked-gouda",
+      "name": "Smoked Gouda",
+      "hook": "A Dutch-style cheese made by smoking young Gouda over hickory or similar wood.",
+      "url": "https://churnmilk.com/item-smoked-gouda.html",
+      "photo_url": null
+    },
+    {
+      "slug": "jarlsberg",
+      "name": "Jarlsberg",
+      "hook": "A Norwegian cheese with large round holes and a yellow wax rind.",
+      "url": "https://churnmilk.com/item-jarlsberg.html",
+      "photo_url": null
+    },
+    {
+      "slug": "salted-butter",
+      "name": "Salted Butter",
+      "hook": "Churned cream with salt added, at about 80 percent butterfat.",
+      "url": "https://churnmilk.com/item-salted-butter.html",
+      "photo_url": "https://churnmilk.com/photos/salted-butter.jpg"
+    },
+    {
+      "slug": "unsalted-butter",
+      "name": "Unsalted Butter",
+      "hook": "Churned cream with no salt added: the baker's standard butter.",
+      "url": "https://churnmilk.com/item-unsalted-butter.html",
+      "photo_url": "https://churnmilk.com/photos/unsalted-butter.jpg"
+    },
+    {
+      "slug": "cultured-butter",
+      "name": "Cultured Butter",
+      "hook": "Butter churned from fermented cream, in the French and northern European tradition.",
+      "url": "https://churnmilk.com/item-cultured-butter.html",
+      "photo_url": "https://churnmilk.com/photos/cultured-butter.jpg"
+    },
+    {
+      "slug": "european-style-butter",
+      "name": "European-Style Butter",
+      "hook": "High-butterfat butter in the European style: 82 to 85 percent fat, less water than standard butter.",
+      "url": "https://churnmilk.com/item-european-style-butter.html",
+      "photo_url": "https://churnmilk.com/photos/european-style-butter.jpg"
+    },
+    {
+      "slug": "whipped-butter",
+      "name": "Whipped Butter",
+      "hook": "Butter whipped with air until light and fluffy, sold in tubs.",
+      "url": "https://churnmilk.com/item-whipped-butter.html",
+      "photo_url": null
+    },
+    {
+      "slug": "brown-butter",
+      "name": "Brown Butter",
+      "hook": "Butter cooked until the milk solids toast and turn nutty: the French beurre noisette.",
+      "url": "https://churnmilk.com/item-brown-butter.html",
+      "photo_url": null
+    },
+    {
+      "slug": "ghee",
+      "name": "Ghee",
+      "hook": "Clarified butter from India, simmered longer than standard clarified butter so the solids toast lightly.",
+      "url": "https://churnmilk.com/item-ghee.html",
+      "photo_url": "https://churnmilk.com/photos/ghee.jpg"
+    },
+    {
+      "slug": "cream-cheese",
+      "name": "Cream Cheese",
+      "hook": "A soft, fresh, mildly tangy American cheese, spreadable straight from the package.",
+      "url": "https://churnmilk.com/item-cream-cheese.html",
+      "photo_url": "https://churnmilk.com/photos/cream-cheese.jpg"
+    },
+    {
+      "slug": "clarified-butter",
+      "name": "Clarified Butter",
+      "hook": "Butter with its water and milk solids removed, leaving clear golden butterfat.",
+      "url": "https://churnmilk.com/item-clarified-butter.html",
+      "photo_url": "https://churnmilk.com/photos/clarified-butter.jpg"
+    },
+    {
+      "slug": "compound-butter",
+      "name": "Compound Butter",
+      "hook": "Softened butter beaten with herbs, aromatics, or sweeteners, then chilled in a log or tub.",
+      "url": "https://churnmilk.com/item-compound-butter.html",
+      "photo_url": "https://churnmilk.com/photos/compound-butter.jpg"
+    },
+    {
+      "slug": "garlic-herb-butter",
+      "name": "Garlic & Herb Butter",
+      "hook": "A compound butter of butter, garlic, and usually parsley and salt.",
+      "url": "https://churnmilk.com/item-garlic-herb-butter.html",
+      "photo_url": null
+    },
+    {
+      "slug": "honey-butter",
+      "name": "Honey Butter",
+      "hook": "A sweet compound butter of butter whipped with honey and a pinch of salt.",
+      "url": "https://churnmilk.com/item-honey-butter.html",
+      "photo_url": null
+    },
+    {
+      "slug": "cinnamon-butter",
+      "name": "Cinnamon Butter",
+      "hook": "A sweet compound butter of butter, cinnamon, and sugar, sometimes with a little vanilla.",
+      "url": "https://churnmilk.com/item-cinnamon-butter.html",
+      "photo_url": null
+    },
+    {
+      "slug": "maple-butter",
+      "name": "Maple Butter",
+      "hook": "A compound butter of butter whipped with maple syrup.",
+      "url": "https://churnmilk.com/item-maple-butter.html",
+      "photo_url": null
+    },
+    {
+      "slug": "lemon-butter",
+      "name": "Lemon Butter",
+      "hook": "A compound butter of butter, lemon juice, and zest.",
+      "url": "https://churnmilk.com/item-lemon-butter.html",
+      "photo_url": null
+    },
+    {
+      "slug": "irish-butter",
+      "name": "Irish Butter",
+      "hook": "Butter made in Ireland from the milk of grass-fed cows, typically cultured and salted, with butterfat around 82 percent.",
+      "url": "https://churnmilk.com/item-irish-butter.html",
+      "photo_url": null
+    },
+    {
+      "slug": "whey-butter",
+      "name": "Whey Butter",
+      "hook": "Butter churned from the cream that rises on whey left over from cheesemaking.",
+      "url": "https://churnmilk.com/item-whey-butter.html",
+      "photo_url": null
+    },
+    {
+      "slug": "neufchatel",
+      "name": "Neufchâtel",
+      "hook": "A fresh, soft cheese in the cream cheese family, made with more milk and less cream, so it has about a third less fat.",
+      "url": "https://churnmilk.com/item-neufchatel.html",
+      "photo_url": "https://churnmilk.com/photos/neufchatel.jpg"
+    },
+    {
+      "slug": "whipped-cream-cheese",
+      "name": "Whipped Cream Cheese",
+      "hook": "Cream cheese whipped with air (and sometimes a little milk) into a light, fluffy spread.",
+      "url": "https://churnmilk.com/item-whipped-cream-cheese.html",
+      "photo_url": null
+    },
+    {
+      "slug": "beurre-blanc",
+      "name": "Beurre Blanc",
+      "hook": "A French butter sauce of wine, vinegar, and shallots reduced and whisked with cold butter.",
+      "url": "https://churnmilk.com/item-beurre-blanc.html",
+      "photo_url": null
+    },
+    {
+      "slug": "whole-milk",
+      "name": "Whole Milk",
+      "hook": "Fluid milk at its full fat level, about 3.25 percent butterfat.",
+      "url": "https://churnmilk.com/item-whole-milk.html",
+      "photo_url": "https://churnmilk.com/photos/whole-milk.jpg"
+    },
+    {
+      "slug": "milk-2-percent",
+      "name": "2% Milk",
+      "hook": "Milk with the fat reduced to 2 percent.",
+      "url": "https://churnmilk.com/item-milk-2-percent.html",
+      "photo_url": null
+    },
+    {
+      "slug": "milk-1-percent",
+      "name": "1% Milk",
+      "hook": "Milk with the fat reduced to 1 percent.",
+      "url": "https://churnmilk.com/item-milk-1-percent.html",
+      "photo_url": null
+    },
+    {
+      "slug": "skim-milk",
+      "name": "Skim Milk",
+      "hook": "Milk with nearly all fat removed, under 0.5 percent.",
+      "url": "https://churnmilk.com/item-skim-milk.html",
+      "photo_url": null
+    },
+    {
+      "slug": "chocolate-milk",
+      "name": "Chocolate Milk",
+      "hook": "Milk flavored with cocoa and sweetener, usually made from whole or 2% milk.",
+      "url": "https://churnmilk.com/item-chocolate-milk.html",
+      "photo_url": "https://churnmilk.com/photos/chocolate-milk.jpg"
+    },
+    {
+      "slug": "strawberry-milk",
+      "name": "Strawberry Milk",
+      "hook": "Milk flavored with strawberry syrup and sweetener, sold ready to drink, usually pink.",
+      "url": "https://churnmilk.com/item-strawberry-milk.html",
+      "photo_url": "https://churnmilk.com/photos/strawberry-milk.jpg"
+    },
+    {
+      "slug": "a2-milk",
+      "name": "A2 Milk",
+      "hook": "Milk from cows that produce only the A2 form of beta-casein protein, rather than the usual mix of A1 and A2.",
+      "url": "https://churnmilk.com/item-a2-milk.html",
+      "photo_url": null
+    },
+    {
+      "slug": "organic-milk",
+      "name": "Organic Milk",
+      "hook": "Milk produced under certified organic standards for feed, pasture, and herd care.",
+      "url": "https://churnmilk.com/item-organic-milk.html",
+      "photo_url": null
+    },
+    {
+      "slug": "buttermilk",
+      "name": "Buttermilk",
+      "hook": "A thick, tangy cultured milk, traditionally the liquid left from butter churning and now made by culturing low-fat milk.",
+      "url": "https://churnmilk.com/item-buttermilk.html",
+      "photo_url": "https://churnmilk.com/photos/buttermilk.jpg"
+    },
+    {
+      "slug": "half-and-half",
+      "name": "Half & Half",
+      "hook": "A blend of equal parts milk and cream, with butterfat between about 10.5 and 18 percent.",
+      "url": "https://churnmilk.com/item-half-and-half.html",
+      "photo_url": null
+    },
+    {
+      "slug": "heavy-cream",
+      "name": "Heavy Cream",
+      "hook": "Cream with at least 36 percent butterfat.",
+      "url": "https://churnmilk.com/item-heavy-cream.html",
+      "photo_url": "https://churnmilk.com/photos/heavy-cream.jpg"
+    },
+    {
+      "slug": "whipping-cream",
+      "name": "Whipping Cream",
+      "hook": "Cream with about 30 to 36 percent butterfat, formulated to whip.",
+      "url": "https://churnmilk.com/item-whipping-cream.html",
+      "photo_url": "https://churnmilk.com/photos/whipping-cream.jpg"
+    },
+    {
+      "slug": "light-cream",
+      "name": "Light Cream",
+      "hook": "Cream with about 18 to 30 percent butterfat, between half & half and whipping cream.",
+      "url": "https://churnmilk.com/item-light-cream.html",
+      "photo_url": null
+    },
+    {
+      "slug": "clotted-cream",
+      "name": "Clotted Cream",
+      "hook": "A thick English cream made by slowly heating cream until it clots into a dense, golden-crusted layer.",
+      "url": "https://churnmilk.com/item-clotted-cream.html",
+      "photo_url": "https://churnmilk.com/photos/clotted-cream.jpg"
+    },
+    {
+      "slug": "double-cream",
+      "name": "Double Cream",
+      "hook": "A rich British cream with at least 48 percent butterfat, thicker than American heavy cream.",
+      "url": "https://churnmilk.com/item-double-cream.html",
+      "photo_url": null
+    },
+    {
+      "slug": "evaporated-milk",
+      "name": "Evaporated Milk",
+      "hook": "Unsweetened milk concentrated by evaporating about 60 percent of its water, then canned and sterilized.",
+      "url": "https://churnmilk.com/item-evaporated-milk.html",
+      "photo_url": null
+    },
+    {
+      "slug": "sweetened-condensed-milk",
+      "name": "Sweetened Condensed Milk",
+      "hook": "Milk concentrated like evaporated milk but with sugar added, making a thick, sweet syrup.",
+      "url": "https://churnmilk.com/item-sweetened-condensed-milk.html",
+      "photo_url": null
+    },
+    {
+      "slug": "powdered-milk",
+      "name": "Powdered Milk",
+      "hook": "Milk dried to a powder, most often nonfat, sometimes whole.",
+      "url": "https://churnmilk.com/item-powdered-milk.html",
+      "photo_url": "https://churnmilk.com/photos/powdered-milk.jpg"
+    },
+    {
+      "slug": "uht-milk",
+      "name": "UHT Milk",
+      "hook": "Milk pasteurized at ultra-high temperature and packed aseptically, so it keeps unopened at room temperature for months.",
+      "url": "https://churnmilk.com/item-uht-milk.html",
+      "photo_url": null
+    },
+    {
+      "slug": "goat-milk",
+      "name": "Goat Milk",
+      "hook": "Milk from goats, naturally homogenized because its fat globules are small, with a tangy, slightly earthy flavor.",
+      "url": "https://churnmilk.com/item-goat-milk.html",
+      "photo_url": null
+    },
+    {
+      "slug": "sheep-milk",
+      "name": "Sheep Milk",
+      "hook": "Milk from sheep, richer than cow or goat milk in fat, protein, and minerals.",
+      "url": "https://churnmilk.com/item-sheep-milk.html",
+      "photo_url": null
+    },
+    {
+      "slug": "eggnog",
+      "name": "Eggnog",
+      "hook": "A seasonal dairy drink of milk, cream, egg yolk, sugar, and spices such as nutmeg and cinnamon.",
+      "url": "https://churnmilk.com/item-eggnog.html",
+      "photo_url": "https://churnmilk.com/photos/eggnog.jpg"
+    },
+    {
+      "slug": "malted-milk",
+      "name": "Malted Milk",
+      "hook": "Milk flavored with malt powder, a blend of malted barley, wheat flour, and milk solids.",
+      "url": "https://churnmilk.com/item-malted-milk.html",
+      "photo_url": null
+    },
+    {
+      "slug": "jersey-milk",
+      "name": "Jersey Milk",
+      "hook": "Milk from Jersey cows, a Channel Islands breed, known for high butterfat and protein.",
+      "url": "https://churnmilk.com/item-jersey-milk.html",
+      "photo_url": null
+    },
+    {
+      "slug": "whey",
+      "name": "Whey",
+      "hook": "The liquid left after milk curdles and the curds are removed in cheesemaking.",
+      "url": "https://churnmilk.com/item-whey.html",
+      "photo_url": "https://churnmilk.com/photos/whey.jpg"
+    },
+    {
+      "slug": "greek-yogurt",
+      "name": "Greek Yogurt",
+      "hook": "Yogurt strained to remove most of its whey, making it thick enough to stand a spoon in, with a dense, tangy taste.",
+      "url": "https://churnmilk.com/item-greek-yogurt.html",
+      "photo_url": "https://churnmilk.com/photos/greek-yogurt.jpg"
+    },
+    {
+      "slug": "skyr",
+      "name": "Skyr",
+      "hook": "An Icelandic strained dairy product made from skim milk, thicker and denser than Greek yogurt, with a very mild tang.",
+      "url": "https://churnmilk.com/item-skyr.html",
+      "photo_url": "https://churnmilk.com/photos/skyr.jpg"
+    },
+    {
+      "slug": "plain-yogurt",
+      "name": "Plain Yogurt",
+      "hook": "Milk fermented with yogurt cultures into a smooth, tangy gel, sold without added flavors or sweeteners.",
+      "url": "https://churnmilk.com/item-plain-yogurt.html",
+      "photo_url": "https://churnmilk.com/photos/plain-yogurt.jpg"
+    },
+    {
+      "slug": "fruit-yogurt",
+      "name": "Fruit Yogurt",
+      "hook": "Yogurt sweetened and flavored, most often with fruit preparations, vanilla, or honey.",
+      "url": "https://churnmilk.com/item-fruit-yogurt.html",
+      "photo_url": "https://churnmilk.com/photos/fruit-yogurt.jpg"
+    },
+    {
+      "slug": "drinkable-yogurt",
+      "name": "Drinkable Yogurt",
+      "hook": "Yogurt made thin enough to drink, sold in bottles, usually flavored and sweetened.",
+      "url": "https://churnmilk.com/item-drinkable-yogurt.html",
+      "photo_url": null
+    },
+    {
+      "slug": "kefir",
+      "name": "Kefir",
+      "hook": "A fermented milk drink made with kefir grains, a culture of bacteria and yeasts.",
+      "url": "https://churnmilk.com/item-kefir.html",
+      "photo_url": "https://churnmilk.com/photos/kefir.jpg"
+    },
+    {
+      "slug": "cottage-cheese",
+      "name": "Cottage Cheese",
+      "hook": "A fresh cheese of loose curds dressed with cream and salt, never pressed or aged.",
+      "url": "https://churnmilk.com/item-cottage-cheese.html",
+      "photo_url": "https://churnmilk.com/photos/cottage-cheese.jpg"
+    },
+    {
+      "slug": "ricotta",
+      "name": "Ricotta",
+      "hook": "An Italian fresh cheese traditionally made by recooking whey until its proteins form soft, fine curds.",
+      "url": "https://churnmilk.com/item-ricotta.html",
+      "photo_url": "https://churnmilk.com/photos/ricotta.jpg"
+    },
+    {
+      "slug": "mascarpone",
+      "name": "Mascarpone",
+      "hook": "An Italian cream cheese from Lombardy, made by curdling cream with acid.",
+      "url": "https://churnmilk.com/item-mascarpone.html",
+      "photo_url": "https://churnmilk.com/photos/mascarpone.jpg"
+    },
+    {
+      "slug": "quark",
+      "name": "Quark",
+      "hook": "A fresh German cheese of soured milk, strained to a thick, smooth paste.",
+      "url": "https://churnmilk.com/item-quark.html",
+      "photo_url": null
+    },
+    {
+      "slug": "fromage-blanc",
+      "name": "Fromage Blanc",
+      "hook": "A fresh French cheese of curdled milk drained to a soft, spoonable consistency, similar to quark.",
+      "url": "https://churnmilk.com/item-fromage-blanc.html",
+      "photo_url": "https://churnmilk.com/photos/fromage-blanc.jpg"
+    },
+    {
+      "slug": "labneh",
+      "name": "Labneh",
+      "hook": "A Levantine strained yogurt, salted and drained until it reaches a soft cheese consistency.",
+      "url": "https://churnmilk.com/item-labneh.html",
+      "photo_url": "https://churnmilk.com/photos/labneh.jpg"
+    },
+    {
+      "slug": "ayran",
+      "name": "Ayran",
+      "hook": "A Turkish savory yogurt drink of yogurt, water, and salt, whisked to a light froth.",
+      "url": "https://churnmilk.com/item-ayran.html",
+      "photo_url": "https://churnmilk.com/photos/ayran.jpg"
+    },
+    {
+      "slug": "lassi",
+      "name": "Lassi",
+      "hook": "An Indian yogurt drink blended with water or milk, made sweet, often with mango or rose, or salted and spiced.",
+      "url": "https://churnmilk.com/item-lassi.html",
+      "photo_url": "https://churnmilk.com/photos/lassi.jpg"
+    },
+    {
+      "slug": "filmjolk",
+      "name": "Filmjölk",
+      "hook": "A Swedish cultured milk, mesophilic and mild, with a distinctive pourable, slightly ropy texture.",
+      "url": "https://churnmilk.com/item-filmjolk.html",
+      "photo_url": "https://churnmilk.com/photos/filmjolk.jpg"
+    },
+    {
+      "slug": "balkan-yogurt",
+      "name": "Balkan Yogurt",
+      "hook": "A set-style yogurt fermented undisturbed in its container, giving a firm, clean-cut gel and a pronounced tartness.",
+      "url": "https://churnmilk.com/item-balkan-yogurt.html",
+      "photo_url": "https://churnmilk.com/photos/balkan-yogurt.jpg"
+    },
+    {
+      "slug": "ryazhenka",
+      "name": "Ryazhenka",
+      "hook": "A cultured milk from Eastern Europe made from baked milk: milk held at low heat for hours until creamy and caramel-tinted, then fermented.",
+      "url": "https://churnmilk.com/item-ryazhenka.html",
+      "photo_url": "https://churnmilk.com/photos/ryazhenka.jpg"
+    },
+    {
+      "slug": "smetana",
+      "name": "Smetana",
+      "hook": "The sour cream of Central and Eastern Europe, cultured cream with a clean tang and a thick, spoonable body, usually around 20 to 30 percent fat in commercial versions.",
+      "url": "https://churnmilk.com/item-smetana.html",
+      "photo_url": null
+    },
+    {
+      "slug": "sour-cream",
+      "name": "Sour Cream",
+      "hook": "Cream cultured until it thickens and turns pleasantly tart.",
+      "url": "https://churnmilk.com/item-sour-cream.html",
+      "photo_url": "https://churnmilk.com/photos/sour-cream.jpg"
+    },
+    {
+      "slug": "creme-fraiche",
+      "name": "Crème Fraîche",
+      "hook": "A French cultured cream, thick and velvety with a mild, nutty tang, around 30 to 45 percent fat.",
+      "url": "https://churnmilk.com/item-creme-fraiche.html",
+      "photo_url": "https://churnmilk.com/photos/creme-fraiche.jpg"
+    },
+    {
+      "slug": "vanilla",
+      "name": "Vanilla",
+      "hook": "The classic ice cream flavor, made with real vanilla or vanilla extract.",
+      "url": "https://churnmilk.com/item-vanilla.html",
+      "photo_url": "https://churnmilk.com/photos/vanilla.jpg"
+    },
+    {
+      "slug": "chocolate",
+      "name": "Chocolate",
+      "hook": "Ice cream flavored with cocoa or chocolate: one of the two oldest ice cream flavors and a permanent fixture in the top three sellers.",
+      "url": "https://churnmilk.com/item-chocolate.html",
+      "photo_url": "https://churnmilk.com/photos/chocolate.jpg"
+    },
+    {
+      "slug": "strawberry",
+      "name": "Strawberry",
+      "hook": "Sweet cream ice cream flavored with real strawberries or strawberry puree.",
+      "url": "https://churnmilk.com/item-strawberry.html",
+      "photo_url": "https://churnmilk.com/photos/strawberry.jpg"
+    },
+    {
+      "slug": "cookies-and-cream",
+      "name": "Cookies & Cream",
+      "hook": "Vanilla ice cream loaded with crushed chocolate sandwich cookie pieces.",
+      "url": "https://churnmilk.com/item-cookies-and-cream.html",
+      "photo_url": "https://churnmilk.com/photos/cookies-and-cream.jpg"
+    },
+    {
+      "slug": "mint-chocolate-chip",
+      "name": "Mint Chocolate Chip",
+      "hook": "Cool mint ice cream studded with chocolate pieces, often tinted pale green.",
+      "url": "https://churnmilk.com/item-mint-chocolate-chip.html",
+      "photo_url": "https://churnmilk.com/photos/mint-chocolate-chip.jpg"
+    },
+    {
+      "slug": "cookie-dough",
+      "name": "Cookie Dough",
+      "hook": "Vanilla ice cream filled with chunks of chocolate chip cookie dough, usually with chocolate chips of its own.",
+      "url": "https://churnmilk.com/item-cookie-dough.html",
+      "photo_url": "https://churnmilk.com/photos/cookie-dough.jpg"
+    },
+    {
+      "slug": "butter-pecan",
+      "name": "Butter Pecan",
+      "hook": "Vanilla or brown-sugar ice cream filled with butter-roasted pecans.",
+      "url": "https://churnmilk.com/item-butter-pecan.html",
+      "photo_url": "https://churnmilk.com/photos/butter-pecan.jpg"
+    },
+    {
+      "slug": "rocky-road",
+      "name": "Rocky Road",
+      "hook": "Chocolate ice cream with marshmallow and nuts, born in Oakland, California in 1929.",
+      "url": "https://churnmilk.com/item-rocky-road.html",
+      "photo_url": "https://churnmilk.com/photos/rocky-road.jpg"
+    },
+    {
+      "slug": "neapolitan",
+      "name": "Neapolitan",
+      "hook": "A tri-flavor ice cream sold in one carton, classically chocolate, vanilla, and strawberry in three distinct bands.",
+      "url": "https://churnmilk.com/item-neapolitan.html",
+      "photo_url": "https://churnmilk.com/photos/neapolitan.jpg"
+    },
+    {
+      "slug": "french-vanilla",
+      "name": "French Vanilla",
+      "hook": "A premium vanilla ice cream made from a cooked egg-yolk custard base, rather than plain sweet cream.",
+      "url": "https://churnmilk.com/item-french-vanilla.html",
+      "photo_url": null
+    },
+    {
+      "slug": "coffee",
+      "name": "Coffee",
+      "hook": "An ice cream flavored with coffee, ranging from lightly tan and sweet to dark and intense.",
+      "url": "https://churnmilk.com/item-coffee.html",
+      "photo_url": null
+    },
+    {
+      "slug": "pistachio",
+      "name": "Pistachio",
+      "hook": "An ice cream flavored with pistachio paste and dotted with nut pieces.",
+      "url": "https://churnmilk.com/item-pistachio.html",
+      "photo_url": "https://churnmilk.com/photos/pistachio.jpg"
+    },
+    {
+      "slug": "salted-caramel",
+      "name": "Salted Caramel",
+      "hook": "An ice cream of caramel-flavored base with ribbons of salted caramel sauce.",
+      "url": "https://churnmilk.com/item-salted-caramel.html",
+      "photo_url": "https://churnmilk.com/photos/salted-caramel.jpg"
+    },
+    {
+      "slug": "moose-tracks",
+      "name": "Moose Tracks",
+      "hook": "A licensed American flavor: vanilla ice cream with peanut butter cups and a thick fudge ribbon.",
+      "url": "https://churnmilk.com/item-moose-tracks.html",
+      "photo_url": null
+    },
+    {
+      "slug": "black-cherry",
+      "name": "Black Cherry",
+      "hook": "An almond-scented or vanilla base studded with dark, tart black cherries.",
+      "url": "https://churnmilk.com/item-black-cherry.html",
+      "photo_url": "https://churnmilk.com/photos/black-cherry.jpg"
+    },
+    {
+      "slug": "rum-raisin",
+      "name": "Rum Raisin",
+      "hook": "An ice cream flavored with rum and studded with rum-soaked raisins.",
+      "url": "https://churnmilk.com/item-rum-raisin.html",
+      "photo_url": "https://churnmilk.com/photos/rum-raisin.jpg"
+    },
+    {
+      "slug": "butter-brickle",
+      "name": "Butter Brickle",
+      "hook": "A butter-flavored ice cream with pieces of butter brickle candy, a toffee of butter and brown sugar.",
+      "url": "https://churnmilk.com/item-butter-brickle.html",
+      "photo_url": null
+    },
+    {
+      "slug": "spumoni",
+      "name": "Spumoni",
+      "hook": "A molded Italian-style dessert of layered ice creams, classically chocolate, cherry, and pistachio, with candied fruit and nuts.",
+      "url": "https://churnmilk.com/item-spumoni.html",
+      "photo_url": "https://churnmilk.com/photos/spumoni.jpg"
+    },
+    {
+      "slug": "sherbet",
+      "name": "Sherbet",
+      "hook": "A frozen dessert of fruit juice or purée with a little milk, between sorbet and ice cream in richness.",
+      "url": "https://churnmilk.com/item-sherbet.html",
+      "photo_url": null
+    },
+    {
+      "slug": "sorbet",
+      "name": "Sorbet",
+      "hook": "A frozen dessert of sweetened fruit juice or purée and water, with no dairy.",
+      "url": "https://churnmilk.com/item-sorbet.html",
+      "photo_url": "https://churnmilk.com/photos/sorbet.jpg"
+    },
+    {
+      "slug": "gelato",
+      "name": "Gelato",
+      "hook": "An Italian frozen dessert churned denser and served warmer than ice cream, with less air and usually less fat.",
+      "url": "https://churnmilk.com/item-gelato.html",
+      "photo_url": "https://churnmilk.com/photos/gelato.jpg"
+    },
+    {
+      "slug": "frozen-yogurt",
+      "name": "Frozen Yogurt",
+      "hook": "A frozen dessert of yogurt and milk, sold in hard-packed pints and soft-serve shops.",
+      "url": "https://churnmilk.com/item-frozen-yogurt.html",
+      "photo_url": "https://churnmilk.com/photos/frozen-yogurt.jpg"
+    },
+    {
+      "slug": "soft-serve",
+      "name": "Soft Serve",
+      "hook": "A frozen dairy dessert served directly from a machine that freezes and aerates the mix at once.",
+      "url": "https://churnmilk.com/item-soft-serve.html",
+      "photo_url": "https://churnmilk.com/photos/soft-serve.jpg"
+    },
+    {
+      "slug": "kulfi",
+      "name": "Kulfi",
+      "hook": "An Indian frozen dessert of milk reduced by slow simmering until thick, sweetened and flavored (cardamom, saffron, pistachio), then frozen dense in molds.",
+      "url": "https://churnmilk.com/item-kulfi.html",
+      "photo_url": "https://churnmilk.com/photos/kulfi.jpg"
+    },
+    {
+      "slug": "mochi-ice-cream",
+      "name": "Mochi Ice Cream",
+      "hook": "Bite-sized balls of ice cream wrapped in sweet rice dough (mochi).",
+      "url": "https://churnmilk.com/item-mochi-ice-cream.html",
+      "photo_url": "https://churnmilk.com/photos/mochi-ice-cream.jpg"
+    }
+  ],
+  "pages": [
+    {
+      "label": "The Dairy Storage Chart",
+      "url": "https://churnmilk.com/guide-storage-chart.html",
+      "blurb": "How long every dairy staple keeps, and where it belongs in the fridge."
+    },
+    {
+      "label": "The Melting Cheese Guide",
+      "url": "https://churnmilk.com/guide-melting-cheese-guide.html",
+      "blurb": "Which cheeses melt smooth, which seize, and why."
+    },
+    {
+      "label": "All dairy guides",
+      "url": "https://churnmilk.com/guides.html",
+      "blurb": "The ChurnMilk guide shelf — storage, melting, and more."
+    }
+  ],
+  "hashtags": [
+    "cheese",
+    "dairy",
+    "foodfacts"
+  ],
+  "keywords": [
+    "cheese",
+    "cheddar",
+    "butter",
+    "ice cream",
+    "dairy"
+  ]
+}

@@ -1,0 +1,491 @@
+{
+  "site": "gravytoast",
+  "brand": "GravyToast",
+  "tagline": "All things gravy.",
+  "base": "https://gravytoast.com",
+  "items": [
+    {
+      "slug": "sawmill-gravy",
+      "name": "Sawmill Gravy",
+      "hook": "A milk gravy made in the pan with pork sausage or bacon drippings and flour, served over biscuits.",
+      "url": "https://gravytoast.com/item-sawmill-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/sawmill-gravy.jpg"
+    },
+    {
+      "slug": "sausage-gravy",
+      "name": "Sausage Gravy",
+      "hook": "The national diner standard: crumbled pork breakfast sausage folded through a peppered milk gravy, served over biscuits.",
+      "url": "https://gravytoast.com/item-sausage-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/sausage-gravy.jpg"
+    },
+    {
+      "slug": "country-cream-gravy",
+      "name": "Country (Cream) Gravy",
+      "hook": "A white pan gravy made from the drippings of fried chicken, steak, or chops, with flour and milk or cream, seasoned hard with black pepper.",
+      "url": "https://gravytoast.com/item-country-cream-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/country-cream-gravy.jpg"
+    },
+    {
+      "slug": "red-eye-gravy",
+      "name": "Red-Eye Gravy",
+      "hook": "A thin, sharp gravy of country-ham drippings and black coffee, named for the circle of red fat that floats on it like an eye.",
+      "url": "https://gravytoast.com/item-red-eye-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/red-eye-gravy.jpg"
+    },
+    {
+      "slug": "chocolate-gravy",
+      "name": "Chocolate Gravy",
+      "hook": "A sweet breakfast gravy of cocoa, sugar, flour, and milk, cooked like a thin pudding and ladled over hot biscuits.",
+      "url": "https://gravytoast.com/item-chocolate-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "tomato-gravy",
+      "name": "Tomato Gravy",
+      "hook": "A roux-based gravy built on tomatoes, canned or fresh, with bacon fat or drippings.",
+      "url": "https://gravytoast.com/item-tomato-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "cornmeal-gravy",
+      "name": "Cornmeal Gravy",
+      "hook": "An Appalachian gravy thickened with cornmeal instead of flour, giving a fine grain and a deep corn flavor.",
+      "url": "https://gravytoast.com/item-cornmeal-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "giblet-gravy",
+      "name": "Giblet Gravy",
+      "hook": "The Thanksgiving gravy: turkey drippings and stock thickened with a roux, enriched with the chopped, simmered giblets — neck meat, heart, gizzard, liver — and often chopped egg.",
+      "url": "https://gravytoast.com/item-giblet-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/giblet-gravy.jpg"
+    },
+    {
+      "slug": "ham-gravy",
+      "name": "Ham Gravy",
+      "hook": "A thickened milk gravy built on baked-ham drippings and pan juices, the gravy of the holiday ham table.",
+      "url": "https://gravytoast.com/item-ham-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/ham-gravy.jpg"
+    },
+    {
+      "slug": "brown-gravy",
+      "name": "Brown Gravy",
+      "hook": "The all-purpose gravy: a browned roux loosened with beef, chicken, or mixed stock, dark and savory.",
+      "url": "https://gravytoast.com/item-brown-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/brown-gravy.jpg"
+    },
+    {
+      "slug": "onion-gravy",
+      "name": "Onion Gravy",
+      "hook": "A brown gravy built on slowly caramelized onions, sweet and deep.",
+      "url": "https://gravytoast.com/item-onion-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/onion-gravy.jpg"
+    },
+    {
+      "slug": "mushroom-gravy",
+      "name": "Mushroom Gravy",
+      "hook": "A gravy built on browned mushrooms and their liquor, roux-thickened with stock.",
+      "url": "https://gravytoast.com/item-mushroom-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/mushroom-gravy.jpg"
+    },
+    {
+      "slug": "chicken-gravy",
+      "name": "Chicken Gravy",
+      "hook": "A pale, rich gravy from roast or fried chicken drippings and stock, flour-thickened.",
+      "url": "https://gravytoast.com/item-chicken-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/chicken-gravy.jpg"
+    },
+    {
+      "slug": "turkey-gravy",
+      "name": "Turkey Gravy",
+      "hook": "Roast-turkey drippings and stock, flour-thickened and strained smooth.",
+      "url": "https://gravytoast.com/item-turkey-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/turkey-gravy.jpg"
+    },
+    {
+      "slug": "hamburger-gravy",
+      "name": "Hamburger Gravy",
+      "hook": "Ground beef browned and folded into a peppered milk or stock gravy: a mess-hall and school-cafeteria staple.",
+      "url": "https://gravytoast.com/item-hamburger-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/hamburger-gravy.jpg"
+    },
+    {
+      "slug": "liver-gravy",
+      "name": "Liver Gravy",
+      "hook": "The pan gravy made where liver was fried: drippings, flour, and water or milk, poured back over liver and caramelized onions.",
+      "url": "https://gravytoast.com/item-liver-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/liver-gravy.jpg"
+    },
+    {
+      "slug": "shrimp-gravy",
+      "name": "Shrimp Gravy",
+      "hook": "A Lowcountry gravy of shrimp, bacon or ham, peppers, and a light roux, made to pour over stone-ground grits.",
+      "url": "https://gravytoast.com/item-shrimp-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "crawfish-gravy",
+      "name": "Crawfish Gravy",
+      "hook": "A Louisiana gravy of crawfish tails in a dark, peppery roux with the trinity of onion, celery, and bell pepper.",
+      "url": "https://gravytoast.com/item-crawfish-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/crawfish-gravy.jpg"
+    },
+    {
+      "slug": "chili-gravy",
+      "name": "Chili Gravy (Tex-Mex)",
+      "hook": "The defining sauce of Tex-Mex enchiladas: a smooth, brick-red gravy of stock, chili powder, and cumin, roux-thickened.",
+      "url": "https://gravytoast.com/item-chili-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "bulldog-gravy",
+      "name": "Bulldog Gravy",
+      "hook": "A bare-bones camp gravy of flour, water or milk, and whatever grease the pan held, from the logging and mining camps.",
+      "url": "https://gravytoast.com/item-bulldog-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "milk-gravy",
+      "name": "Milk Gravy",
+      "hook": "The plain form of the Southern white gravy: fat, flour, and milk, whisked smooth and peppered.",
+      "url": "https://gravytoast.com/item-milk-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "pepper-gravy",
+      "name": "Pepper Gravy",
+      "hook": "A cream gravy seasoned assertively with cracked black pepper, the Texas steakhouse form served over chicken-fried steak.",
+      "url": "https://gravytoast.com/item-pepper-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "bacon-gravy",
+      "name": "Bacon Gravy",
+      "hook": "A milk gravy built purely on bacon drippings, flour whisked into the rendered fat, crumbled bacon folded back in.",
+      "url": "https://gravytoast.com/item-bacon-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "coffee-gravy",
+      "name": "Coffee Gravy",
+      "hook": "A thin coffee gravy from the upland South: strong coffee stirred into pan drippings, sometimes lightly sweetened or thickened.",
+      "url": "https://gravytoast.com/item-coffee-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "sorghum-gravy",
+      "name": "Sorghum Gravy",
+      "hook": "A sweet breakfast sauce of sorghum syrup warmed with butter and a little water or cream, poured over biscuits and country ham.",
+      "url": "https://gravytoast.com/item-sorghum-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "sunday-gravy",
+      "name": "Sunday Gravy",
+      "hook": "The Italian-American Sunday sauce: tomatoes simmered for hours with braciole, meatballs, and sausage, called gravy in the Northeast's Italian-American kitchens.",
+      "url": "https://gravytoast.com/item-sunday-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "vegetarian-mushroom-gravy",
+      "name": "Vegetarian Mushroom Gravy",
+      "hook": "A meatless mushroom gravy built on vegetable stock and mushroom liquor, roux- or cornstarch-thickened.",
+      "url": "https://gravytoast.com/item-vegetarian-mushroom-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/vegetarian-mushroom-gravy.jpg"
+    },
+    {
+      "slug": "vegan-cashew-gravy",
+      "name": "Vegan Cashew Gravy",
+      "hook": "A dairy-free white gravy of blended soaked cashews, water, and nutritional yeast, seasoned with black pepper and sage.",
+      "url": "https://gravytoast.com/item-vegan-cashew-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "gluten-free-gravy",
+      "name": "Gluten-Free (Cornstarch) Gravy",
+      "hook": "Any gravy thickened with a cornstarch slurry instead of a wheat roux: glossy, clear-edged, and gluten-free.",
+      "url": "https://gravytoast.com/item-gluten-free-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/gluten-free-gravy.jpg"
+    },
+    {
+      "slug": "au-jus",
+      "name": "Au Jus",
+      "hook": "Roast-beef drippings served unthickened, 'with juice.' Documented here as the boundary case: it is served where gravy is served, but with no thickener it is a jus, not a gravy.",
+      "url": "https://gravytoast.com/item-au-jus.html",
+      "photo_url": "https://gravytoast.com/photos/au-jus.jpg"
+    },
+    {
+      "slug": "white-toast",
+      "name": "White Toast",
+      "hook": "Plain toasted sandwich bread, the universal gravy base.",
+      "url": "https://gravytoast.com/item-white-toast.html",
+      "photo_url": "https://gravytoast.com/photos/white-toast.jpg"
+    },
+    {
+      "slug": "texas-toast",
+      "name": "Texas Toast",
+      "hook": "White bread cut twice as thick as standard, about an inch, griddled in butter.",
+      "url": "https://gravytoast.com/item-texas-toast.html",
+      "photo_url": "https://gravytoast.com/photos/texas-toast.jpg"
+    },
+    {
+      "slug": "sourdough-toast",
+      "name": "Sourdough Toast",
+      "hook": "Tangy, open-crumb toast from a levain loaf.",
+      "url": "https://gravytoast.com/item-sourdough-toast.html",
+      "photo_url": "https://gravytoast.com/photos/sourdough-toast.jpg"
+    },
+    {
+      "slug": "whole-wheat-toast",
+      "name": "Whole Wheat Toast",
+      "hook": "Toast from a whole-grain sandwich loaf: denser, nuttier, and sturdier than white.",
+      "url": "https://gravytoast.com/item-whole-wheat-toast.html",
+      "photo_url": "https://gravytoast.com/photos/whole-wheat-toast.jpg"
+    },
+    {
+      "slug": "rye-toast",
+      "name": "Rye Toast",
+      "hook": "Caraway-flecked rye bread, toasted.",
+      "url": "https://gravytoast.com/item-rye-toast.html",
+      "photo_url": "https://gravytoast.com/photos/rye-toast.jpg"
+    },
+    {
+      "slug": "english-muffin",
+      "name": "English Muffin",
+      "hook": "A fork-split, griddled muffin with a pocked interior made to catch gravy.",
+      "url": "https://gravytoast.com/item-english-muffin.html",
+      "photo_url": "https://gravytoast.com/photos/english-muffin.jpg"
+    },
+    {
+      "slug": "buttermilk-biscuit",
+      "name": "Buttermilk Biscuit",
+      "hook": "The Southern buttermilk biscuit: tall, tender, and tangy, built to be split and gravied.",
+      "url": "https://gravytoast.com/item-buttermilk-biscuit.html",
+      "photo_url": "https://gravytoast.com/photos/buttermilk-biscuit.jpg"
+    },
+    {
+      "slug": "split-top-roll",
+      "name": "Split-Top Roll",
+      "hook": "A soft white roll with a split baked into its top, the New England bakery roll.",
+      "url": "https://gravytoast.com/item-split-top-roll.html",
+      "photo_url": "https://gravytoast.com/photos/split-top-roll.jpg"
+    },
+    {
+      "slug": "cornbread",
+      "name": "Cornbread",
+      "hook": "A wedge or square of skillet cornbread, split or crumbled as the base.",
+      "url": "https://gravytoast.com/item-cornbread.html",
+      "photo_url": "https://gravytoast.com/photos/cornbread.jpg"
+    },
+    {
+      "slug": "grits",
+      "name": "Grits",
+      "hook": "Ground hominy corn cooked to a soft porridge, the Lowcountry's base.",
+      "url": "https://gravytoast.com/item-grits.html",
+      "photo_url": "https://gravytoast.com/photos/grits.jpg"
+    },
+    {
+      "slug": "hash-brown-base",
+      "name": "Hash-Brown Base",
+      "hook": "Shredded potatoes fried crisp on the griddle, used as a plated base.",
+      "url": "https://gravytoast.com/item-hash-brown-base.html",
+      "photo_url": "https://gravytoast.com/photos/hash-brown-base.jpg"
+    },
+    {
+      "slug": "fried-mush",
+      "name": "Fried Mush",
+      "hook": "Cooked cornmeal chilled firm, sliced, and fried crisp.",
+      "url": "https://gravytoast.com/item-fried-mush.html",
+      "photo_url": null
+    },
+    {
+      "slug": "johnnycake",
+      "name": "Johnnycake",
+      "hook": "A cornmeal griddle cake of Rhode Island tradition, thin and crisp-edged.",
+      "url": "https://gravytoast.com/item-johnnycake.html",
+      "photo_url": "https://gravytoast.com/photos/johnnycake.jpg"
+    },
+    {
+      "slug": "bagel",
+      "name": "Bagel",
+      "hook": "A boiled-then-baked ring roll with a chewy crust, split and toasted.",
+      "url": "https://gravytoast.com/item-bagel.html",
+      "photo_url": "https://gravytoast.com/photos/bagel.jpg"
+    },
+    {
+      "slug": "dressing-base",
+      "name": "Leftover Dressing Base",
+      "hook": "Leftover baked dressing or stuffing, reheated crisp, used as a base for turkey and giblet gravy.",
+      "url": "https://gravytoast.com/item-dressing-base.html",
+      "photo_url": "https://gravytoast.com/photos/dressing-base.jpg"
+    },
+    {
+      "slug": "sos-chipped-beef",
+      "name": "Creamed Chipped Beef on Toast (SOS)",
+      "hook": "Creamed chipped beef on toast: dried beef folded into a white sauce over toast points.",
+      "url": "https://gravytoast.com/item-sos-chipped-beef.html",
+      "photo_url": null
+    },
+    {
+      "slug": "sausage-gravy-over-biscuits",
+      "name": "Sausage Gravy over Biscuits",
+      "hook": "The signature plate of the gravy world: split buttermilk biscuits under a full ladle of sausage gravy.",
+      "url": "https://gravytoast.com/item-sausage-gravy-over-biscuits.html",
+      "photo_url": "https://gravytoast.com/photos/sausage-gravy-over-biscuits.jpg"
+    },
+    {
+      "slug": "chicken-fried-steak",
+      "name": "Chicken-Fried Steak with Cream Gravy",
+      "hook": "A tenderized round steak, battered and fried like chicken, drowned in country cream or pepper gravy.",
+      "url": "https://gravytoast.com/item-chicken-fried-steak.html",
+      "photo_url": "https://gravytoast.com/photos/chicken-fried-steak.jpg"
+    },
+    {
+      "slug": "open-faced-hot-turkey",
+      "name": "Open-Faced Hot Turkey",
+      "hook": "Sliced roast turkey on bread, open-faced, covered in turkey gravy with mashed potatoes alongside.",
+      "url": "https://gravytoast.com/item-open-faced-hot-turkey.html",
+      "photo_url": "https://gravytoast.com/photos/open-faced-hot-turkey.jpg"
+    },
+    {
+      "slug": "hot-beef-plate",
+      "name": "Hot Beef Plate",
+      "hook": "Sliced roast beef on bread with mashed potatoes, the whole plate flooded with brown gravy.",
+      "url": "https://gravytoast.com/item-hot-beef-plate.html",
+      "photo_url": "https://gravytoast.com/photos/hot-beef-plate.jpg"
+    },
+    {
+      "slug": "country-ham-red-eye",
+      "name": "Country Ham with Red-Eye Gravy",
+      "hook": "A thick slice of fried country ham with its red-eye gravy, biscuits on the side for sopping.",
+      "url": "https://gravytoast.com/item-country-ham-red-eye.html",
+      "photo_url": "https://gravytoast.com/photos/country-ham-red-eye.jpg"
+    },
+    {
+      "slug": "biscuits-chocolate-gravy",
+      "name": "Biscuits with Chocolate Gravy",
+      "hook": "Hot buttermilk biscuits split and covered in chocolate gravy, the sweet breakfast plate of the Ozarks and Appalachia.",
+      "url": "https://gravytoast.com/item-biscuits-chocolate-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "tomato-gravy-grits",
+      "name": "Tomato Gravy over Grits",
+      "hook": "A bowl of stone-ground grits under brick-red tomato gravy, the Lowcountry supper plate.",
+      "url": "https://gravytoast.com/item-tomato-gravy-grits.html",
+      "photo_url": null
+    },
+    {
+      "slug": "shrimp-and-grits",
+      "name": "Shrimp Gravy over Grits",
+      "hook": "Shrimp gravy spooned over stone-ground grits: the Lowcountry's defining plate, born a fishermen's breakfast and now its most famous export.",
+      "url": "https://gravytoast.com/item-shrimp-and-grits.html",
+      "photo_url": "https://gravytoast.com/photos/shrimp-and-grits.jpg"
+    },
+    {
+      "slug": "hamburger-gravy-toast",
+      "name": "Hamburger Gravy over Toast",
+      "hook": "Ground-beef gravy ladled over toast points: the cafeteria and farmhouse descendant of SOS, and a main-dish plate in its own right.",
+      "url": "https://gravytoast.com/item-hamburger-gravy-toast.html",
+      "photo_url": null
+    },
+    {
+      "slug": "fried-chicken-cream-gravy",
+      "name": "Fried Chicken with Cream Gravy",
+      "hook": "Buttermilk fried chicken served with the cream gravy made from its own drippings.",
+      "url": "https://gravytoast.com/item-fried-chicken-cream-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "pork-chop-sawmill",
+      "name": "Pork Chop with Sawmill Gravy",
+      "hook": "A fried pork chop under sawmill gravy, the Appalachian farmhouse plate.",
+      "url": "https://gravytoast.com/item-pork-chop-sawmill.html",
+      "photo_url": null
+    },
+    {
+      "slug": "liver-onions-plate",
+      "name": "Liver and Onion Gravy Plate",
+      "hook": "Floured liver slices fried and returned to their pan gravy with caramelized onions.",
+      "url": "https://gravytoast.com/item-liver-onions-plate.html",
+      "photo_url": "https://gravytoast.com/photos/liver-onions-plate.jpg"
+    },
+    {
+      "slug": "crawfish-gravy-cornbread",
+      "name": "Crawfish Gravy over Cornbread",
+      "hook": "Dark-roux crawfish gravy over a split wedge of skillet cornbread.",
+      "url": "https://gravytoast.com/item-crawfish-gravy-cornbread.html",
+      "photo_url": null
+    },
+    {
+      "slug": "eggs-with-gravy",
+      "name": "Eggs with Gravy (Diner Style)",
+      "hook": "Fried or scrambled eggs served under sausage or milk gravy, diner style.",
+      "url": "https://gravytoast.com/item-eggs-with-gravy.html",
+      "photo_url": "https://gravytoast.com/photos/eggs-with-gravy.jpg"
+    },
+    {
+      "slug": "scrapple-with-gravy",
+      "name": "Scrapple with Gravy",
+      "hook": "Crisp-fried scrapple slices with gravy, the Delaware diner plate.",
+      "url": "https://gravytoast.com/item-scrapple-with-gravy.html",
+      "photo_url": null
+    },
+    {
+      "slug": "chicken-fried-chicken",
+      "name": "Chicken-Fried Chicken",
+      "hook": "A pounded chicken breast, battered and fried like chicken-fried steak, under cream or pepper gravy.",
+      "url": "https://gravytoast.com/item-chicken-fried-chicken.html",
+      "photo_url": "https://gravytoast.com/photos/chicken-fried-chicken.jpg"
+    },
+    {
+      "slug": "smothered-pork-chops",
+      "name": "Smothered Pork Chops",
+      "hook": "Pork chops browned, then braised in their own onion gravy until tender.",
+      "url": "https://gravytoast.com/item-smothered-pork-chops.html",
+      "photo_url": "https://gravytoast.com/photos/smothered-pork-chops.jpg"
+    },
+    {
+      "slug": "smothered-steak",
+      "name": "Smothered Steak",
+      "hook": "Round steak braised tender in brown onion gravy.",
+      "url": "https://gravytoast.com/item-smothered-steak.html",
+      "photo_url": "https://gravytoast.com/photos/smothered-steak.jpg"
+    },
+    {
+      "slug": "breakfast-stack",
+      "name": "Breakfast Stack",
+      "hook": "Hash browns layered with eggs and sausage, flooded with sausage gravy.",
+      "url": "https://gravytoast.com/item-breakfast-stack.html",
+      "photo_url": null
+    }
+  ],
+  "pages": [
+    {
+      "label": "The Gravy Chart",
+      "url": "https://gravytoast.com/guide-gravy-chart.html",
+      "blurb": "Every gravy on the site, one chart — bases, colors, and what they cover."
+    },
+    {
+      "label": "Roux & lumps, solved",
+      "url": "https://gravytoast.com/guide-roux-and-lumps.html",
+      "blurb": "Why gravy lumps, and how to never let it happen again."
+    },
+    {
+      "label": "All gravy guides",
+      "url": "https://gravytoast.com/guides.html",
+      "blurb": "The GravyToast guide shelf."
+    }
+  ],
+  "hashtags": [
+    "gravy",
+    "southernfood",
+    "comfortfood"
+  ],
+  "keywords": [
+    "gravy",
+    "biscuits and gravy",
+    "southern cooking",
+    "sawmill gravy"
+  ]
+}

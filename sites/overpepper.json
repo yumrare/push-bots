@@ -1,0 +1,291 @@
+{
+  "site": "overpepper",
+  "brand": "Overpepper",
+  "tagline": "Rare import hot sauces.",
+  "base": "https://overpepper.com",
+  "items": [
+    {
+      "slug": "linghams-chilli-sauce",
+      "name": "Chilli Sauce (Original)",
+      "hook": "Malaysia's heritage chilli sauce — a recipe older than the country itself.",
+      "price": 12.99,
+      "shu": 1800,
+      "url": "https://overpepper.com/item-linghams-chilli-sauce.html",
+      "photo_url": "https://overpepper.com/photos/linghams-chilli-sauce.jpg",
+      "_tail": "Chilli Sauce (Original) — Malaysia's heritage chilli sauce — a recipe older than the country itself."
+    },
+    {
+      "slug": "jufran-banana-ketchup-hot",
+      "name": "Banana Ketchup Hot & Spicy",
+      "hook": "The Philippines' banana ketchup, in its hot and spicy cut.",
+      "price": 12.49,
+      "shu": 900,
+      "url": "https://overpepper.com/item-jufran-banana-ketchup-hot.html",
+      "photo_url": "https://overpepper.com/photos/jufran-banana-ketchup-hot.jpg",
+      "_tail": "Banana Ketchup Hot & Spicy — The Philippines' banana ketchup, in its hot and spicy cut."
+    },
+    {
+      "slug": "chin-su-hot-sauce",
+      "name": "Hot Sauce (Sweet Sriracha)",
+      "hook": "Vietnam's household hot sauce — Chin-Su, the bottle on every table back home.",
+      "price": 7.49,
+      "shu": 1500,
+      "url": "https://overpepper.com/item-chin-su-hot-sauce.html",
+      "photo_url": "https://overpepper.com/photos/chin-su-hot-sauce.jpg",
+      "_tail": "Hot Sauce (Sweet Sriracha) — Vietnam's household hot sauce — Chin-Su, the bottle on every table back home."
+    },
+    {
+      "slug": "el-yucateco-caribbean",
+      "name": "Caribbean Chile Habanero Hot Sauce",
+      "hook": "El Yucateco's carrot-sweetened Caribbean recipe — habanero with a tropical accent.",
+      "price": 14.49,
+      "shu": 5400,
+      "url": "https://overpepper.com/item-el-yucateco-caribbean.html",
+      "photo_url": "https://overpepper.com/photos/el-yucateco-caribbean.jpg",
+      "_tail": "Caribbean Chile Habanero Hot Sauce — El Yucateco's carrot-sweetened Caribbean recipe — habanero with a tropical accent."
+    },
+    {
+      "slug": "el-yucateco-jalapeno",
+      "name": "Chile Jalapeño Hot Sauce",
+      "hook": "The green one from Mérida — El Yucateco's jalapeño pour.",
+      "price": 11.49,
+      "shu": 1400,
+      "url": "https://overpepper.com/item-el-yucateco-jalapeno.html",
+      "photo_url": "https://overpepper.com/photos/el-yucateco-jalapeno.jpg",
+      "_tail": "Chile Jalapeño Hot Sauce — The green one from Mérida — El Yucateco's jalapeño pour."
+    },
+    {
+      "slug": "ginger-people-sweet-ginger-chili",
+      "name": "Sweet Ginger Chili Sauce",
+      "hook": "Ginger first, chili second — the sweet dipping pour from The Ginger People.",
+      "price": 7.49,
+      "shu": 800,
+      "url": "https://overpepper.com/item-ginger-people-sweet-ginger-chili.html",
+      "photo_url": "https://overpepper.com/photos/ginger-people-sweet-ginger-chili.jpg",
+      "_tail": "Sweet Ginger Chili Sauce — Ginger first, chili second — the sweet dipping pour from The Ginger People."
+    },
+    {
+      "slug": "trader-joes-green-dragon",
+      "name": "Green Dragon Hot Sauce",
+      "hook": "Trader Joe's cult green pour — tomatillo tang with a jalapeño bite.",
+      "price": 11.99,
+      "shu": 1600,
+      "url": "https://overpepper.com/item-trader-joes-green-dragon.html",
+      "photo_url": "https://overpepper.com/photos/trader-joes-green-dragon.jpg",
+      "_tail": "Green Dragon Hot Sauce — Trader Joe's cult green pour — tomatillo tang with a jalapeño bite."
+    },
+    {
+      "slug": "huy-fong-sriracha",
+      "name": "Sriracha Hot Chili Sauce",
+      "hook": "The rooster bottle — the original American sriracha, in the 17 oz.",
+      "price": 3.99,
+      "shu": 2200,
+      "url": "https://overpepper.com/item-huy-fong-sriracha.html",
+      "photo_url": "https://overpepper.com/photos/huy-fong-sriracha.jpg",
+      "_tail": "Sriracha Hot Chili Sauce — The rooster bottle — the original American sriracha, in the 17 oz."
+    },
+    {
+      "slug": "marie-sharps-fiery-hot",
+      "name": "Fiery Hot Habanero Pepper Sauce",
+      "hook": "Belize's national treasure, in its fiery cut — carrot-based habanero fire.",
+      "price": 7.99,
+      "shu": 15000,
+      "url": "https://overpepper.com/item-marie-sharps-fiery-hot.html",
+      "photo_url": "https://overpepper.com/photos/marie-sharps-fiery-hot.jpg",
+      "_tail": "Fiery Hot Habanero Pepper Sauce — Belize's national treasure, in its fiery cut — carrot-based habanero fire."
+    },
+    {
+      "slug": "casa-firelli-truffle",
+      "name": "Truffle Hot Sauce",
+      "hook": "Italy's truffle hot sauce — Calabrian chili under black truffle richness.",
+      "price": 12.49,
+      "shu": 4000,
+      "url": "https://overpepper.com/item-casa-firelli-truffle.html",
+      "photo_url": "https://overpepper.com/photos/casa-firelli-truffle.jpg",
+      "_tail": "Truffle Hot Sauce — Italy's truffle hot sauce — Calabrian chili under black truffle richness."
+    },
+    {
+      "slug": "trader-joes-bomba",
+      "name": "Italian Bomba Hot Pepper Sauce",
+      "hook": "Calabria's bomba, jarred — fermented Calabrian chilies, straight from Italy.",
+      "price": 10.49,
+      "shu": 5000,
+      "url": "https://overpepper.com/item-trader-joes-bomba.html",
+      "photo_url": "https://overpepper.com/photos/trader-joes-bomba.jpg",
+      "_tail": "Italian Bomba Hot Pepper Sauce — Calabria's bomba, jarred — fermented Calabrian chilies, straight from Italy."
+    },
+    {
+      "slug": "el-yucateco-red-habanero",
+      "name": "Red Habanero Hot Sauce",
+      "hook": "The classic red — Yucatán's original habanero table sauce.",
+      "price": 4.99,
+      "shu": 5790,
+      "url": "https://overpepper.com/item-el-yucateco-red-habanero.html",
+      "photo_url": "https://overpepper.com/photos/el-yucateco-red-habanero.jpg",
+      "_tail": "Red Habanero Hot Sauce — The classic red — Yucatán's original habanero table sauce."
+    },
+    {
+      "slug": "hot-mamas-too-hot",
+      "name": "Too Hot Habanero Pepper Sauce",
+      "hook": "From Belize, with a name that is also the warning: Too Hot.",
+      "price": 6.99,
+      "shu": 12000,
+      "url": "https://overpepper.com/item-hot-mamas-too-hot.html",
+      "photo_url": "https://overpepper.com/photos/hot-mamas-too-hot.jpg",
+      "_tail": "Too Hot Habanero Pepper Sauce — From Belize, with a name that is also the warning: Too Hot."
+    },
+    {
+      "slug": "la-sabrosita-aji-chombo",
+      "name": "Habanero Hot Sauce Ají Chombo",
+      "hook": "Panama's ají chombo in a bottle — the Caribbean coast's own pepper.",
+      "price": 3.49,
+      "shu": 8000,
+      "url": "https://overpepper.com/item-la-sabrosita-aji-chombo.html",
+      "photo_url": "https://overpepper.com/photos/la-sabrosita-aji-chombo.jpg",
+      "_tail": "Habanero Hot Sauce Ají Chombo — Panama's ají chombo in a bottle — the Caribbean coast's own pepper."
+    },
+    {
+      "slug": "mr-bajan-level-2",
+      "name": "Caribbean Vietnamese Hot Sauce — Level 2",
+      "hook": "Barbados meets Vietnam — Mr. Bajan's fusion bottle, at Level 2.",
+      "price": 10.49,
+      "shu": 9000,
+      "url": "https://overpepper.com/item-mr-bajan-level-2.html",
+      "photo_url": "https://overpepper.com/photos/mr-bajan-level-2.jpg",
+      "_tail": "Caribbean Vietnamese Hot Sauce — Level 2 — Barbados meets Vietnam — Mr. Bajan's fusion bottle, at Level 2."
+    },
+    {
+      "slug": "stuzzi-italian",
+      "name": "Premium Italian Hot Sauce",
+      "hook": "Italy's premium pour — a small Calabrian bottle with restaurant manners.",
+      "price": 9.49,
+      "shu": 3500,
+      "url": "https://overpepper.com/item-stuzzi-italian.html",
+      "photo_url": "https://overpepper.com/photos/stuzzi-italian.jpg",
+      "_tail": "Premium Italian Hot Sauce — Italy's premium pour — a small Calabrian bottle with restaurant manners."
+    },
+    {
+      "slug": "matouks-trinidad-scorpion",
+      "name": "Hot Pepper Trinidad Scorpion Sauce",
+      "hook": "Trinidad's scorpion, bottled by Matouk's — pure scorpion fire.",
+      "price": 10.49,
+      "shu": 500000,
+      "url": "https://overpepper.com/item-matouks-trinidad-scorpion.html",
+      "photo_url": "https://overpepper.com/photos/matouks-trinidad-scorpion.jpg",
+      "_tail": "Hot Pepper Trinidad Scorpion Sauce — Trinidad's scorpion, bottled by Matouk's — pure scorpion fire."
+    },
+    {
+      "slug": "tonys-ghost-pepper",
+      "name": "Handcrafted Hot Sauce — Ghost Pepper",
+      "hook": "A small-batch ghost pepper bottle with a slow, smoky build.",
+      "price": 11.99,
+      "shu": 400000,
+      "url": "https://overpepper.com/item-tonys-ghost-pepper.html",
+      "photo_url": "https://overpepper.com/photos/tonys-ghost-pepper.jpg",
+      "_tail": "Handcrafted Hot Sauce — Ghost Pepper — A small-batch ghost pepper bottle with a slow, smoky build."
+    },
+    {
+      "slug": "il-mig-onima",
+      "name": "IL MIG Hot Sauce",
+      "hook": "Spain's Onima bottles IL MIG — a European superhot with a cult following.",
+      "price": 12.99,
+      "shu": 300000,
+      "url": "https://overpepper.com/item-il-mig-onima.html",
+      "photo_url": "https://overpepper.com/photos/il-mig-onima.jpg",
+      "_tail": "IL MIG Hot Sauce — Spain's Onima bottles IL MIG — a European superhot with a cult following."
+    },
+    {
+      "slug": "burmans-red-sriracha",
+      "name": "Red Sriracha Hot Sauce",
+      "hook": "ALDI's Burman's red sriracha — the 18 oz bottle shoppers clear out.",
+      "price": 11.49,
+      "shu": 2500,
+      "url": "https://overpepper.com/item-burmans-red-sriracha.html",
+      "photo_url": "https://overpepper.com/photos/burmans-red-sriracha.jpg",
+      "_tail": "Red Sriracha Hot Sauce — ALDI's Burman's red sriracha — the 18 oz bottle shoppers clear out."
+    },
+    {
+      "slug": "de-mama-morita",
+      "name": "Morita Chili Sauce",
+      "hook": "Morita smoke in a bottle — the smoked jalapeño, sauced.",
+      "price": 10.49,
+      "shu": 6000,
+      "url": "https://overpepper.com/item-de-mama-morita.html",
+      "photo_url": "https://overpepper.com/photos/de-mama-morita.jpg",
+      "_tail": "Morita Chili Sauce — Morita smoke in a bottle — the smoked jalapeño, sauced."
+    },
+    {
+      "slug": "pineapple-habanero-paste",
+      "name": "Pineapple Habanero Chili Paste",
+      "hook": "A concentrated habanero paste with pineapple — a spoonful seasons the pot.",
+      "price": 11.99,
+      "shu": 20000,
+      "url": "https://overpepper.com/item-pineapple-habanero-paste.html",
+      "photo_url": "https://overpepper.com/photos/pineapple-habanero-paste.jpg",
+      "_tail": "Pineapple Habanero Chili Paste — A concentrated habanero paste with pineapple — a spoonful seasons the pot."
+    },
+    {
+      "slug": "citrus-mango-habanero-paste",
+      "name": "Citrus Mango Habanero Chili Paste",
+      "hook": "Mango and citrus folded into habanero paste — the tropical end of the top shelf.",
+      "price": 11.99,
+      "shu": 19000,
+      "url": "https://overpepper.com/item-citrus-mango-habanero-paste.html",
+      "photo_url": "https://overpepper.com/photos/citrus-mango-habanero-paste.jpg",
+      "_tail": "Citrus Mango Habanero Chili Paste — Mango and citrus folded into habanero paste — the tropical end of the top shelf."
+    },
+    {
+      "slug": "nellys-hot-pepper",
+      "name": "Hot Pepper Sauce",
+      "hook": "Nelly's pepper sauce — a small-maker bottle with a big, bold burn.",
+      "price": 9.49,
+      "shu": 10000,
+      "url": "https://overpepper.com/item-nellys-hot-pepper.html",
+      "photo_url": "https://overpepper.com/photos/nellys-hot-pepper.jpg",
+      "_tail": "Hot Pepper Sauce — Nelly's pepper sauce — a small-maker bottle with a big, bold burn."
+    }
+  ],
+  "pages": [
+    {
+      "label": "The Heat Guide",
+      "url": "https://overpepper.com/heat-guide.html",
+      "blurb": "Every pepper on the shelf, ranked by Scoville heat — from jalapeño mild to scorpion fire."
+    },
+    {
+      "label": "Habanero, profiled",
+      "url": "https://overpepper.com/heat-habanero.html",
+      "blurb": "100,000–350,000 SHU of fruity fire. The habanero, profiled."
+    },
+    {
+      "label": "Ghost pepper, profiled",
+      "url": "https://overpepper.com/heat-ghost-pepper.html",
+      "blurb": "855,000–1,041,427 SHU. The ghost pepper, profiled."
+    },
+    {
+      "label": "Scorpion pepper, profiled",
+      "url": "https://overpepper.com/heat-scorpion.html",
+      "blurb": "1.2M–2M SHU — the sting is real. The scorpion pepper, profiled."
+    },
+    {
+      "label": "The Warm shelf",
+      "url": "https://overpepper.com/warm.html",
+      "blurb": "Eight import hot sauces with warmth, not warfare."
+    },
+    {
+      "label": "The Overpeppered shelf",
+      "url": "https://overpepper.com/overpeppered.html",
+      "blurb": "The eight hottest bottles in the shop. Proceed happily."
+    }
+  ],
+  "hashtags": [
+    "hotsauce",
+    "spicyfood",
+    "chilihead"
+  ],
+  "keywords": [
+    "hot sauce",
+    "scoville",
+    "chili pepper",
+    "spicy food"
+  ]
+}
