@@ -149,6 +149,19 @@ def trim_head(head, tail):
     return head[:max(room, 0)].rstrip(" ,;—-") + "…" + tail
 
 
+def ensure_site_link(text, cfg):
+    """Dee's rule (2026-10-19): the website is in EVERY post. If the
+    site's domain somehow fell out of a composed post, append the
+    site's homepage before it can ship."""
+    domain = cfg["site"] + ".com"
+    if domain in text:
+        return text
+    suffix = " " + cfg["base"]
+    if len(text) + len(suffix) > LIMIT:
+        text = text[: LIMIT - len(suffix) - 1].rstrip() + "…"
+    return text + suffix
+
+
 # ------------------------------------------------------------------ modes
 
 def mode_feature(site, sess, dry):
@@ -175,7 +188,7 @@ def mode_feature(site, sess, dry):
     else:
         head = f"From {cfg['brand']}: {item['name']} — {item['hook']} "
         tail = f"{item['url']} {tags}"
-    text = trim_head(head, tail)
+    text = ensure_site_link(trim_head(head, tail), cfg)
     log(f"{site} feature target: {item['slug']} ({len(text)} chars): {text}")
     if dry:
         log(f"  photo: {item.get('photo_url') or 'none (link card)'}; dry-run, state untouched")
@@ -213,8 +226,8 @@ def mode_guide(site, sess, dry):
     else:
         page = pages[0]
     tags = " ".join("#" + t for t in cfg["hashtags"][:2])
-    text = trim_head(f"From {cfg['brand']}: {page['label']} — {page['blurb']} ",
-                     f"{page['url']} {tags}")
+    text = ensure_site_link(trim_head(f"From {cfg['brand']}: {page['label']} — {page['blurb']} ",
+                     f"{page['url']} {tags}"), cfg)
     log(f"{site} guide target: {page['label']} ({len(text)} chars): {text}")
     if dry:
         log("  dry-run, state untouched")
@@ -242,8 +255,8 @@ def mode_roundup(site, sess, dry):
         return 0
     names = ", ".join(h["name"] for h in recent[-5:])
     tags = " ".join("#" + t for t in cfg["hashtags"][:2])
-    text = trim_head(f"This week on {cfg['brand']}: {names}. ",
-                     f"Catch up: {cfg['base']} {tags}")
+    text = ensure_site_link(trim_head(f"This week on {cfg['brand']}: {names}. ",
+                     f"Catch up: {cfg['base']} {tags}"), cfg)
     log(f"{site} roundup ({len(text)} chars): {text}")
     if dry:
         log("  dry-run, state untouched")
