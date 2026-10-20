@@ -1,10 +1,14 @@
 {
   "feature": {
-    "last_slug": "cheddar",
+    "last_slug": "mozzarella",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myb5slvb2l2o"
+      },
+      "mozzarella": {
+        "at": "2026-10-20T15:36:13.348113+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mycxlz6ul32l"
       }
     }
   },
@@ -19,9 +23,19 @@
       "name": "Cheddar",
       "at": "2026-10-19T22:21:57.274897+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myb5slvb2l2o"
+    },
+    {
+      "kind": "feature",
+      "slug": "mozzarella",
+      "name": "Mozzarella",
+      "at": "2026-10-20T15:36:13.348131+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mycxlz6ul32l"
     }
   ],
   "reader": {
     "days": {}
+  },
+  "tumblr": {
+    "posted": {}
   }
 }

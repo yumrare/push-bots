@@ -1,10 +1,14 @@
 {
   "feature": {
-    "last_slug": "sawmill-gravy",
+    "last_slug": "sausage-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myb5taw2ne2l"
+      },
+      "sausage-gravy": {
+        "at": "2026-10-20T15:36:36.058545+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mycxmonhp22w"
       }
     }
   },
@@ -19,9 +23,19 @@
       "name": "Sawmill Gravy",
       "at": "2026-10-19T22:22:19.281370+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myb5taw2ne2l"
+    },
+    {
+      "kind": "feature",
+      "slug": "sausage-gravy",
+      "name": "Sausage Gravy",
+      "at": "2026-10-20T15:36:36.058566+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mycxmonhp22w"
     }
   ],
   "reader": {
     "days": {}
+  },
+  "tumblr": {
+    "posted": {}
   }
 }
