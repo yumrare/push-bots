@@ -17,8 +17,21 @@ Modes:
   reader  --site S   keyword search -> like <=8 posts, follow <=3 new
                      authors (daily caps in state); no comments
   keeper             fleet health report -> REPORT.md (no posting)
+  substack           watch happyfoods.substack.com/feed -> amplify any
+                     NEW post to the fleet's Bluesky + Tumblr (first
+                     run seeds existing posts without posting)
+
+Every feature/guide/roundup post is mirrored to the fleet's Tumblr blog
+(@happyfoods1, added 2026-10-20 at Dee's order) when the TUMBLR_* env
+vars are present — same text (website link included, per Dee's rule),
+photo posts by source URL, link posts otherwise. Tumblr post ids are
+tracked per site in state so a mirror never duplicates; a failed mirror
+logs loudly and never blocks the Bluesky post. The reader stays
+Bluesky-only.
 
 Env: BSKY_HANDLE, BSKY_APP_PASSWORD (either absent -> dry-run),
+     TUMBLR_CONSUMER_KEY, TUMBLR_CONSUMER_SECRET, TUMBLR_TOKEN,
+     TUMBLR_TOKEN_SECRET, TUMBLR_BLOG (absent -> no Tumblr mirror),
      DRY_RUN=1 forces dry-run. State lives in state/<site>.json and is
      committed back by the GitHub Actions workflows.
 """
@@ -67,6 +80,7 @@ def load_state(site):
     st.setdefault("guide", {"last_label": None, "posted": {}})
     st.setdefault("history", [])
     st.setdefault("reader", {"days": {}})
+    st.setdefault("tumblr", {"posted": {}})
     return st
 
 
@@ -162,6 +176,98 @@ def ensure_site_link(text, cfg):
     return text + suffix
 
 
+# ------------------------------------------------------------------ Tumblr
+
+TUMBLR_ENV = ("TUMBLR_CONSUMER_KEY", "TUMBLR_CONSUMER_SECRET",
+              "TUMBLR_TOKEN", "TUMBLR_TOKEN_SECRET", "TUMBLR_BLOG")
+
+
+def tumblr_enabled():
+    return all(os.environ.get(k) for k in TUMBLR_ENV)
+
+
+def post_tumblr(cfg, kind, text, item=None, page=None):
+    """Mirror one fleet post to the Happy Foods Tumblr blog via the
+    legacy v2 post API (OAuth1), the same pattern as yumrare-bots.
+    `text` already carries the site's link (ensure_site_link ran on
+    it); the caption also gets a real anchor for the item/page URL."""
+    try:
+        import requests
+        from requests_oauthlib import OAuth1
+    except ImportError as e:
+        raise RuntimeError(
+            "Tumblr mirroring needs `requests` and `requests-oauthlib`"
+        ) from e
+    auth = OAuth1(*(os.environ[k] for k in TUMBLR_ENV[:4]))
+    blog = os.environ["TUMBLR_BLOG"]
+    tags = ",".join(list(cfg["hashtags"]) + [cfg["brand"], "happy foods"])
+    data = {"tags": tags}
+    if kind == "feature" and item is not None:
+        caption = text + f'<br><br><a href="{item["url"]}">{item["url"]}</a>'
+        if item.get("photo_url"):
+            data.update({"type": "photo", "source": item["photo_url"],
+                         "caption": caption, "link": item["url"]})
+        else:
+            data.update({"type": "link", "url": item["url"],
+                         "title": item["name"], "description": caption})
+    elif kind == "guide" and page is not None:
+        data.update({"type": "link", "url": page["url"], "title": page["label"],
+                     "description": text +
+                     f'<br><br><a href="{page["url"]}">{page["url"]}</a>'})
+    else:  # roundup
+        data.update({"type": "text", "title": f"This week on {cfg['brand']}",
+                     "body": text +
+                     f'<br><br><a href="{cfg["base"]}">{cfg["base"]}</a>'})
+    r = requests.post(f"https://api.tumblr.com/v2/blog/{blog}/post",
+                      auth=auth, data=data, timeout=60)
+    if r.status_code not in (200, 201):
+        raise RuntimeError(f"Tumblr post failed: HTTP {r.status_code} {r.text[:200]}")
+    return str(r.json().get("response", {}).get("id", ""))
+
+
+def tumblr_post_data(data):
+    """POST one legacy-API post dict to the fleet Tumblr blog."""
+    try:
+        import requests
+        from requests_oauthlib import OAuth1
+    except ImportError as e:
+        raise RuntimeError(
+            "Tumblr posting needs `requests` and `requests-oauthlib`"
+        ) from e
+    auth = OAuth1(*(os.environ[k] for k in TUMBLR_ENV[:4]))
+    r = requests.post(
+        f"https://api.tumblr.com/v2/blog/{os.environ['TUMBLR_BLOG']}/post",
+        auth=auth, data=data, timeout=60)
+    if r.status_code not in (200, 201):
+        raise RuntimeError(f"Tumblr post failed: HTTP {r.status_code} {r.text[:200]}")
+    return str(r.json().get("response", {}).get("id", ""))
+
+
+def post_tumblr_link(title, url, text, tags):
+    return tumblr_post_data({"type": "link", "url": url, "title": title,
+                             "description": text +
+                             f'<br><br><a href="{url}">{url}</a>',
+                             "tags": ",".join(tags)})
+
+
+def mirror_tumblr(site, cfg, st, kind, key, text, item=None, page=None):
+    """Post the Tumblr mirror once per (kind, key); record in state.
+    Never raises — a failed mirror must not sink the Bluesky post."""
+    if not tumblr_enabled():
+        return
+    posted = st["tumblr"]["posted"]
+    mkey = f"{kind}:{key}"
+    if mkey in posted:
+        log(f"  tumblr: {mkey} already mirrored — skipping")
+        return
+    try:
+        pid = post_tumblr(cfg, kind, text, item=item, page=page)
+        posted[mkey] = {"at": now().isoformat(), "id": pid}
+        log(f"  tumblr mirrored OK: post {pid}")
+    except Exception as e:  # noqa: BLE001 — mirror failure is logged, not fatal
+        log(f"  tumblr mirror FAILED for {mkey}: {e}")
+
+
 # ------------------------------------------------------------------ modes
 
 def mode_feature(site, sess, dry):
@@ -207,6 +313,7 @@ def mode_feature(site, sess, dry):
                  "external": {"uri": item["url"], "title": item["name"],
                               "description": item["hook"][:200]}}
     uri = sess.post(text, embed)
+    mirror_tumblr(site, cfg, st, "feature", item["slug"], text, item=item)
     rot["posted"][item["slug"]] = {"at": now().isoformat(), "ref": uri}
     rot["last_slug"] = item["slug"]
     st["history"].append({"kind": "feature", "slug": item["slug"],
@@ -236,6 +343,7 @@ def mode_guide(site, sess, dry):
              "external": {"uri": page["url"], "title": page["label"],
                           "description": page["blurb"][:200]}}
     uri = sess.post(text, embed)
+    mirror_tumblr(site, cfg, st, "guide", page["label"], text, page=page)
     rot["posted"][page["label"]] = {"at": now().isoformat(), "ref": uri}
     rot["last_label"] = page["label"]
     st["history"].append({"kind": "guide", "slug": page["label"],
@@ -262,6 +370,7 @@ def mode_roundup(site, sess, dry):
         log("  dry-run, state untouched")
         return 0
     uri = sess.post(text)
+    mirror_tumblr(site, cfg, st, "roundup", now().strftime("%Y-%m-%d"), text)
     st["history"].append({"kind": "roundup", "slug": "weekly", "name": "Weekly roundup",
                           "at": now().isoformat(), "ref": uri})
     save_state(site, st)
@@ -322,19 +431,102 @@ def mode_reader(site, sess, dry):
     return 0
 
 
+def mode_substack(sess, dry):
+    """Happy Foods Substack watcher (added 2026-10-20, Dee's order):
+    read happyfoods.substack.com/feed; any NEW post is amplified to
+    the fleet's Bluesky + Tumblr. First-ever run seeds state with the
+    existing catalog WITHOUT posting (no back-catalog blast — the same
+    seeding rule as the 90s Foodie crossposter). An item is marked
+    seen only after its Bluesky post succeeds."""
+    import html as html_mod
+    import re
+    import xml.etree.ElementTree as ET
+
+    feed_url = "https://happyfoods.substack.com/feed"
+    spath = os.path.join(HERE, "state", "substack.json")
+    seeded = os.path.exists(spath)
+    if seeded:
+        with open(spath, encoding="utf-8") as f:
+            sst = json.load(f)
+    else:
+        sst = {"seen": {}}
+    sst.setdefault("seen", {})
+
+    req = urllib.request.Request(feed_url, headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        root = ET.fromstring(r.read())
+    items = []
+    for it in root.iter("item"):
+        def txt(tag):
+            el = it.find(tag)
+            return (el.text or "").strip() if el is not None else ""
+        guid = txt("guid") or txt("link")
+        desc = re.sub(r"<[^>]+>", " ", txt("description"))
+        desc = html_mod.unescape(re.sub(r"\s+", " ", desc)).strip()
+        items.append({"guid": guid, "title": txt("title"),
+                      "link": txt("link"), "desc": desc})
+    log(f"substack: feed carries {len(items)} post(s); "
+        f"{len(sst['seen'])} already seen")
+
+    if not seeded:
+        for it in items:
+            sst["seen"][it["guid"]] = {"at": now().isoformat(), "seeded": True}
+        if not dry:
+            os.makedirs(os.path.dirname(spath), exist_ok=True)
+            with open(spath, "w", encoding="utf-8") as f:
+                json.dump(sst, f, indent=2, ensure_ascii=False)
+                f.write("\n")
+        log(f"substack: seeded {len(items)} existing post(s) — no blast")
+        return 0
+
+    new = [it for it in reversed(items) if it["guid"] not in sst["seen"]]
+    if not new:
+        log("substack: nothing new")
+        return 0
+    for it in new[:2]:
+        head = f"New from Happy Foods: {it['title']} — {it['desc']} "
+        text = trim_head(head, it["link"])
+        log(f"substack new post: {it['title']} ({len(text)} chars): {text}")
+        if dry:
+            log("  dry-run, state untouched")
+            continue
+        embed = {"$type": "app.bsky.embed.external",
+                 "external": {"uri": it["link"], "title": it["title"],
+                              "description": it["desc"][:200]}}
+        uri = sess.post(text, embed)
+        entry = {"at": now().isoformat(), "bsky": uri}
+        if tumblr_enabled():
+            try:
+                entry["tumblr"] = post_tumblr_link(
+                    it["title"], it["link"], text,
+                    ["happy foods", "food blog", "substack"])
+                log(f"  tumblr mirrored OK: post {entry['tumblr']}")
+            except Exception as e:  # noqa: BLE001
+                log(f"  tumblr mirror FAILED: {e}")
+        sst["seen"][it["guid"]] = entry
+        with open(spath, "w", encoding="utf-8") as f:
+            json.dump(sst, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+        log(f"  amplified OK: {uri}")
+    return 0
+
+
 def mode_keeper():
     lines = [f"# Push-bots fleet report — {now().strftime('%Y-%m-%d %H:%M UTC')}", ""]
     for site in ("churnmilk", "gravytoast", "overpepper"):
         st = load_state(site)
         feats = [h for h in st["history"] if h["kind"] == "feature"]
         last = feats[-1] if feats else None
+        mirrors = len(st.get("tumblr", {}).get("posted", {}))
         if last:
             age_h = (now() - datetime.fromisoformat(last["at"])).total_seconds() / 3600
             flag = "STALE (>48h)" if age_h > 48 else "ok"
             lines.append(f"- **{site}**: {len(feats)} features posted; last "
-                         f"{last['name']} {age_h:.0f}h ago — {flag}")
+                         f"{last['name']} {age_h:.0f}h ago — {flag}; "
+                         f"{mirrors} Tumblr mirrors")
         else:
-            lines.append(f"- **{site}**: no features posted yet")
+            lines.append(f"- **{site}**: no features posted yet; "
+                         f"{mirrors} Tumblr mirrors")
     report = "\n".join(lines) + "\n"
     with open(os.path.join(HERE, "REPORT.md"), "w", encoding="utf-8") as f:
         f.write(report)
@@ -345,11 +537,17 @@ def mode_keeper():
 def main():
     args = sys.argv[1:]
     if not args:
-        log("usage: bot.py <feature|guide|roundup|reader|keeper> [--site S]")
+        log("usage: bot.py <feature|guide|roundup|reader|keeper|substack> [--site S]")
         return 2
     mode = args[0]
     if mode == "keeper":
         return mode_keeper()
+    if mode == "substack":
+        dry_s = truthy(os.environ.get("DRY_RUN")) or not (
+            os.environ.get("BSKY_HANDLE") and os.environ.get("BSKY_APP_PASSWORD"))
+        if dry_s and not truthy(os.environ.get("DRY_RUN")):
+            log("no Bluesky secrets present — dry-run mode")
+        return mode_substack(None if dry_s else Session(), dry_s)
     site = args[args.index("--site") + 1] if "--site" in args else None
     if site not in ("churnmilk", "gravytoast", "overpepper"):
         log("a valid --site is required (churnmilk|gravytoast|overpepper)")

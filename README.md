@@ -37,3 +37,20 @@ Edit a site's data at its source, then run `python3 prep_sites.py` here
 ## Dry run
 `DRY_RUN=1 python3 bot.py feature --site churnmilk` — composes and logs,
 posts nothing, touches no state. Missing secrets also force dry-run.
+
+## Tumblr mirror + Substack watcher (added 2026-10-20, Dee's order)
+
+- **Tumblr mirror** — every feature/guide/roundup post is also posted to
+  the fleet's Tumblr blog **@happyfoods1** ("Happy Foods") via the legacy
+  v2 API (OAuth1, same pattern as yumrare-bots). Photo posts use the
+  entry's photo by source URL; guides/roundups/Substack amplifications
+  are link/text posts. Mirror ids are tracked per site in
+  `state/<site>.json` under `tumblr.posted` so nothing ever duplicates;
+  a failed mirror logs loudly and never blocks the Bluesky post. The
+  reader stays Bluesky-only. Requires the `TUMBLR_*` repo secrets and
+  `requests` + `requests-oauthlib` (installed in the posting workflows).
+- **Substack watcher** (`bot.py substack`, substack.yml, hourly) —
+  reads https://happyfoods.substack.com/feed; any NEW post on Dee's
+  Happy Foods Substack is amplified to the fleet's Bluesky + Tumblr.
+  First run seeds existing posts WITHOUT posting (no back-catalog
+  blast). State: `state/substack.json`.
