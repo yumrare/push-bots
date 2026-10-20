@@ -431,15 +431,15 @@ def mode_reader(site, sess, dry):
     return 0
 
 
-def mode_substack(sess, dry):
-    """Happy Foods Substack watcher (added 2026-10-20, Dee's order):
-    read happyfoods.substack.com/feed; any NEW post is amplified to
-    the fleet's Bluesky + Tumblr. First-ever run seeds state with the
-    existing catalog WITHOUT posting (no back-catalog blast — the same
-    seeding rule as the 90s Foodie crossposter). An item is marked
-    seen only after its Bluesky post succeeds."""
+def _substack_feed():
+    """Load the watcher state and fetch the Happy Foods feed.
+    The fetch is retry-hardened (2026-10-20, Dee's order): Substack
+    intermittently 403s datacenter/WARP egress IPs; a single flake
+    must not kill the run — retry the fetch+parse with backoff.
+    Returns (state, items, seeded_flag, state_path)."""
     import html as html_mod
     import re
+    import time
     import xml.etree.ElementTree as ET
 
     feed_url = "https://happyfoods.substack.com/feed"
@@ -452,10 +452,6 @@ def mode_substack(sess, dry):
         sst = {"seen": {}}
     sst.setdefault("seen", {})
 
-    # Fetch with retries (hardened 2026-10-20, Dee's order): Substack
-    # intermittently 403s datacenter/WARP egress IPs; a single flake
-    # must not kill the run — retry the fetch+parse with backoff.
-    import time
     root = None
     last_err = None
     for attempt, wait in enumerate((0, 5, 15, 30), start=1):
@@ -486,22 +482,48 @@ def mode_substack(sess, dry):
                       "link": txt("link"), "desc": desc})
     log(f"substack: feed carries {len(items)} post(s); "
         f"{len(sst['seen'])} already seen")
+    return sst, items, seeded, spath
+
+
+def _substack_seed(sst, items, spath, dry):
+    """First-ever run: mark the existing catalog seen, no blast."""
+    for it in items:
+        sst["seen"][it["guid"]] = {"at": now().isoformat(), "seeded": True}
+    if not dry:
+        os.makedirs(os.path.dirname(spath), exist_ok=True)
+        with open(spath, "w", encoding="utf-8") as f:
+            json.dump(sst, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+    log(f"substack: seeded {len(items)} existing post(s) — no blast")
+
+
+def mode_substack(sess, dry):
+    """Happy Foods Substack watcher (added 2026-10-20, Dee's order):
+    read happyfoods.substack.com/feed; any NEW post is amplified to
+    the fleet's Bluesky + Tumblr. First-ever run seeds state with the
+    existing catalog WITHOUT posting (no back-catalog blast — the same
+    seeding rule as the 90s Foodie crossposter). An item is marked
+    seen only after its Bluesky post succeeds."""
+    sst, items, seeded, spath = _substack_feed()
 
     if not seeded:
-        for it in items:
-            sst["seen"][it["guid"]] = {"at": now().isoformat(), "seeded": True}
-        if not dry:
-            os.makedirs(os.path.dirname(spath), exist_ok=True)
-            with open(spath, "w", encoding="utf-8") as f:
-                json.dump(sst, f, indent=2, ensure_ascii=False)
-                f.write("\n")
-        log(f"substack: seeded {len(items)} existing post(s) — no blast")
+        _substack_seed(sst, items, spath, dry)
         return 0
 
     new = [it for it in reversed(items) if it["guid"] not in sst["seen"]]
     if not new:
         log("substack: nothing new")
         return 0
+    _substack_amplify(sess, sst, spath, new, dry)
+    return 0
+
+
+def _substack_amplify(sess, sst, spath, new, dry):
+    """Post up to 2 new items to Bluesky (+ Tumblr mirror); an item is
+    marked seen only after its Bluesky post succeeds.
+    Returns the list of guids actually posted."""
+    import time
+    posted = []
     for it in new[:2]:
         head = f"New from Happy Foods: {it['title']} — {it['desc']} "
         text = trim_head(head, it["link"])
@@ -512,9 +534,8 @@ def mode_substack(sess, dry):
         embed = {"$type": "app.bsky.embed.external",
                  "external": {"uri": it["link"], "title": it["title"],
                               "description": it["desc"][:200]}}
-        # Post with retries (hardened 2026-10-20, Dee's order): the
-        # bsky.social call rides the WARP tunnel in this workflow and
-        # a single read timeout there killed run #7 after the fetch
+        # Post with retries (hardened 2026-10-20, Dee's order): a
+        # single read timeout killed run #7's post after the fetch
         # had already succeeded — retry the post with backoff.
         uri = None
         last_err = None
@@ -544,6 +565,64 @@ def mode_substack(sess, dry):
             json.dump(sst, f, indent=2, ensure_ascii=False)
             f.write("\n")
         log(f"  amplified OK: {uri}")
+        posted.append(it["guid"])
+    return posted
+
+
+def mode_substack_fetch(dry):
+    """Phase 1 (runs under the WARP tunnel in the workflow): fetch the
+    feed and stash new items in state/pending.json. No Bluesky session
+    is created — Bluesky traffic must NOT ride the tunnel (TLS
+    handshake and read timeouts there killed runs #7 and #8,
+    2026-10-20)."""
+    sst, items, seeded, spath = _substack_feed()
+    ppath = os.path.join(HERE, "state", "pending.json")
+    if not seeded:
+        _substack_seed(sst, items, spath, dry)
+        pending = []
+    else:
+        pending = [it for it in reversed(items)
+                   if it["guid"] not in sst["seen"]]
+    if dry:
+        log(f"substack fetch: {len(pending)} pending (dry-run, "
+            f"pending.json untouched)")
+        return 0
+    os.makedirs(os.path.dirname(ppath), exist_ok=True)
+    with open(ppath, "w", encoding="utf-8") as f:
+        json.dump(pending, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+    log(f"substack fetch: {len(pending)} pending item(s) stashed")
+    return 0
+
+
+def mode_substack_post(sess, dry):
+    """Phase 2 (runs on the open network): amplify whatever the fetch
+    phase stashed in state/pending.json, then prune what posted."""
+    spath = os.path.join(HERE, "state", "substack.json")
+    ppath = os.path.join(HERE, "state", "pending.json")
+    if os.path.exists(spath):
+        with open(spath, encoding="utf-8") as f:
+            sst = json.load(f)
+    else:
+        sst = {"seen": {}}
+    sst.setdefault("seen", {})
+    pending = []
+    if os.path.exists(ppath):
+        with open(ppath, encoding="utf-8") as f:
+            pending = json.load(f)
+    pending = [it for it in pending if it["guid"] not in sst["seen"]]
+    if not pending:
+        log("substack post: nothing pending")
+        return 0
+    posted = _substack_amplify(sess, sst, spath, pending, dry)
+    if not dry:
+        done = set(posted)
+        remaining = [it for it in pending if it["guid"] not in done]
+        with open(ppath, "w", encoding="utf-8") as f:
+            json.dump(remaining, f, indent=2, ensure_ascii=False)
+            f.write("\n")
+        log(f"substack post: {len(posted)} amplified, "
+            f"{len(remaining)} still pending")
     return 0
 
 
@@ -581,9 +660,15 @@ def main():
     if mode == "substack":
         dry_s = truthy(os.environ.get("DRY_RUN")) or not (
             os.environ.get("BSKY_HANDLE") and os.environ.get("BSKY_APP_PASSWORD"))
+        if "--fetch" in args:
+            # Fetch phase never creates a Bluesky session.
+            return mode_substack_fetch(dry_s)
         if dry_s and not truthy(os.environ.get("DRY_RUN")):
             log("no Bluesky secrets present — dry-run mode")
-        return mode_substack(None if dry_s else Session(), dry_s)
+        sess = None if dry_s else Session()
+        if "--post" in args:
+            return mode_substack_post(sess, dry_s)
+        return mode_substack(sess, dry_s)
     site = args[args.index("--site") + 1] if "--site" in args else None
     if site not in ("churnmilk", "gravytoast", "overpepper"):
         log("a valid --site is required (churnmilk|gravytoast|overpepper)")
