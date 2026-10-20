@@ -16,6 +16,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      # Install BEFORE the WARP tunnel (fixed 2026-10-20): pip behind
+      # the tunnel intermittently fails DNS for pypi.org, which killed
+      # the amplify step before bot.py ever ran (runs #4 and #5).
+      - name: Install dependencies
+        run: |
+          for i in 1 2 3; do pip install -q requests requests-oauthlib && break || sleep 10; done
       - name: Connect via Cloudflare WARP
         run: |
           sudo apt-get update -qq
@@ -45,7 +51,6 @@ jobs:
           TUMBLR_TOKEN_SECRET: ${{ secrets.TUMBLR_TOKEN_SECRET }}
           TUMBLR_BLOG: ${{ secrets.TUMBLR_BLOG }}
         run: |
-          pip install -q requests requests-oauthlib
           python3 bot.py substack || true
       - name: Disconnect WARP
         if: always()
