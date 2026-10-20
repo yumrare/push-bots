@@ -41,6 +41,16 @@ jobs:
           sudo wg-quick up wgcf
           echo "--- egress check ---"
           curl -s --max-time 20 https://www.cloudflare.com/cdn-cgi/trace | grep -E '^(ip|warp)=' || true
+      # Phase 1: fetch under the tunnel — ONLY the Substack fetch
+      # needs WARP. No Bluesky session is created in this phase.
+      - name: Fetch new Substack posts
+        run: python3 bot.py substack --fetch || true
+      - name: Disconnect WARP
+        if: always()
+        run: sudo wg-quick down wgcf || true
+      # Phase 2: post on the open network — bsky.social through the
+      # tunnel kept timing out (read timeout run #7, TLS handshake
+      # run #8, 2026-10-20); the rest of the fleet posts tunnel-free.
       - name: Amplify new Substack posts
         env:
           BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
@@ -50,12 +60,9 @@ jobs:
           TUMBLR_TOKEN: ${{ secrets.TUMBLR_TOKEN }}
           TUMBLR_TOKEN_SECRET: ${{ secrets.TUMBLR_TOKEN_SECRET }}
           TUMBLR_BLOG: ${{ secrets.TUMBLR_BLOG }}
-        run: |
-          python3 bot.py substack || true
-      - name: Disconnect WARP
-        if: always()
-        run: sudo wg-quick down wgcf || true
+        run: python3 bot.py substack --post
       - name: Commit state
+        if: always()
         run: |
           git config user.name "push-bots"
           git config user.email "push-bots@users.noreply.github.com"
