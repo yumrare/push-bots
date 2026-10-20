@@ -512,7 +512,24 @@ def mode_substack(sess, dry):
         embed = {"$type": "app.bsky.embed.external",
                  "external": {"uri": it["link"], "title": it["title"],
                               "description": it["desc"][:200]}}
-        uri = sess.post(text, embed)
+        # Post with retries (hardened 2026-10-20, Dee's order): the
+        # bsky.social call rides the WARP tunnel in this workflow and
+        # a single read timeout there killed run #7 after the fetch
+        # had already succeeded — retry the post with backoff.
+        uri = None
+        last_err = None
+        for attempt, wait in enumerate((0, 10, 20), start=1):
+            if wait:
+                log(f"substack: bsky post retry {attempt} after {wait}s "
+                    f"(last error: {last_err})")
+                time.sleep(wait)
+            try:
+                uri = sess.post(text, embed)
+                break
+            except Exception as e:  # noqa: BLE001 - retry any post flake
+                last_err = e
+        if uri is None:
+            raise RuntimeError(f"bsky post failed after retries: {last_err}")
         entry = {"at": now().isoformat(), "bsky": uri}
         if tumblr_enabled():
             try:
