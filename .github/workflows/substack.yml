@@ -16,6 +16,25 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Connect via Cloudflare WARP
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq wireguard-tools
+          WGCF_URL=""
+          for i in 1 2 3 4; do
+            WGCF_URL=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" https://api.github.com/repos/ViRb3/wgcf/releases/latest | grep -o 'https://[^"]*linux_amd64[^"]*' | head -1)
+            [ -n "$WGCF_URL" ] && break
+            echo "wgcf lookup attempt $i came back empty, retrying..."
+            sleep 15
+          done
+          if [ -z "$WGCF_URL" ]; then echo "wgcf download URL lookup failed"; exit 1; fi
+          curl -fsSL "$WGCF_URL" -o wgcf && chmod +x wgcf
+          ./wgcf register --accept-tos >/dev/null 2>&1
+          ./wgcf generate >/dev/null 2>&1
+          sudo install -m 600 wgcf-profile.conf /etc/wireguard/wgcf.conf
+          sudo wg-quick up wgcf
+          echo "--- egress check ---"
+          curl -s --max-time 20 https://www.cloudflare.com/cdn-cgi/trace | grep -E '^(ip|warp)=' || true
       - name: Amplify new Substack posts
         env:
           BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
@@ -28,6 +47,9 @@ jobs:
         run: |
           pip install -q requests requests-oauthlib
           python3 bot.py substack || true
+      - name: Disconnect WARP
+        if: always()
+        run: sudo wg-quick down wgcf || true
       - name: Commit state
         run: |
           git config user.name "push-bots"
