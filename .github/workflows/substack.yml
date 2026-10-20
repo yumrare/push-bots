@@ -1,0 +1,37 @@
+name: Substack watcher
+on:
+  schedule:
+    - cron: "17 * * * *"   # hourly at :17 — amplify new Happy Foods Substack posts
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: push-bots-state
+  cancel-in-progress: false
+jobs:
+  substack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Amplify new Substack posts
+        env:
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          TUMBLR_CONSUMER_KEY: ${{ secrets.TUMBLR_CONSUMER_KEY }}
+          TUMBLR_CONSUMER_SECRET: ${{ secrets.TUMBLR_CONSUMER_SECRET }}
+          TUMBLR_TOKEN: ${{ secrets.TUMBLR_TOKEN }}
+          TUMBLR_TOKEN_SECRET: ${{ secrets.TUMBLR_TOKEN_SECRET }}
+          TUMBLR_BLOG: ${{ secrets.TUMBLR_BLOG }}
+        run: |
+          pip install -q requests requests-oauthlib
+          python3 bot.py substack || true
+      - name: Commit state
+        run: |
+          git config user.name "push-bots"
+          git config user.email "push-bots@users.noreply.github.com"
+          git add state REPORT.md 2>/dev/null || git add state
+          git diff --cached --quiet || git commit -m "substack run state [skip ci]"
+          git push
