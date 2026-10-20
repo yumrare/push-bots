@@ -452,9 +452,28 @@ def mode_substack(sess, dry):
         sst = {"seen": {}}
     sst.setdefault("seen", {})
 
-    req = urllib.request.Request(feed_url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        root = ET.fromstring(r.read())
+    # Fetch with retries (hardened 2026-10-20, Dee's order): Substack
+    # intermittently 403s datacenter/WARP egress IPs; a single flake
+    # must not kill the run — retry the fetch+parse with backoff.
+    import time
+    root = None
+    last_err = None
+    for attempt, wait in enumerate((0, 5, 15, 30), start=1):
+        if wait:
+            log(f"substack: fetch retry {attempt} after {wait}s "
+                f"(last error: {last_err})")
+            time.sleep(wait)
+        try:
+            req = urllib.request.Request(feed_url,
+                                         headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                root = ET.fromstring(r.read())
+            break
+        except Exception as e:  # noqa: BLE001 - retry any fetch/parse flake
+            last_err = e
+    if root is None:
+        raise RuntimeError(f"substack feed fetch failed after retries: "
+                           f"{last_err}")
     items = []
     for it in root.iter("item"):
         def txt(tag):
