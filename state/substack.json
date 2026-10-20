@@ -1,3 +1,8 @@
 {
-  "seen": {}
+  "seen": {
+    "https://happyfoods.substack.com/p/sawmill-gravy-gravytoast": {
+      "at": "2026-10-20T17:01:00.177135+00:00",
+      "bsky": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myd4dmuqoi2q"
+    }
+  }
 }
