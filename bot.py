@@ -661,8 +661,11 @@ def main():
         dry_s = truthy(os.environ.get("DRY_RUN")) or not (
             os.environ.get("BSKY_HANDLE") and os.environ.get("BSKY_APP_PASSWORD"))
         if "--fetch" in args:
-            # Fetch phase never creates a Bluesky session.
-            return mode_substack_fetch(dry_s)
+            # Fetch phase never creates a Bluesky session, so the
+            # missing-secrets dry-run rule must NOT apply to it (bug
+            # in run #9, 2026-10-20: fetch ran dry and stashed
+            # nothing). Only an explicit DRY_RUN makes fetch dry.
+            return mode_substack_fetch(truthy(os.environ.get("DRY_RUN")))
         if dry_s and not truthy(os.environ.get("DRY_RUN")):
             log("no Bluesky secrets present — dry-run mode")
         sess = None if dry_s else Session()
