@@ -17,8 +17,13 @@
     }
   },
   "guide": {
-    "last_label": null,
-    "posted": {}
+    "last_label": "The Heat Guide",
+    "posted": {
+      "The Heat Guide": {
+        "at": "2026-10-21T17:37:20.065646+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfot5qjjw2v"
+      }
+    }
   },
   "history": [
     {
@@ -41,6 +46,13 @@
       "name": "Hot Sauce (Sweet Sriracha)",
       "at": "2026-10-21T15:38:47.951519+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfi73i4kp2x"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Heat Guide",
+      "name": "The Heat Guide",
+      "at": "2026-10-21T17:37:20.065653+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfot5qjjw2v"
     }
   ],
   "reader": {
@@ -59,6 +71,10 @@
       "feature:chin-su-hot-sauce": {
         "at": "2026-10-21T15:38:35.472451+00:00",
         "id": "117479644500246089"
+      },
+      "guide:The Heat Guide": {
+        "at": "2026-10-21T17:37:08.385719+00:00",
+        "id": "117480110701040689"
       }
     }
   },
@@ -67,6 +83,10 @@
       "feature:chin-su-hot-sauce": {
         "at": "2026-10-21T15:38:47.951479+00:00",
         "id": "aca42d49dee5841b409e5203a841b2c27f045272544f418b518e9f225f8f76b9"
+      },
+      "guide:The Heat Guide": {
+        "at": "2026-10-21T17:37:20.065615+00:00",
+        "id": "0278ab7bf18d35465b25c95b6d5cd557d2034ab89af83dacb41e5bee21b9e6cb"
       }
     }
   }

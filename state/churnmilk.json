@@ -17,8 +17,13 @@
     }
   },
   "guide": {
-    "last_label": null,
-    "posted": {}
+    "last_label": "The Dairy Storage Chart",
+    "posted": {
+      "The Dairy Storage Chart": {
+        "at": "2026-10-21T17:36:14.105030+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfor5vbpi2x"
+      }
+    }
   },
   "history": [
     {
@@ -41,6 +46,13 @@
       "name": "Parmesan",
       "at": "2026-10-21T15:37:34.225081+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfi4vofd72m"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Dairy Storage Chart",
+      "name": "The Dairy Storage Chart",
+      "at": "2026-10-21T17:36:14.105036+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfor5vbpi2x"
     }
   ],
   "reader": {
@@ -59,6 +71,10 @@
       "feature:parmesan": {
         "at": "2026-10-21T15:37:21.630699+00:00",
         "id": "117479639702620982"
+      },
+      "guide:The Dairy Storage Chart": {
+        "at": "2026-10-21T17:36:01.926594+00:00",
+        "id": "117480106345458934"
       }
     }
   },
@@ -67,6 +83,10 @@
       "feature:parmesan": {
         "at": "2026-10-21T15:37:34.225051+00:00",
         "id": "e74979e55096285493136147734ffbdd74f09df306eaf3ab3056a635b4073911"
+      },
+      "guide:The Dairy Storage Chart": {
+        "at": "2026-10-21T17:36:14.105005+00:00",
+        "id": "420dc4361e05383607e184eeec966317f9985cc1989f479eaac2f0ce3c2c8cf3"
       }
     }
   }

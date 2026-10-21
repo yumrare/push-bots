@@ -17,8 +17,13 @@
     }
   },
   "guide": {
-    "last_label": null,
-    "posted": {}
+    "last_label": "The Gravy Chart",
+    "posted": {
+      "The Gravy Chart": {
+        "at": "2026-10-21T17:36:47.114691+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfos5ye4l2m"
+      }
+    }
   },
   "history": [
     {
@@ -41,6 +46,13 @@
       "name": "Country (Cream) Gravy",
       "at": "2026-10-21T15:38:09.995351+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfi5ywoo72v"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Gravy Chart",
+      "name": "The Gravy Chart",
+      "at": "2026-10-21T17:36:47.114698+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfos5ye4l2m"
     }
   ],
   "reader": {
@@ -59,6 +71,10 @@
       "feature:country-cream-gravy": {
         "at": "2026-10-21T15:37:57.802391+00:00",
         "id": "117479642078346056"
+      },
+      "guide:The Gravy Chart": {
+        "at": "2026-10-21T17:36:35.287165+00:00",
+        "id": "117480108533295162"
       }
     }
   },
@@ -67,6 +83,10 @@
       "feature:country-cream-gravy": {
         "at": "2026-10-21T15:38:09.995319+00:00",
         "id": "dc153119870e000f1687ff2c221c821945ea967e163b37a8053b973b1757eaf3"
+      },
+      "guide:The Gravy Chart": {
+        "at": "2026-10-21T17:36:47.114666+00:00",
+        "id": "ae3bd0d368880c86eaa7a144a3ca9769a8dde350390f95f5c4ff4553fbac9ee9"
       }
     }
   }
