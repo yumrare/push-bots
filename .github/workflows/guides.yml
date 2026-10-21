@@ -27,6 +27,7 @@ jobs:
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
           MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           MASTODON_BASE: https://mastodon.social
+          NOSTR_PRIVATE_KEY: ${{ secrets.NOSTR_PRIVATE_KEY }}
         run: |
           pip install -q requests requests-oauthlib
           for s in churnmilk gravytoast overpepper; do
