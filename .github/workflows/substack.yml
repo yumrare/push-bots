@@ -60,6 +60,8 @@ jobs:
           TUMBLR_TOKEN: ${{ secrets.TUMBLR_TOKEN }}
           TUMBLR_TOKEN_SECRET: ${{ secrets.TUMBLR_TOKEN_SECRET }}
           TUMBLR_BLOG: ${{ secrets.TUMBLR_BLOG }}
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          MASTODON_BASE: https://mastodon.social
         run: python3 bot.py substack --post
       - name: Commit state
         if: always()

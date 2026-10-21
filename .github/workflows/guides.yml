@@ -25,6 +25,8 @@ jobs:
           TUMBLR_TOKEN_SECRET: ${{ secrets.TUMBLR_TOKEN_SECRET }}
           TUMBLR_BLOG: ${{ secrets.TUMBLR_BLOG }}
           BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          MASTODON_BASE: https://mastodon.social
         run: |
           pip install -q requests requests-oauthlib
           for s in churnmilk gravytoast overpepper; do
