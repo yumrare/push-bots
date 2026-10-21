@@ -78,7 +78,7 @@ posts nothing, touches no state. Missing secrets also force dry-run.
 - Every feature/guide/roundup post and every Substack amplification
   is also published as a kind-1 note to public Nostr relays from the
   fleet's own Nostr identity, **@happyfoods**
-  (npub1j6ywegxsx33k7x5wqe9fhmdcma5g0nphwwhjqwkrtj4qam2p24lsm6zhct).
+  (npub1j6ywegxsx33k7x5wqe9fhmdcma5g0nphwwhjqwkrtj4qam2p24ls6z48n8).
   Nostr has no email/password accounts — the identity is a keypair;
   the private key lives only in the `NOSTR_PRIVATE_KEY` repo secret,
   like the other fleet credentials.

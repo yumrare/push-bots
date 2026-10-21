@@ -541,10 +541,19 @@ def _convertbits(data, frombits, tobits, pad=True):
     return ret
 
 
+def _bech32_hrp_expand(hrp):
+    """BIP-173 HRP expansion: high 3 bits of each char, a zero, then
+    the low 5 bits. (Bug caught 2026-10-21 by njump's validator: the
+    first cut fed raw ord() values into the polymod — self-consistent
+    for round-trips but rejected by every real bech32 checker.)"""
+    return ([ord(c) >> 5 for c in hrp] + [0]
+            + [ord(c) & 31 for c in hrp])
+
+
 def bech32_encode(hrp, data_bytes):
     """BIP-173 bech32 (Nostr NIP-19 uses it for npub/nsec)."""
     data = _convertbits(data_bytes, 8, 5)
-    values = [ord(c) for c in hrp] + [0] + data
+    values = _bech32_hrp_expand(hrp) + data
     poly = _bech32_polymod(values + [0] * 6) ^ 1
     checksum = [(poly >> 5 * (5 - i)) & 31 for i in range(6)]
     return hrp + "1" + "".join(_BECH[d] for d in data + checksum)
@@ -555,7 +564,7 @@ def bech32_decode(s):
     pos = s.rfind("1")
     hrp = s[:pos]
     data = [_BECH.index(c) for c in s[pos + 1:]]
-    if _bech32_polymod([ord(c) for c in hrp] + [0] + data) != 1:
+    if _bech32_polymod(_bech32_hrp_expand(hrp) + data) != 1:
         raise ValueError("bad bech32 checksum")
     return hrp, bytes(_convertbits(data[:-6], 5, 8, pad=False))
 
