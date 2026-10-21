@@ -15,6 +15,12 @@
     "https://happyfoods.substack.com/p/handcrafted-hot-sauce-ghost-pepper": {
       "at": "2026-10-21T12:53:30.699587+00:00",
       "bsky": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myf6xyqnxo2v"
+    },
+    "https://happyfoods.substack.com/p/crawfish-gravy-gravytoast": {
+      "at": "2026-10-21T17:41:31.392638+00:00",
+      "bsky": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfp2yv4gf2m",
+      "mastodon": "117480127976516479",
+      "nostr": "6c850f3a701cb8ced0cfcb6f8063113c3af91fb43974c98d4b9fd7d5d2db96c3"
     }
   }
 }
