@@ -1,5 +1,5 @@
-# Push-bots fleet report — 2026-10-20 21:05 UTC
+# Push-bots fleet report — 2026-10-21 21:05 UTC
 
-- **churnmilk**: 2 features posted; last Mozzarella 5h ago — ok; 0 Tumblr mirrors
-- **gravytoast**: 2 features posted; last Sausage Gravy 5h ago — ok; 0 Tumblr mirrors
-- **overpepper**: 2 features posted; last Banana Ketchup Hot & Spicy 5h ago — ok; 0 Tumblr mirrors
+- **churnmilk**: 3 features posted; last Parmesan 5h ago — ok; 0 Tumblr mirrors; 2 Mastodon mirrors; 2 Nostr mirrors
+- **gravytoast**: 3 features posted; last Country (Cream) Gravy 5h ago — ok; 0 Tumblr mirrors; 2 Mastodon mirrors; 2 Nostr mirrors
+- **overpepper**: 3 features posted; last Hot Sauce (Sweet Sriracha) 5h ago — ok; 0 Tumblr mirrors; 2 Mastodon mirrors; 2 Nostr mirrors
