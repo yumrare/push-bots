@@ -42,17 +42,40 @@ doesn't. Mastodon post ids are tracked per site in state exactly
 like the Tumblr mirror; a failed mirror logs loudly and never
 blocks the Bluesky post. The reader stays Bluesky-only.
 
+Every feature/guide/roundup post and every Substack amplification is
+also mirrored to Nostr (added 2026-10-21 at Dee's order) when
+NOSTR_PRIVATE_KEY is present. The fleet's Nostr identity is
+@happyfoods: Nostr has no email/password accounts — the identity is
+a keypair, and the private key (hex or nsec) lives only in the repo
+secrets, like the Bluesky and Mastodon credentials. Dee's footer
+rule applies exactly as on Mastodon (all three websites plus the
+Happy Foods Substack blog, reusing MASTO_SITES_FOOTER); a feature
+item's photo rides as its URL, which Nostr clients render inline.
+Events are BIP-340 Schnorr-signed and published to public relays
+with a minimal pure-stdlib WebSocket client, so the workflows need
+no extra packages. Event ids are tracked per site in state exactly
+like the other mirrors; a failed mirror logs loudly and never
+blocks the Bluesky post. The reader stays Bluesky-only.
+
 Env: BSKY_HANDLE, BSKY_APP_PASSWORD (either absent -> dry-run),
      TUMBLR_CONSUMER_KEY, TUMBLR_CONSUMER_SECRET, TUMBLR_TOKEN,
      TUMBLR_TOKEN_SECRET, TUMBLR_BLOG (absent -> no Tumblr mirror),
      MASTODON_ACCESS_TOKEN, MASTODON_BASE (absent -> no Mastodon
      mirror; base defaults to https://mastodon.social),
+     NOSTR_PRIVATE_KEY, NOSTR_RELAYS (absent -> no Nostr mirror;
+     relays default to NOSTR_RELAYS below),
      DRY_RUN=1 forces dry-run. State lives in state/<site>.json and is
      committed back by the GitHub Actions workflows.
 """
+import base64
+import hashlib
 import json
 import os
+import socket
+import ssl
+import struct
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -97,6 +120,7 @@ def load_state(site):
     st.setdefault("reader", {"days": {}})
     st.setdefault("tumblr", {"posted": {}})
     st.setdefault("mastodon", {"posted": {}})
+    st.setdefault("nostr", {"posted": {}})
     return st
 
 
@@ -393,6 +417,389 @@ def mirror_mastodon(site, cfg, st, kind, key, text, item=None, page=None):
         log(f"  mastodon mirror FAILED for {mkey}: {e}")
 
 
+
+# ------------------------------------------------------------------ Nostr
+
+NOSTR_RELAYS = ("wss://relay.damus.io", "wss://nos.lol",
+                "wss://relay.nostr.band", "wss://relay.primal.net")
+
+# secp256k1 domain parameters + BIP-340 Schnorr, pure stdlib.
+_SP = 2**256 - 2**32 - 977
+_SN = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141
+_SG = (0x79BE667EF9DCBBAC55A06295CE870B07029BFCDB2DCE28D959F2815B16F81798,
+       0x483ADA7726A3C4655DA4FBFC0E1108A8FD17B448A68554199C47D08FFB10D4B8)
+
+
+def _sp_add(Pt, Qt):
+    if Pt is None:
+        return Qt
+    if Qt is None:
+        return Pt
+    if Pt[0] == Qt[0] and Pt[1] != Qt[1]:
+        return None
+    if Pt == Qt:
+        lam = 3 * Pt[0] * Pt[0] * pow(2 * Pt[1], _SP - 2, _SP) % _SP
+    else:
+        lam = (Qt[1] - Pt[1]) * pow(Qt[0] - Pt[0], _SP - 2, _SP) % _SP
+    x = (lam * lam - Pt[0] - Qt[0]) % _SP
+    return (x, (lam * (Pt[0] - x) - Pt[1]) % _SP)
+
+
+def _sp_mul(k, Pt):
+    R = None
+    while k:
+        if k & 1:
+            R = _sp_add(R, Pt)
+        Pt = _sp_add(Pt, Pt)
+        k >>= 1
+    return R
+
+
+def _b32(i):
+    return i.to_bytes(32, "big")
+
+
+def _tagged_hash(tag, msg):
+    t = hashlib.sha256(tag.encode()).digest()
+    return hashlib.sha256(t + t + msg).digest()
+
+
+def _lift_x(x):
+    if x >= _SP:
+        raise ValueError("x out of range")
+    y_sq = (pow(x, 3, _SP) + 7) % _SP
+    y = pow(y_sq, (_SP + 1) // 4, _SP)
+    if pow(y, 2, _SP) != y_sq:
+        raise ValueError("x is not on the curve")
+    return (x, y if y % 2 == 0 else _SP - y)
+
+
+def _schnorr_sign(msg32, sk_bytes, aux32):
+    """BIP-340 Schnorr signature over a 32-byte message."""
+    d0 = int.from_bytes(sk_bytes, "big")
+    if not 1 <= d0 < _SN:
+        raise ValueError("bad secret key")
+    Pt = _sp_mul(d0, _SG)
+    d = d0 if Pt[1] % 2 == 0 else _SN - d0
+    t = _b32(d ^ int.from_bytes(_tagged_hash("BIP0340/aux", aux32), "big"))
+    rand = _tagged_hash("BIP0340/nonce", t + _b32(Pt[0]) + msg32)
+    k0 = int.from_bytes(rand, "big") % _SN
+    if k0 == 0:
+        raise RuntimeError("BIP-340 nonce failure (never in practice)")
+    Rt = _sp_mul(k0, _SG)
+    k = k0 if Rt[1] % 2 == 0 else _SN - k0
+    e = int.from_bytes(
+        _tagged_hash("BIP0340/challenge", _b32(Rt[0]) + _b32(Pt[0]) + msg32),
+        "big") % _SN
+    return _b32(Rt[0]) + _b32((k + e * d) % _SN)
+
+
+def _schnorr_verify(msg32, pub_hex, sig):
+    try:
+        Pt = _lift_x(int(pub_hex, 16))
+    except ValueError:
+        return False
+    r = int.from_bytes(sig[:32], "big")
+    s = int.from_bytes(sig[32:], "big")
+    if r >= _SP or s >= _SN:
+        return False
+    e = int.from_bytes(
+        _tagged_hash("BIP0340/challenge", sig[:32] + bytes.fromhex(pub_hex)
+                     + msg32), "big") % _SN
+    Rt = _sp_add(_sp_mul(s, _SG), _sp_mul(_SN - e, Pt))
+    return Rt is not None and Rt[1] % 2 == 0 and Rt[0] == r
+
+
+_BECH = "qpzry9x8gf2tvdw0s3jn54khce6mua7l"
+
+
+def _bech32_polymod(values):
+    chk = 1
+    gen = (0x3b6a57b2, 0x26508e6d, 0x1ea119fa, 0x3d4233dd, 0x2a1462b3)
+    for v in values:
+        b = chk >> 25
+        chk = ((chk & 0x1ffffff) << 5) ^ v
+        for i in range(5):
+            if (b >> i) & 1:
+                chk ^= gen[i]
+    return chk
+
+
+def _convertbits(data, frombits, tobits, pad=True):
+    acc = 0
+    bits = 0
+    ret = []
+    maxv = (1 << tobits) - 1
+    for v in data:
+        acc = (acc << frombits) | v
+        bits += frombits
+        while bits >= tobits:
+            bits -= tobits
+            ret.append((acc >> bits) & maxv)
+    if pad and bits:
+        ret.append((acc << (tobits - bits)) & maxv)
+    return ret
+
+
+def bech32_encode(hrp, data_bytes):
+    """BIP-173 bech32 (Nostr NIP-19 uses it for npub/nsec)."""
+    data = _convertbits(data_bytes, 8, 5)
+    values = [ord(c) for c in hrp] + [0] + data
+    poly = _bech32_polymod(values + [0] * 6) ^ 1
+    checksum = [(poly >> 5 * (5 - i)) & 31 for i in range(6)]
+    return hrp + "1" + "".join(_BECH[d] for d in data + checksum)
+
+
+def bech32_decode(s):
+    s = s.strip().lower()
+    pos = s.rfind("1")
+    hrp = s[:pos]
+    data = [_BECH.index(c) for c in s[pos + 1:]]
+    if _bech32_polymod([ord(c) for c in hrp] + [0] + data) != 1:
+        raise ValueError("bad bech32 checksum")
+    return hrp, bytes(_convertbits(data[:-6], 5, 8, pad=False))
+
+
+def nostr_enabled():
+    return bool(os.environ.get("NOSTR_PRIVATE_KEY"))
+
+
+def _nostr_keys():
+    """(secret key bytes, x-only pubkey hex) from NOSTR_PRIVATE_KEY,
+    which may be 64-char hex or an nsec."""
+    raw = os.environ["NOSTR_PRIVATE_KEY"].strip()
+    if raw.startswith("nsec1"):
+        _, sk = bech32_decode(raw)
+    else:
+        sk = bytes.fromhex(raw)
+    if len(sk) != 32:
+        raise ValueError("NOSTR_PRIVATE_KEY must be 32 bytes (hex or nsec)")
+    Pt = _sp_mul(int.from_bytes(sk, "big"), _SG)
+    return sk, "%064x" % Pt[0]
+
+
+def nostr_npub():
+    _, pub = _nostr_keys()
+    return bech32_encode("npub", bytes.fromhex(pub))
+
+
+def _nostr_event(kind, content, tags=None):
+    """Build + sign a Nostr event (NIP-01). Returns the event dict."""
+    sk, pub = _nostr_keys()
+    created = int(now().timestamp())
+    tags = tags or []
+    ser = json.dumps([0, pub, created, kind, tags, content],
+                     ensure_ascii=False, separators=(",", ":"))
+    eid = hashlib.sha256(ser.encode("utf-8")).digest()
+    return {"id": eid.hex(), "pubkey": pub, "created_at": created,
+            "kind": kind, "tags": tags, "content": content,
+            "sig": _schnorr_sign(eid, sk, os.urandom(32)).hex()}
+
+
+def _ws_tcp(host, port, timeout):
+    """TCP connection to host:port, honoring the standard *_proxy
+    env vars via an HTTP CONNECT tunnel when one is configured
+    (Nova's VM egresses through a proxy; GitHub Actions does not, and
+    there this is a plain direct connection). urllib gets this for
+    free; a raw socket must ask."""
+    proxies = urllib.request.getproxies()
+    no_proxy = [h.strip() for h in proxies.get("no", "").split(",")]
+    proxy = None
+    if host not in no_proxy:
+        proxy = proxies.get("https") or proxies.get("all")
+    if not proxy:
+        return socket.create_connection((host, port), timeout=timeout)
+    pm = urllib.parse.urlparse(proxy)
+    sock = socket.create_connection(
+        (pm.hostname, pm.port or 3128), timeout=timeout)
+    lines = [f"CONNECT {host}:{port} HTTP/1.1", f"Host: {host}:{port}"]
+    if pm.username:
+        cred = base64.b64encode(
+            f"{urllib.parse.unquote(pm.username)}:"
+            f"{urllib.parse.unquote(pm.password or '')}".encode()).decode()
+        lines.append(f"Proxy-Authorization: Basic {cred}")
+    sock.sendall(("\r\n".join(lines) + "\r\n\r\n").encode())
+    buf = b""
+    while b"\r\n\r\n" not in buf:
+        chunk = sock.recv(4096)
+        if not chunk:
+            raise ConnectionError("proxy closed during CONNECT")
+        buf += chunk
+    if b" 200" not in buf.split(b"\r\n")[0]:
+        raise ConnectionError(
+            f"proxy CONNECT failed: {buf.splitlines()[0]!r}")
+    return sock
+
+
+class _WS:
+    """Minimal WebSocket client (RFC 6455) — just enough to publish
+    one event and read the relay's OK. Client frames are masked as
+    the spec requires."""
+
+    def __init__(self, url, timeout=10):
+        m = urllib.parse.urlparse(url)
+        host = m.hostname
+        port = m.port or (443 if m.scheme == "wss" else 80)
+        path = m.path or "/"
+        if m.query:
+            path += "?" + m.query
+        raw = _ws_tcp(host, port, timeout)
+        if m.scheme == "wss":
+            raw = ssl.create_default_context().wrap_socket(
+                raw, server_hostname=host)
+        self.sock = raw
+        key = base64.b64encode(os.urandom(16)).decode()
+        self.sock.sendall((
+            f"GET {path} HTTP/1.1\r\nHost: {host}\r\n"
+            "Upgrade: websocket\r\nConnection: Upgrade\r\n"
+            f"Sec-WebSocket-Key: {key}\r\nSec-WebSocket-Version: 13\r\n"
+            f"User-Agent: {UA}\r\n\r\n").encode())
+        buf = b""
+        while b"\r\n\r\n" not in buf:
+            chunk = self.sock.recv(4096)
+            if not chunk:
+                raise ConnectionError("relay closed during handshake")
+            buf += chunk
+        head, _, self.buf = buf.partition(b"\r\n\r\n")
+        if b" 101" not in head.split(b"\r\n")[0]:
+            raise ConnectionError(
+                f"relay handshake failed: {head.splitlines()[0]!r}")
+
+    def _send_frame(self, opcode, payload):
+        mask = os.urandom(4)
+        ln = len(payload)
+        if ln < 126:
+            head = bytes([0x80 | opcode, 0x80 | ln])
+        elif ln < 65536:
+            head = bytes([0x80 | opcode, 0xFE]) + struct.pack(">H", ln)
+        else:
+            head = bytes([0x80 | opcode, 0xFF]) + struct.pack(">Q", ln)
+        masked = bytes(b ^ mask[i % 4] for i, b in enumerate(payload))
+        self.sock.sendall(head + mask + masked)
+
+    def send_text(self, text):
+        self._send_frame(1, text.encode("utf-8"))
+
+    def _read_exact(self, n):
+        while len(self.buf) < n:
+            chunk = self.sock.recv(65536)
+            if not chunk:
+                raise ConnectionError("relay closed")
+            self.buf += chunk
+        out, self.buf = self.buf[:n], self.buf[n:]
+        return out
+
+    def recv_msg(self, timeout):
+        self.sock.settimeout(timeout)
+        frag = b""
+        while True:
+            b0, b1 = self._read_exact(2)
+            fin, op = b0 & 0x80, b0 & 0x0F
+            ln = b1 & 0x7F
+            if ln == 126:
+                ln = struct.unpack(">H", self._read_exact(2))[0]
+            elif ln == 127:
+                ln = struct.unpack(">Q", self._read_exact(8))[0]
+            if b1 & 0x80:
+                self._read_exact(4)
+            payload = self._read_exact(ln) if ln else b""
+            if op == 9:  # ping -> pong, keep waiting
+                self._send_frame(10, payload)
+                continue
+            if op == 8:
+                raise ConnectionError("relay closed the socket")
+            frag += payload
+            if fin:
+                return frag.decode("utf-8", "replace")
+
+    def close(self):
+        try:
+            self.sock.close()
+        except Exception:  # noqa: BLE001
+            pass
+
+
+def nostr_relays():
+    raw = os.environ.get("NOSTR_RELAYS", "").strip()
+    if raw:
+        return tuple(r.strip() for r in raw.split(",") if r.strip())
+    return NOSTR_RELAYS
+
+
+def nostr_publish(ev):
+    """Publish one signed event to every configured relay; returns
+    how many accepted it. Raises if none did."""
+    ok = 0
+    errors = []
+    for url in nostr_relays():
+        ws = None
+        try:
+            ws = _WS(url)
+            ws.send_text(json.dumps(["EVENT", ev]))
+            deadline = time.time() + 10
+            while time.time() < deadline:
+                arr = json.loads(ws.recv_msg(max(1.0, deadline - time.time())))
+                if arr and arr[0] == "OK" and arr[1] == ev["id"]:
+                    if len(arr) > 2 and arr[2]:
+                        ok += 1
+                    else:
+                        errors.append(
+                            f"{url}: rejected "
+                            f"({arr[3] if len(arr) > 3 else 'no reason'})")
+                    break
+        except Exception as e:  # noqa: BLE001 — try the next relay
+            errors.append(f"{url}: {e}")
+        finally:
+            if ws is not None:
+                ws.close()
+    if ok == 0:
+        raise RuntimeError("no relay accepted the event ("
+                           + "; ".join(errors) + ")")
+    return ok
+
+
+def nostr_text(text, item=None):
+    """Dee's footer rule, same as Mastodon: append the three-sites +
+    Substack footer unless every required domain is already present.
+    A feature item's photo rides as its URL (Nostr clients render
+    bare image URLs inline). No length trim — relays take long
+    notes, unlike Mastodon's 500 chars."""
+    out = text.rstrip()
+    if not all(d in out for d in MASTO_REQUIRED):
+        out += "\n\n" + MASTO_SITES_FOOTER
+    if item is not None and item.get("photo_url") \
+            and item["photo_url"] not in out:
+        out += "\n" + item["photo_url"]
+    return out
+
+
+def post_nostr_note(text, item=None):
+    """Publish one kind-1 note. Returns the event id."""
+    ev = _nostr_event(1, nostr_text(text, item=item))
+    got = nostr_publish(ev)
+    log(f"  nostr: accepted by {got} relay(s)")
+    return ev["id"]
+
+
+def mirror_nostr(site, cfg, st, kind, key, text, item=None, page=None):
+    """Post the Nostr mirror once per (kind, key); record in state.
+    Never raises — a failed mirror must not sink the Bluesky post.
+    (cfg/page accepted for symmetry with the other mirrors.)"""
+    if not nostr_enabled():
+        return
+    posted = st["nostr"]["posted"]
+    mkey = f"{kind}:{key}"
+    if mkey in posted:
+        log(f"  nostr: {mkey} already mirrored — skipping")
+        return
+    try:
+        eid = post_nostr_note(text, item=item if kind == "feature" else None)
+        posted[mkey] = {"at": now().isoformat(), "id": eid}
+        log(f"  nostr mirrored OK: event {eid}")
+    except Exception as e:  # noqa: BLE001 — mirror failure is logged, not fatal
+        log(f"  nostr mirror FAILED for {mkey}: {e}")
+
+
 # ------------------------------------------------------------------ modes
 
 def mode_feature(site, sess, dry):
@@ -440,6 +847,7 @@ def mode_feature(site, sess, dry):
     uri = sess.post(text, embed)
     mirror_tumblr(site, cfg, st, "feature", item["slug"], text, item=item)
     mirror_mastodon(site, cfg, st, "feature", item["slug"], text, item=item)
+    mirror_nostr(site, cfg, st, "feature", item["slug"], text, item=item)
     rot["posted"][item["slug"]] = {"at": now().isoformat(), "ref": uri}
     rot["last_slug"] = item["slug"]
     st["history"].append({"kind": "feature", "slug": item["slug"],
@@ -471,6 +879,7 @@ def mode_guide(site, sess, dry):
     uri = sess.post(text, embed)
     mirror_tumblr(site, cfg, st, "guide", page["label"], text, page=page)
     mirror_mastodon(site, cfg, st, "guide", page["label"], text, page=page)
+    mirror_nostr(site, cfg, st, "guide", page["label"], text, page=page)
     rot["posted"][page["label"]] = {"at": now().isoformat(), "ref": uri}
     rot["last_label"] = page["label"]
     st["history"].append({"kind": "guide", "slug": page["label"],
@@ -499,6 +908,7 @@ def mode_roundup(site, sess, dry):
     uri = sess.post(text)
     mirror_tumblr(site, cfg, st, "roundup", now().strftime("%Y-%m-%d"), text)
     mirror_mastodon(site, cfg, st, "roundup", now().strftime("%Y-%m-%d"), text)
+    mirror_nostr(site, cfg, st, "roundup", now().strftime("%Y-%m-%d"), text)
     st["history"].append({"kind": "roundup", "slug": "weekly", "name": "Weekly roundup",
                           "at": now().isoformat(), "ref": uri})
     save_state(site, st)
@@ -694,6 +1104,12 @@ def _substack_amplify(sess, sst, spath, new, dry):
                 log(f"  mastodon mirrored OK: status {entry['mastodon']}")
             except Exception as e:  # noqa: BLE001
                 log(f"  mastodon mirror FAILED: {e}")
+        if nostr_enabled():
+            try:
+                entry["nostr"] = post_nostr_note(text)
+                log(f"  nostr mirrored OK: event {entry['nostr']}")
+            except Exception as e:  # noqa: BLE001
+                log(f"  nostr mirror FAILED: {e}")
         sst["seen"][it["guid"]] = entry
         with open(spath, "w", encoding="utf-8") as f:
             json.dump(sst, f, indent=2, ensure_ascii=False)
@@ -768,15 +1184,18 @@ def mode_keeper():
         last = feats[-1] if feats else None
         mirrors = len(st.get("tumblr", {}).get("posted", {}))
         m_mirrors = len(st.get("mastodon", {}).get("posted", {}))
+        n_mirrors = len(st.get("nostr", {}).get("posted", {}))
         if last:
             age_h = (now() - datetime.fromisoformat(last["at"])).total_seconds() / 3600
             flag = "STALE (>48h)" if age_h > 48 else "ok"
             lines.append(f"- **{site}**: {len(feats)} features posted; last "
                          f"{last['name']} {age_h:.0f}h ago — {flag}; "
-                         f"{mirrors} Tumblr mirrors; {m_mirrors} Mastodon mirrors")
+                         f"{mirrors} Tumblr mirrors; {m_mirrors} Mastodon mirrors; "
+                         f"{n_mirrors} Nostr mirrors")
         else:
             lines.append(f"- **{site}**: no features posted yet; "
-                         f"{mirrors} Tumblr mirrors; {m_mirrors} Mastodon mirrors")
+                         f"{mirrors} Tumblr mirrors; {m_mirrors} Mastodon mirrors; "
+                         f"{n_mirrors} Nostr mirrors")
     report = "\n".join(lines) + "\n"
     with open(os.path.join(HERE, "REPORT.md"), "w", encoding="utf-8") as f:
         f.write(report)

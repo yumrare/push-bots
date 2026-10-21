@@ -72,3 +72,25 @@ posts nothing, touches no state. Missing secrets also force dry-run.
   blocks the Bluesky post. The reader stays Bluesky-only.
 - Requires the `MASTODON_ACCESS_TOKEN` repo secret; `MASTODON_BASE`
   is set to https://mastodon.social in the posting workflows.
+
+## Nostr mirror (added 2026-10-21, Dee's order)
+
+- Every feature/guide/roundup post and every Substack amplification
+  is also published as a kind-1 note to public Nostr relays from the
+  fleet's own Nostr identity, **@happyfoods**
+  (npub1j6ywegxsx33k7x5wqe9fhmdcma5g0nphwwhjqwkrtj4qam2p24lsm6zhct).
+  Nostr has no email/password accounts — the identity is a keypair;
+  the private key lives only in the `NOSTR_PRIVATE_KEY` repo secret,
+  like the other fleet credentials.
+- **Dee's footer rule applies exactly as on Mastodon**: every bot
+  post carries churnmilk.com, overpepper.com, gravytoast.com plus
+  the Happy Foods Substack blog; a feature item's photo rides as its
+  URL (Nostr clients render bare image URLs inline). Event ids are
+  tracked per site in `state/<site>.json` under `nostr.posted` so a
+  mirror never duplicates; a failed mirror logs loudly and never
+  blocks the Bluesky post. The reader stays Bluesky-only.
+- Pure stdlib: BIP-340 Schnorr signing and a minimal WebSocket
+  client (with HTTP CONNECT proxy support) live in bot.py — the
+  workflows need no extra packages. Default relays are in
+  `NOSTR_RELAYS` (damus, nos.lol, nostr.band, primal); a publish
+  counts as successful when at least one relay accepts the event.
