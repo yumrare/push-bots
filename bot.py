@@ -29,9 +29,24 @@ tracked per site in state so a mirror never duplicates; a failed mirror
 logs loudly and never blocks the Bluesky post. The reader stays
 Bluesky-only.
 
+Every feature/guide/roundup post and every Substack amplification is
+also mirrored to the fleet's Mastodon account on mastodon.social
+(added 2026-10-21 at Dee's order) when MASTODON_ACCESS_TOKEN is
+present. Dee's Mastodon rule (2026-10-21): EVERY Mastodon bot post
+carries all three websites — churnmilk.com, overpepper.com and
+gravytoast.com — plus the Happy Foods Substack blog, appended as a
+footer (see MASTO_SITES_FOOTER); new Happy Foods Substack posts are
+themselves amplified to Mastodon by the watcher, like Bluesky.
+Mastodon's 500-char limit leaves room the 300-char Bluesky text
+doesn't. Mastodon post ids are tracked per site in state exactly
+like the Tumblr mirror; a failed mirror logs loudly and never
+blocks the Bluesky post. The reader stays Bluesky-only.
+
 Env: BSKY_HANDLE, BSKY_APP_PASSWORD (either absent -> dry-run),
      TUMBLR_CONSUMER_KEY, TUMBLR_CONSUMER_SECRET, TUMBLR_TOKEN,
      TUMBLR_TOKEN_SECRET, TUMBLR_BLOG (absent -> no Tumblr mirror),
+     MASTODON_ACCESS_TOKEN, MASTODON_BASE (absent -> no Mastodon
+     mirror; base defaults to https://mastodon.social),
      DRY_RUN=1 forces dry-run. State lives in state/<site>.json and is
      committed back by the GitHub Actions workflows.
 """
@@ -81,6 +96,7 @@ def load_state(site):
     st.setdefault("history", [])
     st.setdefault("reader", {"days": {}})
     st.setdefault("tumblr", {"posted": {}})
+    st.setdefault("mastodon", {"posted": {}})
     return st
 
 
@@ -268,6 +284,115 @@ def mirror_tumblr(site, cfg, st, kind, key, text, item=None, page=None):
         log(f"  tumblr mirror FAILED for {mkey}: {e}")
 
 
+# ------------------------------------------------------------------ Mastodon
+
+MASTODON_LIMIT = 500
+# Dee's rule (2026-10-21): every Mastodon bot post includes the
+# websites for all three quiet sites, not just the featured one,
+# plus the Happy Foods Substack blog (his addendum, same day).
+MASTO_SITES_FOOTER = ("Sites: https://churnmilk.com · "
+                      "https://overpepper.com · https://gravytoast.com\n"
+                      "Blog: https://happyfoods.substack.com")
+MASTO_REQUIRED = ("churnmilk.com", "overpepper.com", "gravytoast.com",
+                  "happyfoods.substack.com")
+
+
+def mastodon_enabled():
+    return bool(os.environ.get("MASTODON_ACCESS_TOKEN"))
+
+
+def mastodon_base():
+    return (os.environ.get("MASTODON_BASE") or "https://mastodon.social").rstrip("/")
+
+
+def mastodon_text(text):
+    """Append the sites+blog footer unless every required domain is
+    already in the text; trim to the Mastodon limit if ever needed."""
+    if all(d in text for d in MASTO_REQUIRED):
+        return text
+    out = text.rstrip() + "\n\n" + MASTO_SITES_FOOTER
+    if len(out) > MASTODON_LIMIT:
+        room = MASTODON_LIMIT - len(MASTO_SITES_FOOTER) - 3
+        out = text[:max(room, 0)].rstrip(" ,;—-") + "…\n\n" + MASTO_SITES_FOOTER
+    return out
+
+
+def _mstdn_request(method, path, fields=None, media=None):
+    """One Mastodon API call. `fields` posts form-encoded data;
+    `media` = (filename, bytes, mime, description) posts multipart
+    to /api/v2/media. Returns parsed JSON."""
+    token = os.environ["MASTODON_ACCESS_TOKEN"]
+    headers = {"User-Agent": UA, "Authorization": f"Bearer {token}"}
+    body = None
+    if media is not None:
+        import uuid
+        fname, blob, mime, desc = media
+        boundary = "pushbots" + uuid.uuid4().hex
+        parts = []
+        if desc:
+            parts.append(
+                f'--{boundary}\r\nContent-Disposition: form-data; '
+                f'name="description"\r\n\r\n{desc}\r\n'.encode())
+        parts.append(
+            f'--{boundary}\r\nContent-Disposition: form-data; '
+            f'name="file"; filename="{fname}"\r\n'
+            f'Content-Type: {mime}\r\n\r\n'.encode() + blob + b"\r\n")
+        parts.append(f"--{boundary}--\r\n".encode())
+        body = b"".join(parts)
+        headers["Content-Type"] = f"multipart/form-data; boundary={boundary}"
+    elif fields is not None:
+        body = urllib.parse.urlencode(fields, doseq=True).encode()
+        headers["Content-Type"] = "application/x-www-form-urlencoded"
+    req = urllib.request.Request(mastodon_base() + path, data=body,
+                                 headers=headers, method=method)
+    with urllib.request.urlopen(req, timeout=60) as r:
+        raw = r.read()
+    return json.loads(raw) if raw else {}
+
+
+def post_mastodon_status(text, item=None):
+    """Post one status to the fleet Mastodon account. `text` gets the
+    three-sites footer via mastodon_text(); a feature item's photo is
+    uploaded and attached when present. Returns the status id."""
+    fields = {"status": mastodon_text(text), "visibility": "public",
+              "language": "en"}
+    if item is not None and item.get("photo_url"):
+        try:
+            img, mime = download(item["photo_url"])
+            ext = {"image/png": "png", "image/webp": "webp"}.get(mime, "jpg")
+            media = _mstdn_request(
+                "POST", "/api/v2/media",
+                media=(f"{item['slug']}.{ext}", img, mime, item["name"]))
+            if media.get("id"):
+                fields["media_ids[]"] = media["id"]
+        except Exception as e:  # noqa: BLE001 — text-only fallback
+            log(f"  mastodon photo upload failed ({e}); posting text-only")
+    out = _mstdn_request("POST", "/api/v1/statuses", fields=fields)
+    return str(out.get("id", ""))
+
+
+def mirror_mastodon(site, cfg, st, kind, key, text, item=None, page=None):
+    """Post the Mastodon mirror once per (kind, key); record in state.
+    Never raises — a failed mirror must not sink the Bluesky post.
+    (cfg/page are accepted for symmetry with mirror_tumblr; the item
+    URL already rides inside `text`, and the footer adds all three
+    homepages.)"""
+    if not mastodon_enabled():
+        return
+    posted = st["mastodon"]["posted"]
+    mkey = f"{kind}:{key}"
+    if mkey in posted:
+        log(f"  mastodon: {mkey} already mirrored — skipping")
+        return
+    try:
+        pid = post_mastodon_status(
+            text, item=item if kind == "feature" else None)
+        posted[mkey] = {"at": now().isoformat(), "id": pid}
+        log(f"  mastodon mirrored OK: status {pid}")
+    except Exception as e:  # noqa: BLE001 — mirror failure is logged, not fatal
+        log(f"  mastodon mirror FAILED for {mkey}: {e}")
+
+
 # ------------------------------------------------------------------ modes
 
 def mode_feature(site, sess, dry):
@@ -314,6 +439,7 @@ def mode_feature(site, sess, dry):
                               "description": item["hook"][:200]}}
     uri = sess.post(text, embed)
     mirror_tumblr(site, cfg, st, "feature", item["slug"], text, item=item)
+    mirror_mastodon(site, cfg, st, "feature", item["slug"], text, item=item)
     rot["posted"][item["slug"]] = {"at": now().isoformat(), "ref": uri}
     rot["last_slug"] = item["slug"]
     st["history"].append({"kind": "feature", "slug": item["slug"],
@@ -344,6 +470,7 @@ def mode_guide(site, sess, dry):
                           "description": page["blurb"][:200]}}
     uri = sess.post(text, embed)
     mirror_tumblr(site, cfg, st, "guide", page["label"], text, page=page)
+    mirror_mastodon(site, cfg, st, "guide", page["label"], text, page=page)
     rot["posted"][page["label"]] = {"at": now().isoformat(), "ref": uri}
     rot["last_label"] = page["label"]
     st["history"].append({"kind": "guide", "slug": page["label"],
@@ -371,6 +498,7 @@ def mode_roundup(site, sess, dry):
         return 0
     uri = sess.post(text)
     mirror_tumblr(site, cfg, st, "roundup", now().strftime("%Y-%m-%d"), text)
+    mirror_mastodon(site, cfg, st, "roundup", now().strftime("%Y-%m-%d"), text)
     st["history"].append({"kind": "roundup", "slug": "weekly", "name": "Weekly roundup",
                           "at": now().isoformat(), "ref": uri})
     save_state(site, st)
@@ -560,6 +688,12 @@ def _substack_amplify(sess, sst, spath, new, dry):
                 log(f"  tumblr mirrored OK: post {entry['tumblr']}")
             except Exception as e:  # noqa: BLE001
                 log(f"  tumblr mirror FAILED: {e}")
+        if mastodon_enabled():
+            try:
+                entry["mastodon"] = post_mastodon_status(text)
+                log(f"  mastodon mirrored OK: status {entry['mastodon']}")
+            except Exception as e:  # noqa: BLE001
+                log(f"  mastodon mirror FAILED: {e}")
         sst["seen"][it["guid"]] = entry
         with open(spath, "w", encoding="utf-8") as f:
             json.dump(sst, f, indent=2, ensure_ascii=False)
@@ -633,15 +767,16 @@ def mode_keeper():
         feats = [h for h in st["history"] if h["kind"] == "feature"]
         last = feats[-1] if feats else None
         mirrors = len(st.get("tumblr", {}).get("posted", {}))
+        m_mirrors = len(st.get("mastodon", {}).get("posted", {}))
         if last:
             age_h = (now() - datetime.fromisoformat(last["at"])).total_seconds() / 3600
             flag = "STALE (>48h)" if age_h > 48 else "ok"
             lines.append(f"- **{site}**: {len(feats)} features posted; last "
                          f"{last['name']} {age_h:.0f}h ago — {flag}; "
-                         f"{mirrors} Tumblr mirrors")
+                         f"{mirrors} Tumblr mirrors; {m_mirrors} Mastodon mirrors")
         else:
             lines.append(f"- **{site}**: no features posted yet; "
-                         f"{mirrors} Tumblr mirrors")
+                         f"{mirrors} Tumblr mirrors; {m_mirrors} Mastodon mirrors")
     report = "\n".join(lines) + "\n"
     with open(os.path.join(HERE, "REPORT.md"), "w", encoding="utf-8") as f:
         f.write(report)

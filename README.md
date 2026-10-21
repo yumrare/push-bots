@@ -29,6 +29,8 @@ whose last feature is >48h old).
 ## Secrets
 - `BSKY_HANDLE` — happyfoods.bsky.social
 - `BSKY_APP_PASSWORD` — the account's app password
+- `MASTODON_ACCESS_TOKEN` — access token of the "Happy Foods push-bots"
+  application on the fleet's mastodon.social account (added 2026-10-21)
 
 ## Refreshing a catalog
 Edit a site's data at its source, then run `python3 prep_sites.py` here
@@ -54,3 +56,19 @@ posts nothing, touches no state. Missing secrets also force dry-run.
   Happy Foods Substack is amplified to the fleet's Bluesky + Tumblr.
   First run seeds existing posts WITHOUT posting (no back-catalog
   blast). State: `state/substack.json`.
+
+## Mastodon mirror (added 2026-10-21, Dee's order)
+
+- Every feature/guide/roundup post and every Substack amplification
+  is also posted to the fleet's Mastodon account on mastodon.social.
+  Pure stdlib (form-encoded statuses, /api/v2/media photo uploads).
+- **Dee's Mastodon rule: every Mastodon bot post carries all three
+  websites** — churnmilk.com, overpepper.com, gravytoast.com — plus
+  the Happy Foods Substack blog (happyfoods.substack.com), in a
+  footer (`MASTO_SITES_FOOTER` in bot.py); new Substack posts are
+  amplified to Mastodon by the watcher too. Mastodon ids are tracked
+  per site in `state/<site>.json` under `mastodon.posted` so a
+  mirror never duplicates; a failed mirror logs loudly and never
+  blocks the Bluesky post. The reader stays Bluesky-only.
+- Requires the `MASTODON_ACCESS_TOKEN` repo secret; `MASTODON_BASE`
+  is set to https://mastodon.social in the posting workflows.
