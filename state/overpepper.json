@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "jufran-banana-ketchup-hot",
+    "last_slug": "chin-su-hot-sauce",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -9,6 +9,10 @@
       "jufran-banana-ketchup-hot": {
         "at": "2026-10-20T15:36:58.142461+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mycxnduvjm2l"
+      },
+      "chin-su-hot-sauce": {
+        "at": "2026-10-21T15:38:47.951511+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfi73i4kp2x"
       }
     }
   },
@@ -30,6 +34,13 @@
       "name": "Banana Ketchup Hot & Spicy",
       "at": "2026-10-20T15:36:58.142478+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mycxnduvjm2l"
+    },
+    {
+      "kind": "feature",
+      "slug": "chin-su-hot-sauce",
+      "name": "Hot Sauce (Sweet Sriracha)",
+      "at": "2026-10-21T15:38:47.951519+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfi73i4kp2x"
     }
   ],
   "reader": {
@@ -42,5 +53,21 @@
   },
   "tumblr": {
     "posted": {}
+  },
+  "mastodon": {
+    "posted": {
+      "feature:chin-su-hot-sauce": {
+        "at": "2026-10-21T15:38:35.472451+00:00",
+        "id": "117479644500246089"
+      }
+    }
+  },
+  "nostr": {
+    "posted": {
+      "feature:chin-su-hot-sauce": {
+        "at": "2026-10-21T15:38:47.951479+00:00",
+        "id": "aca42d49dee5841b409e5203a841b2c27f045272544f418b518e9f225f8f76b9"
+      }
+    }
   }
 }

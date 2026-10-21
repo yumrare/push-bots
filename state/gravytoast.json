@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "sausage-gravy",
+    "last_slug": "country-cream-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -9,6 +9,10 @@
       "sausage-gravy": {
         "at": "2026-10-20T15:36:36.058545+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mycxmonhp22w"
+      },
+      "country-cream-gravy": {
+        "at": "2026-10-21T15:38:09.995344+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfi5ywoo72v"
       }
     }
   },
@@ -30,6 +34,13 @@
       "name": "Sausage Gravy",
       "at": "2026-10-20T15:36:36.058566+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mycxmonhp22w"
+    },
+    {
+      "kind": "feature",
+      "slug": "country-cream-gravy",
+      "name": "Country (Cream) Gravy",
+      "at": "2026-10-21T15:38:09.995351+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfi5ywoo72v"
     }
   ],
   "reader": {
@@ -42,5 +53,21 @@
   },
   "tumblr": {
     "posted": {}
+  },
+  "mastodon": {
+    "posted": {
+      "feature:country-cream-gravy": {
+        "at": "2026-10-21T15:37:57.802391+00:00",
+        "id": "117479642078346056"
+      }
+    }
+  },
+  "nostr": {
+    "posted": {
+      "feature:country-cream-gravy": {
+        "at": "2026-10-21T15:38:09.995319+00:00",
+        "id": "dc153119870e000f1687ff2c221c821945ea967e163b37a8053b973b1757eaf3"
+      }
+    }
   }
 }

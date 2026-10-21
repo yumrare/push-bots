@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "mozzarella",
+    "last_slug": "parmesan",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -9,6 +9,10 @@
       "mozzarella": {
         "at": "2026-10-20T15:36:13.348113+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mycxlz6ul32l"
+      },
+      "parmesan": {
+        "at": "2026-10-21T15:37:34.225074+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfi4vofd72m"
       }
     }
   },
@@ -30,6 +34,13 @@
       "name": "Mozzarella",
       "at": "2026-10-20T15:36:13.348131+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mycxlz6ul32l"
+    },
+    {
+      "kind": "feature",
+      "slug": "parmesan",
+      "name": "Parmesan",
+      "at": "2026-10-21T15:37:34.225081+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfi4vofd72m"
     }
   ],
   "reader": {
@@ -42,5 +53,21 @@
   },
   "tumblr": {
     "posted": {}
+  },
+  "mastodon": {
+    "posted": {
+      "feature:parmesan": {
+        "at": "2026-10-21T15:37:21.630699+00:00",
+        "id": "117479639702620982"
+      }
+    }
+  },
+  "nostr": {
+    "posted": {
+      "feature:parmesan": {
+        "at": "2026-10-21T15:37:34.225051+00:00",
+        "id": "e74979e55096285493136147734ffbdd74f09df306eaf3ab3056a635b4073911"
+      }
+    }
   }
 }
