@@ -21,6 +21,12 @@
       "bsky": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfp2yv4gf2m",
       "mastodon": "117480127976516479",
       "nostr": "6c850f3a701cb8ced0cfcb6f8063113c3af91fb43974c98d4b9fd7d5d2db96c3"
+    },
+    "https://happyfoods.substack.com/p/rocky-road-ice-cream-churnmilk": {
+      "at": "2026-10-21T21:44:32.767607+00:00",
+      "bsky": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myg4nkrqrz2b",
+      "mastodon": "117481083582533947",
+      "nostr": "5e7cc8da01bf923df245229957232cde9a5b198318956cbadbb3eb98b9c98c65"
     }
   }
 }
