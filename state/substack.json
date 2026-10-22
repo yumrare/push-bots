@@ -39,6 +39,12 @@
       "bsky": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myhstu22g32d",
       "mastodon": "117484897363538075",
       "nostr": "8b1904dfe031b125d3fb9a6883533bcea5604ce607a17d5342a7395f2d896f9a"
+    },
+    "https://happyfoods.substack.com/p/burmans-red-sriracha-overpepper": {
+      "at": "2026-10-22T18:51:15.714368+00:00",
+      "bsky": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myidgmt7fm25",
+      "mastodon": "117486064535946390",
+      "nostr": "168f520256c12cb0020a95ed988d3fdbf480617442ef0efca3929e7a13ebd9d3"
     }
   }
 }
