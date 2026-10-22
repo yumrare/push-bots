@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "chin-su-hot-sauce",
+    "last_slug": "el-yucateco-caribbean",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -13,6 +13,10 @@
       "chin-su-hot-sauce": {
         "at": "2026-10-21T15:38:47.951511+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfi73i4kp2x"
+      },
+      "el-yucateco-caribbean": {
+        "at": "2026-10-22T15:39:41.257238+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myhypnmnv726"
       }
     }
   },
@@ -53,6 +57,13 @@
       "name": "The Heat Guide",
       "at": "2026-10-21T17:37:20.065653+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfot5qjjw2v"
+    },
+    {
+      "kind": "feature",
+      "slug": "el-yucateco-caribbean",
+      "name": "Caribbean Chile Habanero Hot Sauce",
+      "at": "2026-10-22T15:39:41.257245+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myhypnmnv726"
     }
   ],
   "reader": {
@@ -79,6 +90,10 @@
       "guide:The Heat Guide": {
         "at": "2026-10-21T17:37:08.385719+00:00",
         "id": "117480110701040689"
+      },
+      "feature:el-yucateco-caribbean": {
+        "at": "2026-10-22T15:39:29.355731+00:00",
+        "id": "117485310389736737"
       }
     }
   },
@@ -91,6 +106,10 @@
       "guide:The Heat Guide": {
         "at": "2026-10-21T17:37:20.065615+00:00",
         "id": "0278ab7bf18d35465b25c95b6d5cd557d2034ab89af83dacb41e5bee21b9e6cb"
+      },
+      "feature:el-yucateco-caribbean": {
+        "at": "2026-10-22T15:39:41.257073+00:00",
+        "id": "10efd130ac28959ac3047e2bb5095c09c432bcd455642a354aa798dd338d3334"
       }
     }
   }

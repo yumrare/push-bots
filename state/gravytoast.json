@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "country-cream-gravy",
+    "last_slug": "red-eye-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -13,6 +13,10 @@
       "country-cream-gravy": {
         "at": "2026-10-21T15:38:09.995344+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfi5ywoo72v"
+      },
+      "red-eye-gravy": {
+        "at": "2026-10-22T15:39:05.795676+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myhyolbsq42i"
       }
     }
   },
@@ -53,6 +57,13 @@
       "name": "The Gravy Chart",
       "at": "2026-10-21T17:36:47.114698+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfos5ye4l2m"
+    },
+    {
+      "kind": "feature",
+      "slug": "red-eye-gravy",
+      "name": "Red-Eye Gravy",
+      "at": "2026-10-22T15:39:05.795681+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myhyolbsq42i"
     }
   ],
   "reader": {
@@ -79,6 +90,10 @@
       "guide:The Gravy Chart": {
         "at": "2026-10-21T17:36:35.287165+00:00",
         "id": "117480108533295162"
+      },
+      "feature:red-eye-gravy": {
+        "at": "2026-10-22T15:38:53.374699+00:00",
+        "id": "117485308031207774"
       }
     }
   },
@@ -91,6 +106,10 @@
       "guide:The Gravy Chart": {
         "at": "2026-10-21T17:36:47.114666+00:00",
         "id": "ae3bd0d368880c86eaa7a144a3ca9769a8dde350390f95f5c4ff4553fbac9ee9"
+      },
+      "feature:red-eye-gravy": {
+        "at": "2026-10-22T15:39:05.795649+00:00",
+        "id": "47a8d123470ba9eb286cdf576a66207846b03c4249adcb980ba7992aa7a42d94"
       }
     }
   }
