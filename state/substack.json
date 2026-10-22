@@ -33,6 +33,12 @@
       "bsky": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myghbdmaaf2o",
       "mastodon": "117481830772033151",
       "nostr": "1f30961b5ab801e3fde0535cf079621ab9b29f0a4fd2d122e0aca8acdafe1eb5"
+    },
+    "https://happyfoods.substack.com/p/cheddar-cheese-churnmilk": {
+      "at": "2026-10-22T13:54:25.882557+00:00",
+      "bsky": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myhstu22g32d",
+      "mastodon": "117484897363538075",
+      "nostr": "8b1904dfe031b125d3fb9a6883533bcea5604ce607a17d5342a7395f2d896f9a"
     }
   }
 }
