@@ -27,6 +27,12 @@
       "bsky": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myg4nkrqrz2b",
       "mastodon": "117481083582533947",
       "nostr": "5e7cc8da01bf923df245229957232cde9a5b198318956cbadbb3eb98b9c98c65"
+    },
+    "https://happyfoods.substack.com/p/matouks-hot-pepper-sauce-overpepper": {
+      "at": "2026-10-22T00:54:33.742046+00:00",
+      "bsky": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myghbdmaaf2o",
+      "mastodon": "117481830772033151",
+      "nostr": "1f30961b5ab801e3fde0535cf079621ab9b29f0a4fd2d122e0aca8acdafe1eb5"
     }
   }
 }
