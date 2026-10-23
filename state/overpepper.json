@@ -25,11 +25,15 @@
     }
   },
   "guide": {
-    "last_label": "The Heat Guide",
+    "last_label": "Habanero, profiled",
     "posted": {
       "The Heat Guide": {
         "at": "2026-10-21T17:37:20.065646+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfot5qjjw2v"
+      },
+      "Habanero, profiled": {
+        "at": "2026-10-23T17:37:12.417193+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykpqqoomx25"
       }
     }
   },
@@ -75,6 +79,13 @@
       "name": "Chile Jalapeño Hot Sauce",
       "at": "2026-10-23T15:39:27.949720+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykj65xpu72h"
+    },
+    {
+      "kind": "guide",
+      "slug": "Habanero, profiled",
+      "name": "Habanero, profiled",
+      "at": "2026-10-23T17:37:12.417201+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykpqqoomx25"
     }
   ],
   "reader": {
@@ -113,6 +124,10 @@
       "feature:el-yucateco-jalapeno": {
         "at": "2026-10-23T15:39:15.624300+00:00",
         "id": "117490971799341380"
+      },
+      "guide:Habanero, profiled": {
+        "at": "2026-10-23T17:37:00.053222+00:00",
+        "id": "117491434775715389"
       }
     }
   },
@@ -133,6 +148,10 @@
       "feature:el-yucateco-jalapeno": {
         "at": "2026-10-23T15:39:27.949637+00:00",
         "id": "cd7eecd5411e074aa9dbeb0ce89eb052b67c69d19d33f986ce7c69ccab70725c"
+      },
+      "guide:Habanero, profiled": {
+        "at": "2026-10-23T17:37:12.417160+00:00",
+        "id": "f52e4f4be789f2562a29f57d0d2b28e14da394158ade7f84bd3f40cb06892c35"
       }
     }
   }

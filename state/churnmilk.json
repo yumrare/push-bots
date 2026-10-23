@@ -25,11 +25,15 @@
     }
   },
   "guide": {
-    "last_label": "The Dairy Storage Chart",
+    "last_label": "The Melting Cheese Guide",
     "posted": {
       "The Dairy Storage Chart": {
         "at": "2026-10-21T17:36:14.105030+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfor5vbpi2x"
+      },
+      "The Melting Cheese Guide": {
+        "at": "2026-10-23T17:36:06.066173+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykpopu4v725"
       }
     }
   },
@@ -75,6 +79,13 @@
       "name": "Gouda",
       "at": "2026-10-23T15:38:18.350365+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykj3ylfrf2v"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Melting Cheese Guide",
+      "name": "The Melting Cheese Guide",
+      "at": "2026-10-23T17:36:06.066181+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykpopu4v725"
     }
   ],
   "reader": {
@@ -113,6 +124,10 @@
       "feature:gouda": {
         "at": "2026-10-23T15:38:05.839230+00:00",
         "id": "117490967224546873"
+      },
+      "guide:The Melting Cheese Guide": {
+        "at": "2026-10-23T17:35:52.197987+00:00",
+        "id": "117491430327134915"
       }
     }
   },
@@ -133,6 +148,10 @@
       "feature:gouda": {
         "at": "2026-10-23T15:38:18.350336+00:00",
         "id": "88686ab386e148d55fe73c15de45e2a5dd1a89b52153ffaea22eeadccfa3df1c"
+      },
+      "guide:The Melting Cheese Guide": {
+        "at": "2026-10-23T17:36:06.066143+00:00",
+        "id": "c985e1f03a173e78552b31eecbe43b158ec6547aa28b5d97d97b22409c1572bc"
       }
     }
   }
