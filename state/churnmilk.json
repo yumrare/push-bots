@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "brie",
+    "last_slug": "gouda",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -17,6 +17,10 @@
       "brie": {
         "at": "2026-10-22T15:38:29.885824+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myhynh75qv2u"
+      },
+      "gouda": {
+        "at": "2026-10-23T15:38:18.350359+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykj3ylfrf2v"
       }
     }
   },
@@ -64,6 +68,13 @@
       "name": "Brie",
       "at": "2026-10-22T15:38:29.885829+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myhynh75qv2u"
+    },
+    {
+      "kind": "feature",
+      "slug": "gouda",
+      "name": "Gouda",
+      "at": "2026-10-23T15:38:18.350365+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykj3ylfrf2v"
     }
   ],
   "reader": {
@@ -98,6 +109,10 @@
       "feature:brie": {
         "at": "2026-10-22T15:38:17.272771+00:00",
         "id": "117485305627698537"
+      },
+      "feature:gouda": {
+        "at": "2026-10-23T15:38:05.839230+00:00",
+        "id": "117490967224546873"
       }
     }
   },
@@ -114,6 +129,10 @@
       "feature:brie": {
         "at": "2026-10-22T15:38:29.885794+00:00",
         "id": "148790969eb4ab5a9b2b22294717c0b124514919359fb3db1cb6eb068d665e52"
+      },
+      "feature:gouda": {
+        "at": "2026-10-23T15:38:18.350336+00:00",
+        "id": "88686ab386e148d55fe73c15de45e2a5dd1a89b52153ffaea22eeadccfa3df1c"
       }
     }
   }

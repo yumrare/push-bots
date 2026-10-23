@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "el-yucateco-caribbean",
+    "last_slug": "el-yucateco-jalapeno",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -17,6 +17,10 @@
       "el-yucateco-caribbean": {
         "at": "2026-10-22T15:39:41.257238+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myhypnmnv726"
+      },
+      "el-yucateco-jalapeno": {
+        "at": "2026-10-23T15:39:27.949705+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykj65xpu72h"
       }
     }
   },
@@ -64,6 +68,13 @@
       "name": "Caribbean Chile Habanero Hot Sauce",
       "at": "2026-10-22T15:39:41.257245+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myhypnmnv726"
+    },
+    {
+      "kind": "feature",
+      "slug": "el-yucateco-jalapeno",
+      "name": "Chile Jalapeño Hot Sauce",
+      "at": "2026-10-23T15:39:27.949720+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykj65xpu72h"
     }
   ],
   "reader": {
@@ -98,6 +109,10 @@
       "feature:el-yucateco-caribbean": {
         "at": "2026-10-22T15:39:29.355731+00:00",
         "id": "117485310389736737"
+      },
+      "feature:el-yucateco-jalapeno": {
+        "at": "2026-10-23T15:39:15.624300+00:00",
+        "id": "117490971799341380"
       }
     }
   },
@@ -114,6 +129,10 @@
       "feature:el-yucateco-caribbean": {
         "at": "2026-10-22T15:39:41.257073+00:00",
         "id": "10efd130ac28959ac3047e2bb5095c09c432bcd455642a354aa798dd338d3334"
+      },
+      "feature:el-yucateco-jalapeno": {
+        "at": "2026-10-23T15:39:27.949637+00:00",
+        "id": "cd7eecd5411e074aa9dbeb0ce89eb052b67c69d19d33f986ce7c69ccab70725c"
       }
     }
   }

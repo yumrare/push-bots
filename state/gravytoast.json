@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "red-eye-gravy",
+    "last_slug": "chocolate-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -17,6 +17,10 @@
       "red-eye-gravy": {
         "at": "2026-10-22T15:39:05.795676+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myhyolbsq42i"
+      },
+      "chocolate-gravy": {
+        "at": "2026-10-23T15:38:51.842603+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykj54xl6m2i"
       }
     }
   },
@@ -64,6 +68,13 @@
       "name": "Red-Eye Gravy",
       "at": "2026-10-22T15:39:05.795681+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myhyolbsq42i"
+    },
+    {
+      "kind": "feature",
+      "slug": "chocolate-gravy",
+      "name": "Chocolate Gravy",
+      "at": "2026-10-23T15:38:51.842610+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykj54xl6m2i"
     }
   ],
   "reader": {
@@ -98,6 +109,10 @@
       "feature:red-eye-gravy": {
         "at": "2026-10-22T15:38:53.374699+00:00",
         "id": "117485308031207774"
+      },
+      "feature:chocolate-gravy": {
+        "at": "2026-10-23T15:38:39.667286+00:00",
+        "id": "117490969438221679"
       }
     }
   },
@@ -114,6 +129,10 @@
       "feature:red-eye-gravy": {
         "at": "2026-10-22T15:39:05.795649+00:00",
         "id": "47a8d123470ba9eb286cdf576a66207846b03c4249adcb980ba7992aa7a42d94"
+      },
+      "feature:chocolate-gravy": {
+        "at": "2026-10-23T15:38:51.842578+00:00",
+        "id": "9770f8935096d34498db631e4f009f72fbf8309cfb621884b150d2e691cfc67b"
       }
     }
   }
