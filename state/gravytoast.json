@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "chocolate-gravy",
+    "last_slug": "tomato-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -21,6 +21,10 @@
       "chocolate-gravy": {
         "at": "2026-10-23T15:38:51.842603+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykj54xl6m2i"
+      },
+      "tomato-gravy": {
+        "at": "2026-10-24T15:31:38.642870+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mymz75qbo22w"
       }
     }
   },
@@ -86,6 +90,13 @@
       "name": "Roux & lumps, solved",
       "at": "2026-10-23T17:36:38.989916+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykppr2amw2w"
+    },
+    {
+      "kind": "feature",
+      "slug": "tomato-gravy",
+      "name": "Tomato Gravy",
+      "at": "2026-10-24T15:31:38.642877+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mymz75qbo22w"
     }
   ],
   "reader": {
@@ -132,6 +143,10 @@
       "guide:Roux & lumps, solved": {
         "at": "2026-10-23T17:36:27.049593+00:00",
         "id": "117491432602863545"
+      },
+      "feature:tomato-gravy": {
+        "at": "2026-10-24T15:31:26.611677+00:00",
+        "id": "117496603374086421"
       }
     }
   },
@@ -156,6 +171,10 @@
       "guide:Roux & lumps, solved": {
         "at": "2026-10-23T17:36:38.989881+00:00",
         "id": "cf53281cd1d751742fe245f0b139f41750bfd023d5bb4e0b0159cd395eeb45d6"
+      },
+      "feature:tomato-gravy": {
+        "at": "2026-10-24T15:31:38.642843+00:00",
+        "id": "099ebd47e67ad251e294cc61e235369cd2e705aeba8b2f5c05851127f4f9517c"
       }
     }
   }

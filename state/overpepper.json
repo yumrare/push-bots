@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "el-yucateco-jalapeno",
+    "last_slug": "ginger-people-sweet-ginger-chili",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -21,6 +21,10 @@
       "el-yucateco-jalapeno": {
         "at": "2026-10-23T15:39:27.949705+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykj65xpu72h"
+      },
+      "ginger-people-sweet-ginger-chili": {
+        "at": "2026-10-24T15:32:18.029384+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mymza67pdl2r"
       }
     }
   },
@@ -86,6 +90,13 @@
       "name": "Habanero, profiled",
       "at": "2026-10-23T17:37:12.417201+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykpqqoomx25"
+    },
+    {
+      "kind": "feature",
+      "slug": "ginger-people-sweet-ginger-chili",
+      "name": "Sweet Ginger Chili Sauce",
+      "at": "2026-10-24T15:32:18.029390+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mymza67pdl2r"
     }
   ],
   "reader": {
@@ -132,6 +143,10 @@
       "guide:Habanero, profiled": {
         "at": "2026-10-23T17:37:00.053222+00:00",
         "id": "117491434775715389"
+      },
+      "feature:ginger-people-sweet-ginger-chili": {
+        "at": "2026-10-24T15:32:05.791715+00:00",
+        "id": "117496605893685152"
       }
     }
   },
@@ -156,6 +171,10 @@
       "guide:Habanero, profiled": {
         "at": "2026-10-23T17:37:12.417160+00:00",
         "id": "f52e4f4be789f2562a29f57d0d2b28e14da394158ade7f84bd3f40cb06892c35"
+      },
+      "feature:ginger-people-sweet-ginger-chili": {
+        "at": "2026-10-24T15:32:18.029361+00:00",
+        "id": "9596b5e6c23249773b5c1b6048993d0bbb401955e6408a8248b64ee78a1fdced"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "gouda",
+    "last_slug": "swiss-emmental",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -21,6 +21,10 @@
       "gouda": {
         "at": "2026-10-23T15:38:18.350359+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykj3ylfrf2v"
+      },
+      "swiss-emmental": {
+        "at": "2026-10-24T15:31:05.576703+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mymz63rhjv2j"
       }
     }
   },
@@ -86,6 +90,13 @@
       "name": "The Melting Cheese Guide",
       "at": "2026-10-23T17:36:06.066181+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykpopu4v725"
+    },
+    {
+      "kind": "feature",
+      "slug": "swiss-emmental",
+      "name": "Swiss (Emmental)",
+      "at": "2026-10-24T15:31:05.576708+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mymz63rhjv2j"
     }
   ],
   "reader": {
@@ -132,6 +143,10 @@
       "guide:The Melting Cheese Guide": {
         "at": "2026-10-23T17:35:52.197987+00:00",
         "id": "117491430327134915"
+      },
+      "feature:swiss-emmental": {
+        "at": "2026-10-24T15:30:53.263764+00:00",
+        "id": "117496601187926177"
       }
     }
   },
@@ -156,6 +171,10 @@
       "guide:The Melting Cheese Guide": {
         "at": "2026-10-23T17:36:06.066143+00:00",
         "id": "c985e1f03a173e78552b31eecbe43b158ec6547aa28b5d97d97b22409c1572bc"
+      },
+      "feature:swiss-emmental": {
+        "at": "2026-10-24T15:31:05.576679+00:00",
+        "id": "84957e35de49d867ecec5389ac8018e945dbfddd7d876bbda16e432f4cbabb9d"
       }
     }
   }
