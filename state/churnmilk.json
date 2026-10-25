@@ -108,6 +108,13 @@
       "name": "Provolone",
       "at": "2026-10-25T15:31:25.644280+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypjnn2s7f2j"
+    },
+    {
+      "kind": "roundup",
+      "slug": "weekly",
+      "name": "Weekly roundup",
+      "at": "2026-10-25T16:42:29.887180+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypnmqadjm2m"
     }
   ],
   "reader": {
@@ -166,6 +173,10 @@
       "feature:provolone": {
         "at": "2026-10-25T15:31:13.658276+00:00",
         "id": "117502264837578218"
+      },
+      "roundup:2026-10-25": {
+        "at": "2026-10-25T16:42:17.421076+00:00",
+        "id": "117502544232581853"
       }
     }
   },
@@ -198,6 +209,10 @@
       "feature:provolone": {
         "at": "2026-10-25T15:31:25.644247+00:00",
         "id": "9767a66779726019a44a39909d228575cca24e26281641218ab64049be641175"
+      },
+      "roundup:2026-10-25": {
+        "at": "2026-10-25T16:42:29.887156+00:00",
+        "id": "74c0c726f290197ca6a2d46561d022391a33a56cf0200f242a82d3a6bfc8d5e2"
       }
     }
   }

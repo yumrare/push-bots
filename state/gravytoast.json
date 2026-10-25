@@ -108,6 +108,13 @@
       "name": "Cornmeal Gravy",
       "at": "2026-10-25T15:31:58.653624+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypjoo23ru22"
+    },
+    {
+      "kind": "roundup",
+      "slug": "weekly",
+      "name": "Weekly roundup",
+      "at": "2026-10-25T16:43:02.511004+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypnnquwag2j"
     }
   ],
   "reader": {
@@ -166,6 +173,10 @@
       "feature:cornmeal-gravy": {
         "at": "2026-10-25T15:31:46.991496+00:00",
         "id": "117502266994866132"
+      },
+      "roundup:2026-10-25": {
+        "at": "2026-10-25T16:42:50.790765+00:00",
+        "id": "117502546451831339"
       }
     }
   },
@@ -198,6 +209,10 @@
       "feature:cornmeal-gravy": {
         "at": "2026-10-25T15:31:58.653584+00:00",
         "id": "5c89094f841adf08f262ca66f4ff423dc6d8ca454f72da487fe1b555d82d83f1"
+      },
+      "roundup:2026-10-25": {
+        "at": "2026-10-25T16:43:02.510971+00:00",
+        "id": "6079ccbda1a3ba452c418fef67da2dab5ac6f719be46503291d0b58ced963643"
       }
     }
   }

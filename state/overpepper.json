@@ -108,6 +108,13 @@
       "name": "Green Dragon Hot Sauce",
       "at": "2026-10-25T15:32:34.009896+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypjpoc65q2r"
+    },
+    {
+      "kind": "roundup",
+      "slug": "weekly",
+      "name": "Weekly roundup",
+      "at": "2026-10-25T16:43:36.474165+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypnopv7ru2a"
     }
   ],
   "reader": {
@@ -166,6 +173,10 @@
       "feature:trader-joes-green-dragon": {
         "at": "2026-10-25T15:32:22.100567+00:00",
         "id": "117502269322227845"
+      },
+      "roundup:2026-10-25": {
+        "at": "2026-10-25T16:43:24.359709+00:00",
+        "id": "117502548586281433"
       }
     }
   },
@@ -198,6 +209,10 @@
       "feature:trader-joes-green-dragon": {
         "at": "2026-10-25T15:32:34.009865+00:00",
         "id": "944ae709c00927aaefb2e4e440caad258195ba150aaba26d3c1b2424cdd67c5d"
+      },
+      "roundup:2026-10-25": {
+        "at": "2026-10-25T16:43:36.474131+00:00",
+        "id": "5a0f8108bbf731a32c21d18ae14a6891428c4d2a847ff673f5e44c0283523303"
       }
     }
   }
