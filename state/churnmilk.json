@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "swiss-emmental",
+    "last_slug": "provolone",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -25,6 +25,10 @@
       "swiss-emmental": {
         "at": "2026-10-24T15:31:05.576703+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mymz63rhjv2j"
+      },
+      "provolone": {
+        "at": "2026-10-25T15:31:25.644273+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypjnn2s7f2j"
       }
     }
   },
@@ -97,6 +101,13 @@
       "name": "Swiss (Emmental)",
       "at": "2026-10-24T15:31:05.576708+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mymz63rhjv2j"
+    },
+    {
+      "kind": "feature",
+      "slug": "provolone",
+      "name": "Provolone",
+      "at": "2026-10-25T15:31:25.644280+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypjnn2s7f2j"
     }
   ],
   "reader": {
@@ -151,6 +162,10 @@
       "feature:swiss-emmental": {
         "at": "2026-10-24T15:30:53.263764+00:00",
         "id": "117496601187926177"
+      },
+      "feature:provolone": {
+        "at": "2026-10-25T15:31:13.658276+00:00",
+        "id": "117502264837578218"
       }
     }
   },
@@ -179,6 +194,10 @@
       "feature:swiss-emmental": {
         "at": "2026-10-24T15:31:05.576679+00:00",
         "id": "84957e35de49d867ecec5389ac8018e945dbfddd7d876bbda16e432f4cbabb9d"
+      },
+      "feature:provolone": {
+        "at": "2026-10-25T15:31:25.644247+00:00",
+        "id": "9767a66779726019a44a39909d228575cca24e26281641218ab64049be641175"
       }
     }
   }

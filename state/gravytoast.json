@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "tomato-gravy",
+    "last_slug": "cornmeal-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -25,6 +25,10 @@
       "tomato-gravy": {
         "at": "2026-10-24T15:31:38.642870+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mymz75qbo22w"
+      },
+      "cornmeal-gravy": {
+        "at": "2026-10-25T15:31:58.653616+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypjoo23ru22"
       }
     }
   },
@@ -97,6 +101,13 @@
       "name": "Tomato Gravy",
       "at": "2026-10-24T15:31:38.642877+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mymz75qbo22w"
+    },
+    {
+      "kind": "feature",
+      "slug": "cornmeal-gravy",
+      "name": "Cornmeal Gravy",
+      "at": "2026-10-25T15:31:58.653624+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypjoo23ru22"
     }
   ],
   "reader": {
@@ -151,6 +162,10 @@
       "feature:tomato-gravy": {
         "at": "2026-10-24T15:31:26.611677+00:00",
         "id": "117496603374086421"
+      },
+      "feature:cornmeal-gravy": {
+        "at": "2026-10-25T15:31:46.991496+00:00",
+        "id": "117502266994866132"
       }
     }
   },
@@ -179,6 +194,10 @@
       "feature:tomato-gravy": {
         "at": "2026-10-24T15:31:38.642843+00:00",
         "id": "099ebd47e67ad251e294cc61e235369cd2e705aeba8b2f5c05851127f4f9517c"
+      },
+      "feature:cornmeal-gravy": {
+        "at": "2026-10-25T15:31:58.653584+00:00",
+        "id": "5c89094f841adf08f262ca66f4ff423dc6d8ca454f72da487fe1b555d82d83f1"
       }
     }
   }

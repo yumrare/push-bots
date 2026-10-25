@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "ginger-people-sweet-ginger-chili",
+    "last_slug": "trader-joes-green-dragon",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -25,6 +25,10 @@
       "ginger-people-sweet-ginger-chili": {
         "at": "2026-10-24T15:32:18.029384+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mymza67pdl2r"
+      },
+      "trader-joes-green-dragon": {
+        "at": "2026-10-25T15:32:34.009889+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypjpoc65q2r"
       }
     }
   },
@@ -97,6 +101,13 @@
       "name": "Sweet Ginger Chili Sauce",
       "at": "2026-10-24T15:32:18.029390+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mymza67pdl2r"
+    },
+    {
+      "kind": "feature",
+      "slug": "trader-joes-green-dragon",
+      "name": "Green Dragon Hot Sauce",
+      "at": "2026-10-25T15:32:34.009896+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypjpoc65q2r"
     }
   ],
   "reader": {
@@ -151,6 +162,10 @@
       "feature:ginger-people-sweet-ginger-chili": {
         "at": "2026-10-24T15:32:05.791715+00:00",
         "id": "117496605893685152"
+      },
+      "feature:trader-joes-green-dragon": {
+        "at": "2026-10-25T15:32:22.100567+00:00",
+        "id": "117502269322227845"
       }
     }
   },
@@ -179,6 +194,10 @@
       "feature:ginger-people-sweet-ginger-chili": {
         "at": "2026-10-24T15:32:18.029361+00:00",
         "id": "9596b5e6c23249773b5c1b6048993d0bbb401955e6408a8248b64ee78a1fdced"
+      },
+      "feature:trader-joes-green-dragon": {
+        "at": "2026-10-25T15:32:34.009865+00:00",
+        "id": "944ae709c00927aaefb2e4e440caad258195ba150aaba26d3c1b2424cdd67c5d"
       }
     }
   }
