@@ -37,7 +37,7 @@
     }
   },
   "guide": {
-    "last_label": "Habanero, profiled",
+    "last_label": "Ghost pepper, profiled",
     "posted": {
       "The Heat Guide": {
         "at": "2026-10-21T17:37:20.065646+00:00",
@@ -46,6 +46,10 @@
       "Habanero, profiled": {
         "at": "2026-10-23T17:37:12.417193+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykpqqoomx25"
+      },
+      "Ghost pepper, profiled": {
+        "at": "2026-10-26T17:43:25.650427+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mysbilq6th2r"
       }
     }
   },
@@ -126,6 +130,13 @@
       "name": "Sriracha Hot Chili Sauce",
       "at": "2026-10-26T16:06:08.021540+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mys42jqwzr24"
+    },
+    {
+      "kind": "guide",
+      "slug": "Ghost pepper, profiled",
+      "name": "Ghost pepper, profiled",
+      "at": "2026-10-26T17:43:25.650433+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mysbilq6th2r"
     }
   ],
   "reader": {
@@ -196,6 +207,10 @@
       "feature:huy-fong-sriracha": {
         "at": "2026-10-26T16:05:55.599027+00:00",
         "id": "117508063552367271"
+      },
+      "guide:Ghost pepper, profiled": {
+        "at": "2026-10-26T17:43:14.111169+00:00",
+        "id": "117508446176232811"
       }
     }
   },
@@ -236,6 +251,10 @@
       "feature:huy-fong-sriracha": {
         "at": "2026-10-26T16:06:08.021503+00:00",
         "id": "1c66d257c7e08e5efd6e25401329451dd1f72d9499e3ca4fd421b133dff18fe0"
+      },
+      "guide:Ghost pepper, profiled": {
+        "at": "2026-10-26T17:43:25.650406+00:00",
+        "id": "0f0727de894697ffc59d9f558c43e24a1fc0e208b0510a1ea980963779a299c5"
       }
     }
   }

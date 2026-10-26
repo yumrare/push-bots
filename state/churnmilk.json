@@ -37,7 +37,7 @@
     }
   },
   "guide": {
-    "last_label": "The Melting Cheese Guide",
+    "last_label": "All dairy guides",
     "posted": {
       "The Dairy Storage Chart": {
         "at": "2026-10-21T17:36:14.105030+00:00",
@@ -46,6 +46,10 @@
       "The Melting Cheese Guide": {
         "at": "2026-10-23T17:36:06.066173+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykpopu4v725"
+      },
+      "All dairy guides": {
+        "at": "2026-10-26T17:42:18.210094+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mysbglhxxc2n"
       }
     }
   },
@@ -126,6 +130,13 @@
       "name": "Feta",
       "at": "2026-10-26T16:04:49.752184+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mys3y7nucp2a"
+    },
+    {
+      "kind": "guide",
+      "slug": "All dairy guides",
+      "name": "All dairy guides",
+      "at": "2026-10-26T17:42:18.210101+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mysbglhxxc2n"
     }
   ],
   "reader": {
@@ -196,6 +207,10 @@
       "feature:feta": {
         "at": "2026-10-26T16:04:37.331209+00:00",
         "id": "117508058429402540"
+      },
+      "guide:All dairy guides": {
+        "at": "2026-10-26T17:42:06.291144+00:00",
+        "id": "117508441705813450"
       }
     }
   },
@@ -236,6 +251,10 @@
       "feature:feta": {
         "at": "2026-10-26T16:04:49.752145+00:00",
         "id": "57a1df1a856ee54b53256265230b587c2f418300670106e6cf6fb1d2a601ccd2"
+      },
+      "guide:All dairy guides": {
+        "at": "2026-10-26T17:42:18.210038+00:00",
+        "id": "87323ce8076e0ebb8c19e79ccc41cb47a57ea64efa1e9ea408a1bf635c99cfc5"
       }
     }
   }

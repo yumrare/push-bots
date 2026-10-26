@@ -37,7 +37,7 @@
     }
   },
   "guide": {
-    "last_label": "Roux & lumps, solved",
+    "last_label": "All gravy guides",
     "posted": {
       "The Gravy Chart": {
         "at": "2026-10-21T17:36:47.114691+00:00",
@@ -46,6 +46,10 @@
       "Roux & lumps, solved": {
         "at": "2026-10-23T17:36:38.989910+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykppr2amw2w"
+      },
+      "All gravy guides": {
+        "at": "2026-10-26T17:42:51.147861+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mysbhmfdpl2b"
       }
     }
   },
@@ -126,6 +130,13 @@
       "name": "Giblet Gravy",
       "at": "2026-10-26T16:05:29.409244+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mys3ze3nxx2a"
+    },
+    {
+      "kind": "guide",
+      "slug": "All gravy guides",
+      "name": "All gravy guides",
+      "at": "2026-10-26T17:42:51.147866+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mysbhmfdpl2b"
     }
   ],
   "reader": {
@@ -196,6 +207,10 @@
       "feature:giblet-gravy": {
         "at": "2026-10-26T16:05:16.917218+00:00",
         "id": "117508061049064968"
+      },
+      "guide:All gravy guides": {
+        "at": "2026-10-26T17:42:39.249516+00:00",
+        "id": "117508443938185065"
       }
     }
   },
@@ -236,6 +251,10 @@
       "feature:giblet-gravy": {
         "at": "2026-10-26T16:05:29.409212+00:00",
         "id": "9de8894ef502cd8b80367fb68000c6310bfb77e04b1cc0c952f230ccc448789e"
+      },
+      "guide:All gravy guides": {
+        "at": "2026-10-26T17:42:51.147838+00:00",
+        "id": "25e2a76d2a1a960450d50e74d1f1240a7c32a09fb17b7e88fd092e1c0d732d34"
       }
     }
   }
