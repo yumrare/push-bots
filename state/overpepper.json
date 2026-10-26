@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "trader-joes-green-dragon",
+    "last_slug": "huy-fong-sriracha",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -29,6 +29,10 @@
       "trader-joes-green-dragon": {
         "at": "2026-10-25T15:32:34.009889+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypjpoc65q2r"
+      },
+      "huy-fong-sriracha": {
+        "at": "2026-10-26T16:06:08.021532+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mys42jqwzr24"
       }
     }
   },
@@ -115,6 +119,13 @@
       "name": "Weekly roundup",
       "at": "2026-10-25T16:43:36.474165+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypnopv7ru2a"
+    },
+    {
+      "kind": "feature",
+      "slug": "huy-fong-sriracha",
+      "name": "Sriracha Hot Chili Sauce",
+      "at": "2026-10-26T16:06:08.021540+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mys42jqwzr24"
     }
   ],
   "reader": {
@@ -181,6 +192,10 @@
       "roundup:2026-10-25": {
         "at": "2026-10-25T16:43:24.359709+00:00",
         "id": "117502548586281433"
+      },
+      "feature:huy-fong-sriracha": {
+        "at": "2026-10-26T16:05:55.599027+00:00",
+        "id": "117508063552367271"
       }
     }
   },
@@ -217,6 +232,10 @@
       "roundup:2026-10-25": {
         "at": "2026-10-25T16:43:36.474131+00:00",
         "id": "5a0f8108bbf731a32c21d18ae14a6891428c4d2a847ff673f5e44c0283523303"
+      },
+      "feature:huy-fong-sriracha": {
+        "at": "2026-10-26T16:06:08.021503+00:00",
+        "id": "1c66d257c7e08e5efd6e25401329451dd1f72d9499e3ca4fd421b133dff18fe0"
       }
     }
   }

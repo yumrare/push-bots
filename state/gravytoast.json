@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "cornmeal-gravy",
+    "last_slug": "giblet-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -29,6 +29,10 @@
       "cornmeal-gravy": {
         "at": "2026-10-25T15:31:58.653616+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypjoo23ru22"
+      },
+      "giblet-gravy": {
+        "at": "2026-10-26T16:05:29.409237+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mys3ze3nxx2a"
       }
     }
   },
@@ -115,6 +119,13 @@
       "name": "Weekly roundup",
       "at": "2026-10-25T16:43:02.511004+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypnnquwag2j"
+    },
+    {
+      "kind": "feature",
+      "slug": "giblet-gravy",
+      "name": "Giblet Gravy",
+      "at": "2026-10-26T16:05:29.409244+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mys3ze3nxx2a"
     }
   ],
   "reader": {
@@ -181,6 +192,10 @@
       "roundup:2026-10-25": {
         "at": "2026-10-25T16:42:50.790765+00:00",
         "id": "117502546451831339"
+      },
+      "feature:giblet-gravy": {
+        "at": "2026-10-26T16:05:16.917218+00:00",
+        "id": "117508061049064968"
       }
     }
   },
@@ -217,6 +232,10 @@
       "roundup:2026-10-25": {
         "at": "2026-10-25T16:43:02.510971+00:00",
         "id": "6079ccbda1a3ba452c418fef67da2dab5ac6f719be46503291d0b58ced963643"
+      },
+      "feature:giblet-gravy": {
+        "at": "2026-10-26T16:05:29.409212+00:00",
+        "id": "9de8894ef502cd8b80367fb68000c6310bfb77e04b1cc0c952f230ccc448789e"
       }
     }
   }

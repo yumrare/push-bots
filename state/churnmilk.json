@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "provolone",
+    "last_slug": "feta",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -29,6 +29,10 @@
       "provolone": {
         "at": "2026-10-25T15:31:25.644273+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypjnn2s7f2j"
+      },
+      "feta": {
+        "at": "2026-10-26T16:04:49.752176+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mys3y7nucp2a"
       }
     }
   },
@@ -115,6 +119,13 @@
       "name": "Weekly roundup",
       "at": "2026-10-25T16:42:29.887180+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mypnmqadjm2m"
+    },
+    {
+      "kind": "feature",
+      "slug": "feta",
+      "name": "Feta",
+      "at": "2026-10-26T16:04:49.752184+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mys3y7nucp2a"
     }
   ],
   "reader": {
@@ -181,6 +192,10 @@
       "roundup:2026-10-25": {
         "at": "2026-10-25T16:42:17.421076+00:00",
         "id": "117502544232581853"
+      },
+      "feature:feta": {
+        "at": "2026-10-26T16:04:37.331209+00:00",
+        "id": "117508058429402540"
       }
     }
   },
@@ -217,6 +232,10 @@
       "roundup:2026-10-25": {
         "at": "2026-10-25T16:42:29.887156+00:00",
         "id": "74c0c726f290197ca6a2d46561d022391a33a56cf0200f242a82d3a6bfc8d5e2"
+      },
+      "feature:feta": {
+        "at": "2026-10-26T16:04:49.752145+00:00",
+        "id": "57a1df1a856ee54b53256265230b587c2f418300670106e6cf6fb1d2a601ccd2"
       }
     }
   }
