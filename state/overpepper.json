@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "huy-fong-sriracha",
+    "last_slug": "marie-sharps-fiery-hot",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -33,6 +33,10 @@
       "huy-fong-sriracha": {
         "at": "2026-10-26T16:06:08.021532+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mys42jqwzr24"
+      },
+      "marie-sharps-fiery-hot": {
+        "at": "2026-10-27T15:48:19.717792+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myuljn6oo32r"
       }
     }
   },
@@ -137,6 +141,13 @@
       "name": "Ghost pepper, profiled",
       "at": "2026-10-26T17:43:25.650433+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mysbilq6th2r"
+    },
+    {
+      "kind": "feature",
+      "slug": "marie-sharps-fiery-hot",
+      "name": "Fiery Hot Habanero Pepper Sauce",
+      "at": "2026-10-27T15:48:19.717799+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myuljn6oo32r"
     }
   ],
   "reader": {
@@ -215,6 +226,10 @@
       "guide:Ghost pepper, profiled": {
         "at": "2026-10-26T17:43:14.111169+00:00",
         "id": "117508446176232811"
+      },
+      "feature:marie-sharps-fiery-hot": {
+        "at": "2026-10-27T15:48:07.677907+00:00",
+        "id": "117513655882984160"
       }
     }
   },
@@ -259,6 +274,10 @@
       "guide:Ghost pepper, profiled": {
         "at": "2026-10-26T17:43:25.650406+00:00",
         "id": "0f0727de894697ffc59d9f558c43e24a1fc0e208b0510a1ea980963779a299c5"
+      },
+      "feature:marie-sharps-fiery-hot": {
+        "at": "2026-10-27T15:48:19.717760+00:00",
+        "id": "0841b66d3b1ca2507d35f8ca323ccd76d4a75ca69d91aecae613d260fafc8ab9"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "feta",
+    "last_slug": "gruyere",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -33,6 +33,10 @@
       "feta": {
         "at": "2026-10-26T16:04:49.752176+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mys3y7nucp2a"
+      },
+      "gruyere": {
+        "at": "2026-10-27T15:47:05.163173+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myulhg7ucy24"
       }
     }
   },
@@ -137,6 +141,13 @@
       "name": "All dairy guides",
       "at": "2026-10-26T17:42:18.210101+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mysbglhxxc2n"
+    },
+    {
+      "kind": "feature",
+      "slug": "gruyere",
+      "name": "Gruyère",
+      "at": "2026-10-27T15:47:05.163178+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myulhg7ucy24"
     }
   ],
   "reader": {
@@ -215,6 +226,10 @@
       "guide:All dairy guides": {
         "at": "2026-10-26T17:42:06.291144+00:00",
         "id": "117508441705813450"
+      },
+      "feature:gruyere": {
+        "at": "2026-10-27T15:46:52.832237+00:00",
+        "id": "117513650990616723"
       }
     }
   },
@@ -259,6 +274,10 @@
       "guide:All dairy guides": {
         "at": "2026-10-26T17:42:18.210038+00:00",
         "id": "87323ce8076e0ebb8c19e79ccc41cb47a57ea64efa1e9ea408a1bf635c99cfc5"
+      },
+      "feature:gruyere": {
+        "at": "2026-10-27T15:47:05.163145+00:00",
+        "id": "f101f46b29701bf045a948175552215b5cc0b45b80988197133d5fea4c72cac3"
       }
     }
   }

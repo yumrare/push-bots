@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "giblet-gravy",
+    "last_slug": "ham-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -33,6 +33,10 @@
       "giblet-gravy": {
         "at": "2026-10-26T16:05:29.409237+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mys3ze3nxx2a"
+      },
+      "ham-gravy": {
+        "at": "2026-10-27T15:47:41.363058+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myulik7t3m2r"
       }
     }
   },
@@ -137,6 +141,13 @@
       "name": "All gravy guides",
       "at": "2026-10-26T17:42:51.147866+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mysbhmfdpl2b"
+    },
+    {
+      "kind": "feature",
+      "slug": "ham-gravy",
+      "name": "Ham Gravy",
+      "at": "2026-10-27T15:47:41.363064+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myulik7t3m2r"
     }
   ],
   "reader": {
@@ -215,6 +226,10 @@
       "guide:All gravy guides": {
         "at": "2026-10-26T17:42:39.249516+00:00",
         "id": "117508443938185065"
+      },
+      "feature:ham-gravy": {
+        "at": "2026-10-27T15:47:29.338554+00:00",
+        "id": "117513653399225502"
       }
     }
   },
@@ -259,6 +274,10 @@
       "guide:All gravy guides": {
         "at": "2026-10-26T17:42:51.147838+00:00",
         "id": "25e2a76d2a1a960450d50e74d1f1240a7c32a09fb17b7e88fd092e1c0d732d34"
+      },
+      "feature:ham-gravy": {
+        "at": "2026-10-27T15:47:41.363032+00:00",
+        "id": "a93ff48979717eb2ca8bb95f2824ed6fd428761740b1688003ea03b804e7c0ec"
       }
     }
   }
