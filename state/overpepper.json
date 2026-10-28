@@ -45,7 +45,7 @@
     }
   },
   "guide": {
-    "last_label": "Ghost pepper, profiled",
+    "last_label": "Scorpion pepper, profiled",
     "posted": {
       "The Heat Guide": {
         "at": "2026-10-21T17:37:20.065646+00:00",
@@ -58,6 +58,10 @@
       "Ghost pepper, profiled": {
         "at": "2026-10-26T17:43:25.650427+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mysbilq6th2r"
+      },
+      "Scorpion pepper, profiled": {
+        "at": "2026-10-28T17:51:04.303791+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myxcu4uaro2r"
       }
     }
   },
@@ -159,6 +163,13 @@
       "name": "Truffle Hot Sauce",
       "at": "2026-10-28T15:54:31.453763+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myx4dnynso2r"
+    },
+    {
+      "kind": "guide",
+      "slug": "Scorpion pepper, profiled",
+      "name": "Scorpion pepper, profiled",
+      "at": "2026-10-28T17:51:04.303797+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myxcu4uaro2r"
     }
   ],
   "reader": {
@@ -249,6 +260,10 @@
       "feature:casa-firelli-truffle": {
         "at": "2026-10-28T15:54:18.693698+00:00",
         "id": "117519342527202234"
+      },
+      "guide:Scorpion pepper, profiled": {
+        "at": "2026-10-28T17:50:51.780027+00:00",
+        "id": "117519800832887931"
       }
     }
   },
@@ -301,6 +316,10 @@
       "feature:casa-firelli-truffle": {
         "at": "2026-10-28T15:54:31.453698+00:00",
         "id": "d4352506b69a10431ec3b8f99b746809319690f163788869e3038d1ab7ba3e2b"
+      },
+      "guide:Scorpion pepper, profiled": {
+        "at": "2026-10-28T17:51:04.303764+00:00",
+        "id": "bc1285a24ee86f7b8b488a631ef6e22ed5a9d3b582190834c0619c3a06313fe9"
       }
     }
   }

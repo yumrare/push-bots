@@ -45,11 +45,11 @@
     }
   },
   "guide": {
-    "last_label": "All gravy guides",
+    "last_label": "The Gravy Chart",
     "posted": {
       "The Gravy Chart": {
-        "at": "2026-10-21T17:36:47.114691+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfos5ye4l2m"
+        "at": "2026-10-28T17:50:30.497616+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myxctjamw42a"
       },
       "Roux & lumps, solved": {
         "at": "2026-10-23T17:36:38.989910+00:00",
@@ -159,6 +159,13 @@
       "name": "Brown Gravy",
       "at": "2026-10-28T15:53:54.190852+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myx4ckuk2o2m"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Gravy Chart",
+      "name": "The Gravy Chart",
+      "at": "2026-10-28T17:50:30.497634+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myxctjamw42a"
     }
   ],
   "reader": {
