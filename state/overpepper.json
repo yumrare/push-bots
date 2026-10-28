@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "marie-sharps-fiery-hot",
+    "last_slug": "casa-firelli-truffle",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -37,6 +37,10 @@
       "marie-sharps-fiery-hot": {
         "at": "2026-10-27T15:48:19.717792+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myuljn6oo32r"
+      },
+      "casa-firelli-truffle": {
+        "at": "2026-10-28T15:54:31.453754+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myx4dnynso2r"
       }
     }
   },
@@ -148,6 +152,13 @@
       "name": "Fiery Hot Habanero Pepper Sauce",
       "at": "2026-10-27T15:48:19.717799+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myuljn6oo32r"
+    },
+    {
+      "kind": "feature",
+      "slug": "casa-firelli-truffle",
+      "name": "Truffle Hot Sauce",
+      "at": "2026-10-28T15:54:31.453763+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myx4dnynso2r"
     }
   ],
   "reader": {
@@ -234,6 +245,10 @@
       "feature:marie-sharps-fiery-hot": {
         "at": "2026-10-27T15:48:07.677907+00:00",
         "id": "117513655882984160"
+      },
+      "feature:casa-firelli-truffle": {
+        "at": "2026-10-28T15:54:18.693698+00:00",
+        "id": "117519342527202234"
       }
     }
   },
@@ -282,6 +297,10 @@
       "feature:marie-sharps-fiery-hot": {
         "at": "2026-10-27T15:48:19.717760+00:00",
         "id": "0841b66d3b1ca2507d35f8ca323ccd76d4a75ca69d91aecae613d260fafc8ab9"
+      },
+      "feature:casa-firelli-truffle": {
+        "at": "2026-10-28T15:54:31.453698+00:00",
+        "id": "d4352506b69a10431ec3b8f99b746809319690f163788869e3038d1ab7ba3e2b"
       }
     }
   }

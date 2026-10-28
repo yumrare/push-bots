@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "ham-gravy",
+    "last_slug": "brown-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -37,6 +37,10 @@
       "ham-gravy": {
         "at": "2026-10-27T15:47:41.363058+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myulik7t3m2r"
+      },
+      "brown-gravy": {
+        "at": "2026-10-28T15:53:54.190843+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myx4ckuk2o2m"
       }
     }
   },
@@ -148,6 +152,13 @@
       "name": "Ham Gravy",
       "at": "2026-10-27T15:47:41.363064+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myulik7t3m2r"
+    },
+    {
+      "kind": "feature",
+      "slug": "brown-gravy",
+      "name": "Brown Gravy",
+      "at": "2026-10-28T15:53:54.190852+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myx4ckuk2o2m"
     }
   ],
   "reader": {
@@ -234,6 +245,10 @@
       "feature:ham-gravy": {
         "at": "2026-10-27T15:47:29.338554+00:00",
         "id": "117513653399225502"
+      },
+      "feature:brown-gravy": {
+        "at": "2026-10-28T15:53:41.512558+00:00",
+        "id": "117519340099529871"
       }
     }
   },
@@ -282,6 +297,10 @@
       "feature:ham-gravy": {
         "at": "2026-10-27T15:47:41.363032+00:00",
         "id": "a93ff48979717eb2ca8bb95f2824ed6fd428761740b1688003ea03b804e7c0ec"
+      },
+      "feature:brown-gravy": {
+        "at": "2026-10-28T15:53:54.190807+00:00",
+        "id": "9b693190852b4fa17a95ef24321bc28ae3db7accfaefcc4033981c0ec227105f"
       }
     }
   }

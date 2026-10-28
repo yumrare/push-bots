@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "gruyere",
+    "last_slug": "comte",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -37,6 +37,10 @@
       "gruyere": {
         "at": "2026-10-27T15:47:05.163173+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myulhg7ucy24"
+      },
+      "comte": {
+        "at": "2026-10-28T15:53:17.398703+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myx4bggvvs2k"
       }
     }
   },
@@ -148,6 +152,13 @@
       "name": "Gruyère",
       "at": "2026-10-27T15:47:05.163178+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myulhg7ucy24"
+    },
+    {
+      "kind": "feature",
+      "slug": "comte",
+      "name": "Comté",
+      "at": "2026-10-28T15:53:17.398750+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myx4bggvvs2k"
     }
   ],
   "reader": {
@@ -234,6 +245,10 @@
       "feature:gruyere": {
         "at": "2026-10-27T15:46:52.832237+00:00",
         "id": "117513650990616723"
+      },
+      "feature:comte": {
+        "at": "2026-10-28T15:53:04.522238+00:00",
+        "id": "117519337672895650"
       }
     }
   },
@@ -282,6 +297,10 @@
       "feature:gruyere": {
         "at": "2026-10-27T15:47:05.163145+00:00",
         "id": "f101f46b29701bf045a948175552215b5cc0b45b80988197133d5fea4c72cac3"
+      },
+      "feature:comte": {
+        "at": "2026-10-28T15:53:17.398678+00:00",
+        "id": "3555dd8283fada1487fe5b219913487403e62b1677656f1fdf25ee47ef12f4a9"
       }
     }
   }
