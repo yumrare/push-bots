@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "casa-firelli-truffle",
+    "last_slug": "trader-joes-bomba",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -41,6 +41,10 @@
       "casa-firelli-truffle": {
         "at": "2026-10-28T15:54:31.453754+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myx4dnynso2r"
+      },
+      "trader-joes-bomba": {
+        "at": "2026-10-29T15:56:37.019669+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myzmwa2jej2t"
       }
     }
   },
@@ -170,6 +174,13 @@
       "name": "Scorpion pepper, profiled",
       "at": "2026-10-28T17:51:04.303797+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myxcu4uaro2r"
+    },
+    {
+      "kind": "feature",
+      "slug": "trader-joes-bomba",
+      "name": "Italian Bomba Hot Pepper Sauce",
+      "at": "2026-10-29T15:56:37.019676+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myzmwa2jej2t"
     }
   ],
   "reader": {
@@ -268,6 +279,10 @@
       "guide:Scorpion pepper, profiled": {
         "at": "2026-10-28T17:50:51.780027+00:00",
         "id": "117519800832887931"
+      },
+      "feature:trader-joes-bomba": {
+        "at": "2026-10-29T15:56:20.790689+00:00",
+        "id": "117525012849740267"
       }
     }
   },
@@ -324,6 +339,10 @@
       "guide:Scorpion pepper, profiled": {
         "at": "2026-10-28T17:51:04.303764+00:00",
         "id": "bc1285a24ee86f7b8b488a631ef6e22ed5a9d3b582190834c0619c3a06313fe9"
+      },
+      "feature:trader-joes-bomba": {
+        "at": "2026-10-29T15:56:37.019643+00:00",
+        "id": "e40776e560697796768d42bfd26e465265b9f21af415c4e3f61971efa7659ca0"
       }
     }
   }

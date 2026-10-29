@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "brown-gravy",
+    "last_slug": "onion-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -41,6 +41,10 @@
       "brown-gravy": {
         "at": "2026-10-28T15:53:54.190843+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myx4ckuk2o2m"
+      },
+      "onion-gravy": {
+        "at": "2026-10-29T15:55:56.452437+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myzmv43q6b2t"
       }
     }
   },
@@ -166,6 +170,13 @@
       "name": "The Gravy Chart",
       "at": "2026-10-28T17:50:30.497634+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myxctjamw42a"
+    },
+    {
+      "kind": "feature",
+      "slug": "onion-gravy",
+      "name": "Onion Gravy",
+      "at": "2026-10-29T15:55:56.452444+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myzmv43q6b2t"
     }
   ],
   "reader": {
@@ -260,6 +271,10 @@
       "feature:brown-gravy": {
         "at": "2026-10-28T15:53:41.512558+00:00",
         "id": "117519340099529871"
+      },
+      "feature:onion-gravy": {
+        "at": "2026-10-29T15:55:43.468127+00:00",
+        "id": "117525010400647098"
       }
     }
   },
@@ -312,6 +327,10 @@
       "feature:brown-gravy": {
         "at": "2026-10-28T15:53:54.190807+00:00",
         "id": "9b693190852b4fa17a95ef24321bc28ae3db7accfaefcc4033981c0ec227105f"
+      },
+      "feature:onion-gravy": {
+        "at": "2026-10-29T15:55:56.452414+00:00",
+        "id": "b998665fd86307853517051a943eb1b926805d191c8e5d535c971224897ce5f6"
       }
     }
   }

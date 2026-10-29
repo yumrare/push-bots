@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "comte",
+    "last_slug": "manchego",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -41,6 +41,10 @@
       "comte": {
         "at": "2026-10-28T15:53:17.398703+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myx4bggvvs2k"
+      },
+      "manchego": {
+        "at": "2026-10-29T15:55:18.878596+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myzmtyhvoe24"
       }
     }
   },
@@ -166,6 +170,13 @@
       "name": "The Dairy Storage Chart",
       "at": "2026-10-28T17:50:09.941128+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myxcsvnelr2q"
+    },
+    {
+      "kind": "feature",
+      "slug": "manchego",
+      "name": "Manchego",
+      "at": "2026-10-29T15:55:18.878608+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myzmtyhvoe24"
     }
   ],
   "reader": {
@@ -260,6 +271,10 @@
       "feature:comte": {
         "at": "2026-10-28T15:53:04.522238+00:00",
         "id": "117519337672895650"
+      },
+      "feature:manchego": {
+        "at": "2026-10-29T15:55:05.690329+00:00",
+        "id": "117525007922633698"
       }
     }
   },
@@ -312,6 +327,10 @@
       "feature:comte": {
         "at": "2026-10-28T15:53:17.398678+00:00",
         "id": "3555dd8283fada1487fe5b219913487403e62b1677656f1fdf25ee47ef12f4a9"
+      },
+      "feature:manchego": {
+        "at": "2026-10-29T15:55:18.878529+00:00",
+        "id": "98883d7f26d14e4714b8cbd23b2c8abc70a0bdeae44f549ce196240fd0d90e07"
       }
     }
   }
