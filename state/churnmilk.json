@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "manchego",
+    "last_slug": "pecorino-romano",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -45,6 +45,10 @@
       "manchego": {
         "at": "2026-10-29T15:55:18.878596+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myzmtyhvoe24"
+      },
+      "pecorino-romano": {
+        "at": "2026-10-30T15:52:07.368148+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4555l3gk2r"
       }
     }
   },
@@ -177,6 +181,13 @@
       "name": "Manchego",
       "at": "2026-10-29T15:55:18.878608+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myzmtyhvoe24"
+    },
+    {
+      "kind": "feature",
+      "slug": "pecorino-romano",
+      "name": "Pecorino Romano",
+      "at": "2026-10-30T15:52:07.368154+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4555l3gk2r"
     }
   ],
   "reader": {
@@ -279,6 +290,10 @@
       "feature:manchego": {
         "at": "2026-10-29T15:55:05.690329+00:00",
         "id": "117525007922633698"
+      },
+      "feature:pecorino-romano": {
+        "at": "2026-10-30T15:51:52.352209+00:00",
+        "id": "117530657566773218"
       }
     }
   },
@@ -335,6 +350,10 @@
       "feature:manchego": {
         "at": "2026-10-29T15:55:18.878529+00:00",
         "id": "98883d7f26d14e4714b8cbd23b2c8abc70a0bdeae44f549ce196240fd0d90e07"
+      },
+      "feature:pecorino-romano": {
+        "at": "2026-10-30T15:52:07.368121+00:00",
+        "id": "c845de06a51cf0a5c772d9ceb59f9bd1c46bb1a71898cdb2e190a2340dc8c9c5"
       }
     }
   }

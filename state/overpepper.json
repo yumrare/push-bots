@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "trader-joes-bomba",
+    "last_slug": "el-yucateco-red-habanero",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -45,6 +45,10 @@
       "trader-joes-bomba": {
         "at": "2026-10-29T15:56:37.019669+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myzmwa2jej2t"
+      },
+      "el-yucateco-red-habanero": {
+        "at": "2026-10-30T15:53:29.413805+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz457ljfp22n"
       }
     }
   },
@@ -181,6 +185,13 @@
       "name": "Italian Bomba Hot Pepper Sauce",
       "at": "2026-10-29T15:56:37.019676+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myzmwa2jej2t"
+    },
+    {
+      "kind": "feature",
+      "slug": "el-yucateco-red-habanero",
+      "name": "Red Habanero Hot Sauce",
+      "at": "2026-10-30T15:53:29.413811+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz457ljfp22n"
     }
   ],
   "reader": {
@@ -287,6 +298,10 @@
       "feature:trader-joes-bomba": {
         "at": "2026-10-29T15:56:20.790689+00:00",
         "id": "117525012849740267"
+      },
+      "feature:el-yucateco-red-habanero": {
+        "at": "2026-10-30T15:53:13.800180+00:00",
+        "id": "117530662903792642"
       }
     }
   },
@@ -347,6 +362,10 @@
       "feature:trader-joes-bomba": {
         "at": "2026-10-29T15:56:37.019643+00:00",
         "id": "e40776e560697796768d42bfd26e465265b9f21af415c4e3f61971efa7659ca0"
+      },
+      "feature:el-yucateco-red-habanero": {
+        "at": "2026-10-30T15:53:29.413777+00:00",
+        "id": "c9ce253a344dac99b1401fe5ab785bcb55a9f6710fd885af780a2615793f8c71"
       }
     }
   }

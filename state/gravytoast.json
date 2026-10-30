@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "onion-gravy",
+    "last_slug": "mushroom-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -45,6 +45,10 @@
       "onion-gravy": {
         "at": "2026-10-29T15:55:56.452437+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myzmv43q6b2t"
+      },
+      "mushroom-gravy": {
+        "at": "2026-10-30T15:52:50.374645+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz456cekjz24"
       }
     }
   },
@@ -177,6 +181,13 @@
       "name": "Onion Gravy",
       "at": "2026-10-29T15:55:56.452444+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myzmv43q6b2t"
+    },
+    {
+      "kind": "feature",
+      "slug": "mushroom-gravy",
+      "name": "Mushroom Gravy",
+      "at": "2026-10-30T15:52:50.374649+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz456cekjz24"
     }
   ],
   "reader": {
@@ -279,6 +290,10 @@
       "feature:onion-gravy": {
         "at": "2026-10-29T15:55:43.468127+00:00",
         "id": "117525010400647098"
+      },
+      "feature:mushroom-gravy": {
+        "at": "2026-10-30T15:52:31.113015+00:00",
+        "id": "117530660106237069"
       }
     }
   },
@@ -335,6 +350,10 @@
       "feature:onion-gravy": {
         "at": "2026-10-29T15:55:56.452414+00:00",
         "id": "b998665fd86307853517051a943eb1b926805d191c8e5d535c971224897ce5f6"
+      },
+      "feature:mushroom-gravy": {
+        "at": "2026-10-30T15:52:50.374624+00:00",
+        "id": "3077574f9c5a32b23a36cfcc8b252c1b72a85d185706741979c3b779ae6ad746"
       }
     }
   }
