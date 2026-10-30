@@ -53,15 +53,15 @@
     }
   },
   "guide": {
-    "last_label": "The Gravy Chart",
+    "last_label": "Roux & lumps, solved",
     "posted": {
       "The Gravy Chart": {
         "at": "2026-10-28T17:50:30.497616+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myxctjamw42a"
       },
       "Roux & lumps, solved": {
-        "at": "2026-10-23T17:36:38.989910+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykppr2amw2w"
+        "at": "2026-10-30T17:45:50.437538+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4diz3tbj2m"
       },
       "All gravy guides": {
         "at": "2026-10-26T17:42:51.147861+00:00",
@@ -188,6 +188,13 @@
       "name": "Mushroom Gravy",
       "at": "2026-10-30T15:52:50.374649+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz456cekjz24"
+    },
+    {
+      "kind": "guide",
+      "slug": "Roux & lumps, solved",
+      "name": "Roux & lumps, solved",
+      "at": "2026-10-30T17:45:50.437559+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4diz3tbj2m"
     }
   ],
   "reader": {

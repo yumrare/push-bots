@@ -53,7 +53,7 @@
     }
   },
   "guide": {
-    "last_label": "Scorpion pepper, profiled",
+    "last_label": "The Warm shelf",
     "posted": {
       "The Heat Guide": {
         "at": "2026-10-21T17:37:20.065646+00:00",
@@ -70,6 +70,10 @@
       "Scorpion pepper, profiled": {
         "at": "2026-10-28T17:51:04.303791+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myxcu4uaro2r"
+      },
+      "The Warm shelf": {
+        "at": "2026-10-30T17:46:24.709164+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4djmlwiz24"
       }
     }
   },
@@ -192,6 +196,13 @@
       "name": "Red Habanero Hot Sauce",
       "at": "2026-10-30T15:53:29.413811+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz457ljfp22n"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Warm shelf",
+      "name": "The Warm shelf",
+      "at": "2026-10-30T17:46:24.709170+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4djmlwiz24"
     }
   ],
   "reader": {
@@ -302,6 +313,10 @@
       "feature:el-yucateco-red-habanero": {
         "at": "2026-10-30T15:53:13.800180+00:00",
         "id": "117530662903792642"
+      },
+      "guide:The Warm shelf": {
+        "at": "2026-10-30T17:46:11.802975+00:00",
+        "id": "117531107101672431"
       }
     }
   },
@@ -366,6 +381,10 @@
       "feature:el-yucateco-red-habanero": {
         "at": "2026-10-30T15:53:29.413777+00:00",
         "id": "c9ce253a344dac99b1401fe5ab785bcb55a9f6710fd885af780a2615793f8c71"
+      },
+      "guide:The Warm shelf": {
+        "at": "2026-10-30T17:46:24.709140+00:00",
+        "id": "47b34e7ba401373a1ec2dd15472750c0c4bb7bce950df88e0f2641c80ee3ef14"
       }
     }
   }

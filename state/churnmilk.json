@@ -53,15 +53,15 @@
     }
   },
   "guide": {
-    "last_label": "The Dairy Storage Chart",
+    "last_label": "The Melting Cheese Guide",
     "posted": {
       "The Dairy Storage Chart": {
         "at": "2026-10-28T17:50:09.941111+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myxcsvnelr2q"
       },
       "The Melting Cheese Guide": {
-        "at": "2026-10-23T17:36:06.066173+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykpopu4v725"
+        "at": "2026-10-30T17:45:29.885499+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4difirtk2a"
       },
       "All dairy guides": {
         "at": "2026-10-26T17:42:18.210094+00:00",
@@ -188,6 +188,13 @@
       "name": "Pecorino Romano",
       "at": "2026-10-30T15:52:07.368154+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4555l3gk2r"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Melting Cheese Guide",
+      "name": "The Melting Cheese Guide",
+      "at": "2026-10-30T17:45:29.885515+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4difirtk2a"
     }
   ],
   "reader": {
