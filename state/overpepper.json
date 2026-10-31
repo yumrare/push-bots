@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "el-yucateco-red-habanero",
+    "last_slug": "hot-mamas-too-hot",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -49,6 +49,10 @@
       "el-yucateco-red-habanero": {
         "at": "2026-10-30T15:53:29.413805+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz457ljfp22n"
+      },
+      "hot-mamas-too-hot": {
+        "at": "2026-10-31T15:38:30.546065+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz6mtos5nu2r"
       }
     }
   },
@@ -203,6 +207,13 @@
       "name": "The Warm shelf",
       "at": "2026-10-30T17:46:24.709170+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4djmlwiz24"
+    },
+    {
+      "kind": "feature",
+      "slug": "hot-mamas-too-hot",
+      "name": "Too Hot Habanero Pepper Sauce",
+      "at": "2026-10-31T15:38:30.546070+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz6mtos5nu2r"
     }
   ],
   "reader": {
@@ -321,6 +332,10 @@
       "guide:The Warm shelf": {
         "at": "2026-10-30T17:46:11.802975+00:00",
         "id": "117531107101672431"
+      },
+      "feature:hot-mamas-too-hot": {
+        "at": "2026-10-31T15:38:14.963012+00:00",
+        "id": "117536266304660821"
       }
     }
   },
@@ -389,6 +404,10 @@
       "guide:The Warm shelf": {
         "at": "2026-10-30T17:46:24.709140+00:00",
         "id": "47b34e7ba401373a1ec2dd15472750c0c4bb7bce950df88e0f2641c80ee3ef14"
+      },
+      "feature:hot-mamas-too-hot": {
+        "at": "2026-10-31T15:38:30.546042+00:00",
+        "id": "a83ac65bc25ea5604eeaecf28a35ed0d365b1d4326cece9be0aa37d32ea1ff72"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "pecorino-romano",
+    "last_slug": "camembert",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -49,6 +49,10 @@
       "pecorino-romano": {
         "at": "2026-10-30T15:52:07.368148+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4555l3gk2r"
+      },
+      "camembert": {
+        "at": "2026-10-31T15:37:08.567431+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz6mrdtxit2n"
       }
     }
   },
@@ -195,6 +199,13 @@
       "name": "The Melting Cheese Guide",
       "at": "2026-10-30T17:45:29.885515+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4difirtk2a"
+    },
+    {
+      "kind": "feature",
+      "slug": "camembert",
+      "name": "Camembert",
+      "at": "2026-10-31T15:37:08.567436+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz6mrdtxit2n"
     }
   ],
   "reader": {
@@ -305,6 +316,10 @@
       "feature:pecorino-romano": {
         "at": "2026-10-30T15:51:52.352209+00:00",
         "id": "117530657566773218"
+      },
+      "feature:camembert": {
+        "at": "2026-10-31T15:36:56.078415+00:00",
+        "id": "117536261100923412"
       }
     }
   },
@@ -365,6 +380,10 @@
       "feature:pecorino-romano": {
         "at": "2026-10-30T15:52:07.368121+00:00",
         "id": "c845de06a51cf0a5c772d9ceb59f9bd1c46bb1a71898cdb2e190a2340dc8c9c5"
+      },
+      "feature:camembert": {
+        "at": "2026-10-31T15:37:08.567406+00:00",
+        "id": "eca7c7dd2c5dacd68b9cbcecea8027738fe7e2923f0c3a2aa759f4cfb4826cf7"
       }
     }
   }

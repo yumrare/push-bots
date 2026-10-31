@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "mushroom-gravy",
+    "last_slug": "chicken-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -49,6 +49,10 @@
       "mushroom-gravy": {
         "at": "2026-10-30T15:52:50.374645+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz456cekjz24"
+      },
+      "chicken-gravy": {
+        "at": "2026-10-31T15:37:50.002361+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz6msgu7d22k"
       }
     }
   },
@@ -195,6 +199,13 @@
       "name": "Roux & lumps, solved",
       "at": "2026-10-30T17:45:50.437559+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4diz3tbj2m"
+    },
+    {
+      "kind": "feature",
+      "slug": "chicken-gravy",
+      "name": "Chicken Gravy",
+      "at": "2026-10-31T15:37:50.002368+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz6msgu7d22k"
     }
   ],
   "reader": {
@@ -305,6 +316,10 @@
       "feature:mushroom-gravy": {
         "at": "2026-10-30T15:52:31.113015+00:00",
         "id": "117530660106237069"
+      },
+      "feature:chicken-gravy": {
+        "at": "2026-10-31T15:37:32.199675+00:00",
+        "id": "117536263505531916"
       }
     }
   },
@@ -365,6 +380,10 @@
       "feature:mushroom-gravy": {
         "at": "2026-10-30T15:52:50.374624+00:00",
         "id": "3077574f9c5a32b23a36cfcc8b252c1b72a85d185706741979c3b779ae6ad746"
+      },
+      "feature:chicken-gravy": {
+        "at": "2026-10-31T15:37:50.002333+00:00",
+        "id": "c4023815f97aaf67c68bfa917655449f62e9c417623387ff6e26d6b98fbe025b"
       }
     }
   }
