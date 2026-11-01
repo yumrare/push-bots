@@ -217,6 +217,13 @@
       "name": "Turkey Gravy",
       "at": "2026-11-01T15:37:52.057430+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzb5bjysct2t"
+    },
+    {
+      "kind": "roundup",
+      "slug": "weekly",
+      "name": "Weekly roundup",
+      "at": "2026-11-01T16:46:43.681667+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzbb4quttw2q"
     }
   ],
   "reader": {
@@ -339,6 +346,10 @@
       "feature:turkey-gravy": {
         "at": "2026-11-01T15:37:38.128728+00:00",
         "id": "117541926193805500"
+      },
+      "roundup:2026-11-01": {
+        "at": "2026-11-01T16:46:30.939688+00:00",
+        "id": "117542197045327537"
       }
     }
   },
@@ -407,6 +418,10 @@
       "feature:turkey-gravy": {
         "at": "2026-11-01T15:37:52.057397+00:00",
         "id": "0d9500e311936713d672db848b555d9aa44becb96389a4d52e8f3fb7ed9e38c2"
+      },
+      "roundup:2026-11-01": {
+        "at": "2026-11-01T16:46:43.681636+00:00",
+        "id": "d247f254a8d7959715d7e43dd65564c6f9eec615557ba8aab2e8e61b83ec9b39"
       }
     }
   }

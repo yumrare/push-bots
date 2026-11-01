@@ -225,6 +225,13 @@
       "name": "Habanero Hot Sauce Ají Chombo",
       "at": "2026-11-01T15:38:33.263079+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzb5cnkk4h2b"
+    },
+    {
+      "kind": "roundup",
+      "slug": "weekly",
+      "name": "Weekly roundup",
+      "at": "2026-11-01T16:47:17.053410+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzbb5rbfky2k"
     }
   ],
   "reader": {
@@ -355,6 +362,10 @@
       "feature:la-sabrosita-aji-chombo": {
         "at": "2026-11-01T15:38:15.693494+00:00",
         "id": "117541928665127201"
+      },
+      "roundup:2026-11-01": {
+        "at": "2026-11-01T16:47:04.741659+00:00",
+        "id": "117542199269835850"
       }
     }
   },
@@ -431,6 +442,10 @@
       "feature:la-sabrosita-aji-chombo": {
         "at": "2026-11-01T15:38:33.263044+00:00",
         "id": "c5a082bb55c8b35fdc489e84bddc906cd37eb81820b27e7b7a3fa1f60b727f60"
+      },
+      "roundup:2026-11-01": {
+        "at": "2026-11-01T16:47:17.053385+00:00",
+        "id": "4970fb26421c22ebb1b9e19c1bee067bc9a3225fa485470ab79cea2b8e636982"
       }
     }
   }

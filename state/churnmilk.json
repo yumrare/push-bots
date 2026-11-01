@@ -217,6 +217,13 @@
       "name": "Gorgonzola",
       "at": "2026-11-01T15:37:14.750648+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzb5agsf7x2w"
+    },
+    {
+      "kind": "roundup",
+      "slug": "weekly",
+      "name": "Weekly roundup",
+      "at": "2026-11-01T16:46:09.700726+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzbb3qapkg22"
     }
   ],
   "reader": {
@@ -339,6 +346,10 @@
       "feature:gorgonzola": {
         "at": "2026-11-01T15:37:01.704439+00:00",
         "id": "117541923812875666"
+      },
+      "roundup:2026-11-01": {
+        "at": "2026-11-01T16:45:56.981941+00:00",
+        "id": "117542194828327590"
       }
     }
   },
@@ -407,6 +418,10 @@
       "feature:gorgonzola": {
         "at": "2026-11-01T15:37:14.750609+00:00",
         "id": "d29a20e7821b77b5b6a40f51b357d4353e9f64e026f1b44ab97f71f7c2b47b32"
+      },
+      "roundup:2026-11-01": {
+        "at": "2026-11-01T16:46:09.700694+00:00",
+        "id": "b3192d630d6e9075e401d36671c19a04e9f78054e106c5f340c5b5ba2f8b1c34"
       }
     }
   }
