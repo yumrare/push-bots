@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "camembert",
+    "last_slug": "gorgonzola",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -53,6 +53,10 @@
       "camembert": {
         "at": "2026-10-31T15:37:08.567431+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz6mrdtxit2n"
+      },
+      "gorgonzola": {
+        "at": "2026-11-01T15:37:14.750640+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzb5agsf7x2w"
       }
     }
   },
@@ -206,6 +210,13 @@
       "name": "Camembert",
       "at": "2026-10-31T15:37:08.567436+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz6mrdtxit2n"
+    },
+    {
+      "kind": "feature",
+      "slug": "gorgonzola",
+      "name": "Gorgonzola",
+      "at": "2026-11-01T15:37:14.750648+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzb5agsf7x2w"
     }
   ],
   "reader": {
@@ -324,6 +335,10 @@
       "feature:camembert": {
         "at": "2026-10-31T15:36:56.078415+00:00",
         "id": "117536261100923412"
+      },
+      "feature:gorgonzola": {
+        "at": "2026-11-01T15:37:01.704439+00:00",
+        "id": "117541923812875666"
       }
     }
   },
@@ -388,6 +403,10 @@
       "feature:camembert": {
         "at": "2026-10-31T15:37:08.567406+00:00",
         "id": "eca7c7dd2c5dacd68b9cbcecea8027738fe7e2923f0c3a2aa759f4cfb4826cf7"
+      },
+      "feature:gorgonzola": {
+        "at": "2026-11-01T15:37:14.750609+00:00",
+        "id": "d29a20e7821b77b5b6a40f51b357d4353e9f64e026f1b44ab97f71f7c2b47b32"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "hot-mamas-too-hot",
+    "last_slug": "la-sabrosita-aji-chombo",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -53,6 +53,10 @@
       "hot-mamas-too-hot": {
         "at": "2026-10-31T15:38:30.546065+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz6mtos5nu2r"
+      },
+      "la-sabrosita-aji-chombo": {
+        "at": "2026-11-01T15:38:33.263072+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzb5cnkk4h2b"
       }
     }
   },
@@ -214,6 +218,13 @@
       "name": "Too Hot Habanero Pepper Sauce",
       "at": "2026-10-31T15:38:30.546070+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz6mtos5nu2r"
+    },
+    {
+      "kind": "feature",
+      "slug": "la-sabrosita-aji-chombo",
+      "name": "Habanero Hot Sauce Ají Chombo",
+      "at": "2026-11-01T15:38:33.263079+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzb5cnkk4h2b"
     }
   ],
   "reader": {
@@ -340,6 +351,10 @@
       "feature:hot-mamas-too-hot": {
         "at": "2026-10-31T15:38:14.963012+00:00",
         "id": "117536266304660821"
+      },
+      "feature:la-sabrosita-aji-chombo": {
+        "at": "2026-11-01T15:38:15.693494+00:00",
+        "id": "117541928665127201"
       }
     }
   },
@@ -412,6 +427,10 @@
       "feature:hot-mamas-too-hot": {
         "at": "2026-10-31T15:38:30.546042+00:00",
         "id": "a83ac65bc25ea5604eeaecf28a35ed0d365b1d4326cece9be0aa37d32ea1ff72"
+      },
+      "feature:la-sabrosita-aji-chombo": {
+        "at": "2026-11-01T15:38:33.263044+00:00",
+        "id": "c5a082bb55c8b35fdc489e84bddc906cd37eb81820b27e7b7a3fa1f60b727f60"
       }
     }
   }
