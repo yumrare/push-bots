@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "la-sabrosita-aji-chombo",
+    "last_slug": "mr-bajan-level-2",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -57,6 +57,10 @@
       "la-sabrosita-aji-chombo": {
         "at": "2026-11-01T15:38:33.263072+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzb5cnkk4h2b"
+      },
+      "mr-bajan-level-2": {
+        "at": "2026-11-02T16:01:17.212809+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdp2esm7g22"
       }
     }
   },
@@ -232,6 +236,13 @@
       "name": "Weekly roundup",
       "at": "2026-11-01T16:47:17.053410+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzbb5rbfky2k"
+    },
+    {
+      "kind": "feature",
+      "slug": "mr-bajan-level-2",
+      "name": "Caribbean Vietnamese Hot Sauce — Level 2",
+      "at": "2026-11-02T16:01:17.212815+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdp2esm7g22"
     }
   ],
   "reader": {
@@ -370,6 +381,10 @@
       "roundup:2026-11-01": {
         "at": "2026-11-01T16:47:04.741659+00:00",
         "id": "117542199269835850"
+      },
+      "feature:mr-bajan-level-2": {
+        "at": "2026-11-02T16:01:05.093704+00:00",
+        "id": "117547680705621860"
       }
     }
   },
@@ -450,6 +465,10 @@
       "roundup:2026-11-01": {
         "at": "2026-11-01T16:47:17.053385+00:00",
         "id": "4970fb26421c22ebb1b9e19c1bee067bc9a3225fa485470ab79cea2b8e636982"
+      },
+      "feature:mr-bajan-level-2": {
+        "at": "2026-11-02T16:01:17.212781+00:00",
+        "id": "6ed377f1af899457623a9b090899b31dd2aeb09f2f2a13ac012f4518ece1382d"
       }
     }
   }

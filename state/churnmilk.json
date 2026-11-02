@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "gorgonzola",
+    "last_slug": "stilton",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -57,6 +57,10 @@
       "gorgonzola": {
         "at": "2026-11-01T15:37:14.750640+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzb5agsf7x2w"
+      },
+      "stilton": {
+        "at": "2026-11-02T16:00:05.019232+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdoyaaixc24"
       }
     }
   },
@@ -224,6 +228,13 @@
       "name": "Weekly roundup",
       "at": "2026-11-01T16:46:09.700726+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzbb3qapkg22"
+    },
+    {
+      "kind": "feature",
+      "slug": "stilton",
+      "name": "Stilton",
+      "at": "2026-11-02T16:00:05.019238+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdoyaaixc24"
     }
   ],
   "reader": {
@@ -354,6 +365,10 @@
       "roundup:2026-11-01": {
         "at": "2026-11-01T16:45:56.981941+00:00",
         "id": "117542194828327590"
+      },
+      "feature:stilton": {
+        "at": "2026-11-02T15:59:52.941887+00:00",
+        "id": "117547675988321652"
       }
     }
   },
@@ -426,6 +441,10 @@
       "roundup:2026-11-01": {
         "at": "2026-11-01T16:46:09.700694+00:00",
         "id": "b3192d630d6e9075e401d36671c19a04e9f78054e106c5f340c5b5ba2f8b1c34"
+      },
+      "feature:stilton": {
+        "at": "2026-11-02T16:00:05.019206+00:00",
+        "id": "6f322829e56ace84633c19b50ef6842d95a0abf373ffcf32750cc0a100913819"
       }
     }
   }

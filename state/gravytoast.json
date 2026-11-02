@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "turkey-gravy",
+    "last_slug": "hamburger-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -57,6 +57,10 @@
       "turkey-gravy": {
         "at": "2026-11-01T15:37:52.057422+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzb5bjysct2t"
+      },
+      "hamburger-gravy": {
+        "at": "2026-11-02T16:00:40.904267+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdozcoh2g2m"
       }
     }
   },
@@ -224,6 +228,13 @@
       "name": "Weekly roundup",
       "at": "2026-11-01T16:46:43.681667+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzbb4quttw2q"
+    },
+    {
+      "kind": "feature",
+      "slug": "hamburger-gravy",
+      "name": "Hamburger Gravy",
+      "at": "2026-11-02T16:00:40.904274+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdozcoh2g2m"
     }
   ],
   "reader": {
@@ -354,6 +365,10 @@
       "roundup:2026-11-01": {
         "at": "2026-11-01T16:46:30.939688+00:00",
         "id": "117542197045327537"
+      },
+      "feature:hamburger-gravy": {
+        "at": "2026-11-02T16:00:28.979459+00:00",
+        "id": "117547678353987198"
       }
     }
   },
@@ -426,6 +441,10 @@
       "roundup:2026-11-01": {
         "at": "2026-11-01T16:46:43.681636+00:00",
         "id": "d247f254a8d7959715d7e43dd65564c6f9eec615557ba8aab2e8e61b83ec9b39"
+      },
+      "feature:hamburger-gravy": {
+        "at": "2026-11-02T16:00:40.904240+00:00",
+        "id": "ec8e4b372a523f9f0315c926badb5f3ca916b2b5581e884d8cd15b3cb8c39e2d"
       }
     }
   }
