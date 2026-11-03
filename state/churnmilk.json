@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "stilton",
+    "last_slug": "roquefort",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -61,6 +61,10 @@
       "stilton": {
         "at": "2026-11-02T16:00:05.019232+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdoyaaixc24"
+      },
+      "roquefort": {
+        "at": "2026-11-03T15:52:28.445954+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzg6ziwbbl2j"
       }
     }
   },
@@ -242,6 +246,13 @@
       "name": "All dairy guides",
       "at": "2026-11-02T17:58:26.998764+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdvmcymtz2j"
+    },
+    {
+      "kind": "feature",
+      "slug": "roquefort",
+      "name": "Roquefort",
+      "at": "2026-11-03T15:52:28.445963+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzg6ziwbbl2j"
     }
   ],
   "reader": {
@@ -380,6 +391,10 @@
       "feature:stilton": {
         "at": "2026-11-02T15:59:52.941887+00:00",
         "id": "117547675988321652"
+      },
+      "feature:roquefort": {
+        "at": "2026-11-03T15:52:15.395049+00:00",
+        "id": "117553308317995913"
       }
     }
   },
@@ -456,6 +471,10 @@
       "feature:stilton": {
         "at": "2026-11-02T16:00:05.019206+00:00",
         "id": "6f322829e56ace84633c19b50ef6842d95a0abf373ffcf32750cc0a100913819"
+      },
+      "feature:roquefort": {
+        "at": "2026-11-03T15:52:28.445923+00:00",
+        "id": "ef18c991a4e747244e4c43e707c1da1b752e3bdf45fa24c320ad6ade06bcc57e"
       }
     }
   }

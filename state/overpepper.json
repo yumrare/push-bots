@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "mr-bajan-level-2",
+    "last_slug": "stuzzi-italian",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -61,6 +61,10 @@
       "mr-bajan-level-2": {
         "at": "2026-11-02T16:01:17.212809+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdp2esm7g22"
+      },
+      "stuzzi-italian": {
+        "at": "2026-11-03T15:53:45.000655+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzg73rhrz32k"
       }
     }
   },
@@ -254,6 +258,13 @@
       "name": "The Overpeppered shelf",
       "at": "2026-11-02T17:59:28.007995+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdvnktjm324"
+    },
+    {
+      "kind": "feature",
+      "slug": "stuzzi-italian",
+      "name": "Premium Italian Hot Sauce",
+      "at": "2026-11-03T15:53:45.000662+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzg73rhrz32k"
     }
   ],
   "reader": {
@@ -404,6 +415,10 @@
       "guide:The Overpeppered shelf": {
         "at": "2026-11-02T17:59:09.374753+00:00",
         "id": "117548144994430927"
+      },
+      "feature:stuzzi-italian": {
+        "at": "2026-11-03T15:53:32.284625+00:00",
+        "id": "117553313345400367"
       }
     }
   },
@@ -492,6 +507,10 @@
       "guide:The Overpeppered shelf": {
         "at": "2026-11-02T17:59:28.007964+00:00",
         "id": "055bb02609beffb1960d2c2c4e5398ba28eaf065c8f7608adbeeb8c18c89bcf7"
+      },
+      "feature:stuzzi-italian": {
+        "at": "2026-11-03T15:53:45.000630+00:00",
+        "id": "221166830117951b24b40c514bb4d5084690dea03bae4c652f05e2131caf2433"
       }
     }
   }

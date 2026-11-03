@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "hamburger-gravy",
+    "last_slug": "liver-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -61,6 +61,10 @@
       "hamburger-gravy": {
         "at": "2026-11-02T16:00:40.904267+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdozcoh2g2m"
+      },
+      "liver-gravy": {
+        "at": "2026-11-03T15:53:06.613724+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzg72namys2a"
       }
     }
   },
@@ -242,6 +246,13 @@
       "name": "All gravy guides",
       "at": "2026-11-02T17:58:47.816616+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdvmwtvgi2w"
+    },
+    {
+      "kind": "feature",
+      "slug": "liver-gravy",
+      "name": "Liver Gravy",
+      "at": "2026-11-03T15:53:06.613730+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzg72namys2a"
     }
   ],
   "reader": {
@@ -380,6 +391,10 @@
       "feature:hamburger-gravy": {
         "at": "2026-11-02T16:00:28.979459+00:00",
         "id": "117547678353987198"
+      },
+      "feature:liver-gravy": {
+        "at": "2026-11-03T15:52:53.925270+00:00",
+        "id": "117553310783806319"
       }
     }
   },
@@ -456,6 +471,10 @@
       "feature:hamburger-gravy": {
         "at": "2026-11-02T16:00:40.904240+00:00",
         "id": "ec8e4b372a523f9f0315c926badb5f3ca916b2b5581e884d8cd15b3cb8c39e2d"
+      },
+      "feature:liver-gravy": {
+        "at": "2026-11-03T15:53:06.613700+00:00",
+        "id": "9112aeb5d14a6ea5a693f710d0b498d9c8c2da056ba5bdd14332ebbd83bfc33a"
       }
     }
   }
