@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "stuzzi-italian",
+    "last_slug": "matouks-trinidad-scorpion",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -65,6 +65,10 @@
       "stuzzi-italian": {
         "at": "2026-11-03T15:53:45.000655+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzg73rhrz32k"
+      },
+      "matouks-trinidad-scorpion": {
+        "at": "2026-11-04T15:57:34.898253+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziprl6ymy2q"
       }
     }
   },
@@ -265,6 +269,13 @@
       "name": "Premium Italian Hot Sauce",
       "at": "2026-11-03T15:53:45.000662+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzg73rhrz32k"
+    },
+    {
+      "kind": "feature",
+      "slug": "matouks-trinidad-scorpion",
+      "name": "Hot Pepper Trinidad Scorpion Sauce",
+      "at": "2026-11-04T15:57:34.898260+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziprl6ymy2q"
     }
   ],
   "reader": {
@@ -423,6 +434,10 @@
       "feature:stuzzi-italian": {
         "at": "2026-11-03T15:53:32.284625+00:00",
         "id": "117553313345400367"
+      },
+      "feature:matouks-trinidad-scorpion": {
+        "at": "2026-11-04T15:57:21.985556+00:00",
+        "id": "117558990716116123"
       }
     }
   },
@@ -515,6 +530,10 @@
       "feature:stuzzi-italian": {
         "at": "2026-11-03T15:53:45.000630+00:00",
         "id": "221166830117951b24b40c514bb4d5084690dea03bae4c652f05e2131caf2433"
+      },
+      "feature:matouks-trinidad-scorpion": {
+        "at": "2026-11-04T15:57:34.898225+00:00",
+        "id": "9c41498c20658698680da5cf0821b9e6f4ced6ec20d4422c67ea947da3428024"
       }
     }
   }

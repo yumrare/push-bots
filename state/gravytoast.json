@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "liver-gravy",
+    "last_slug": "shrimp-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -65,6 +65,10 @@
       "liver-gravy": {
         "at": "2026-11-03T15:53:06.613724+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzg72namys2a"
+      },
+      "shrimp-gravy": {
+        "at": "2026-11-04T15:56:57.667152+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzipqiazl42k"
       }
     }
   },
@@ -253,6 +257,13 @@
       "name": "Liver Gravy",
       "at": "2026-11-03T15:53:06.613730+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzg72namys2a"
+    },
+    {
+      "kind": "feature",
+      "slug": "shrimp-gravy",
+      "name": "Shrimp Gravy",
+      "at": "2026-11-04T15:56:57.667158+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzipqiazl42k"
     }
   ],
   "reader": {
@@ -399,6 +410,10 @@
       "feature:liver-gravy": {
         "at": "2026-11-03T15:52:53.925270+00:00",
         "id": "117553310783806319"
+      },
+      "feature:shrimp-gravy": {
+        "at": "2026-11-04T15:56:43.603139+00:00",
+        "id": "117558988197904016"
       }
     }
   },
@@ -479,6 +494,10 @@
       "feature:liver-gravy": {
         "at": "2026-11-03T15:53:06.613700+00:00",
         "id": "9112aeb5d14a6ea5a693f710d0b498d9c8c2da056ba5bdd14332ebbd83bfc33a"
+      },
+      "feature:shrimp-gravy": {
+        "at": "2026-11-04T15:56:57.667124+00:00",
+        "id": "114a83a0e2711ea1bffd35f4e7400b40f593d0a50b31ecf73280f9177cea57c4"
       }
     }
   }

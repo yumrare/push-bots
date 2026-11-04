@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "roquefort",
+    "last_slug": "asiago",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -65,6 +65,10 @@
       "roquefort": {
         "at": "2026-11-03T15:52:28.445954+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzg6ziwbbl2j"
+      },
+      "asiago": {
+        "at": "2026-11-04T15:56:22.398644+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzippesha52t"
       }
     }
   },
@@ -253,6 +257,13 @@
       "name": "Roquefort",
       "at": "2026-11-03T15:52:28.445963+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzg6ziwbbl2j"
+    },
+    {
+      "kind": "feature",
+      "slug": "asiago",
+      "name": "Asiago",
+      "at": "2026-11-04T15:56:22.398649+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzippesha52t"
     }
   ],
   "reader": {
@@ -399,6 +410,10 @@
       "feature:roquefort": {
         "at": "2026-11-03T15:52:15.395049+00:00",
         "id": "117553308317995913"
+      },
+      "feature:asiago": {
+        "at": "2026-11-04T15:56:09.005401+00:00",
+        "id": "117558985938283659"
       }
     }
   },
@@ -479,6 +494,10 @@
       "feature:roquefort": {
         "at": "2026-11-03T15:52:28.445923+00:00",
         "id": "ef18c991a4e747244e4c43e707c1da1b752e3bdf45fa24c320ad6ade06bcc57e"
+      },
+      "feature:asiago": {
+        "at": "2026-11-04T15:56:22.398620+00:00",
+        "id": "55fc1dc7575911cc3c60eeff39da794b4e7f6500c5f4adb265d855a510e29385"
       }
     }
   }
