@@ -73,11 +73,11 @@
     }
   },
   "guide": {
-    "last_label": "The Overpeppered shelf",
+    "last_label": "The Heat Guide",
     "posted": {
       "The Heat Guide": {
-        "at": "2026-10-21T17:37:20.065646+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myfot5qjjw2v"
+        "at": "2026-11-04T17:56:00.683139+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziwfset4b2t"
       },
       "Habanero, profiled": {
         "at": "2026-10-23T17:37:12.417193+00:00",
@@ -276,6 +276,13 @@
       "name": "Hot Pepper Trinidad Scorpion Sauce",
       "at": "2026-11-04T15:57:34.898260+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziprl6ymy2q"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Heat Guide",
+      "name": "The Heat Guide",
+      "at": "2026-11-04T17:56:00.683162+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziwfset4b2t"
     }
   ],
   "reader": {

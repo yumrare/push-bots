@@ -73,11 +73,11 @@
     }
   },
   "guide": {
-    "last_label": "All dairy guides",
+    "last_label": "The Dairy Storage Chart",
     "posted": {
       "The Dairy Storage Chart": {
-        "at": "2026-10-28T17:50:09.941111+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myxcsvnelr2q"
+        "at": "2026-11-04T17:55:19.747041+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziweldntc2j"
       },
       "The Melting Cheese Guide": {
         "at": "2026-10-30T17:45:29.885499+00:00",
@@ -264,6 +264,13 @@
       "name": "Asiago",
       "at": "2026-11-04T15:56:22.398649+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzippesha52t"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Dairy Storage Chart",
+      "name": "The Dairy Storage Chart",
+      "at": "2026-11-04T17:55:19.747059+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziweldntc2j"
     }
   ],
   "reader": {

@@ -73,11 +73,11 @@
     }
   },
   "guide": {
-    "last_label": "All gravy guides",
+    "last_label": "The Gravy Chart",
     "posted": {
       "The Gravy Chart": {
-        "at": "2026-10-28T17:50:30.497616+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myxctjamw42a"
+        "at": "2026-11-04T17:55:40.212935+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziwf6uarr2t"
       },
       "Roux & lumps, solved": {
         "at": "2026-10-30T17:45:50.437538+00:00",
@@ -264,6 +264,13 @@
       "name": "Shrimp Gravy",
       "at": "2026-11-04T15:56:57.667158+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzipqiazl42k"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Gravy Chart",
+      "name": "The Gravy Chart",
+      "at": "2026-11-04T17:55:40.212976+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziwf6uarr2t"
     }
   ],
   "reader": {
