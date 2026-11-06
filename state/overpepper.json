@@ -77,15 +77,15 @@
     }
   },
   "guide": {
-    "last_label": "The Heat Guide",
+    "last_label": "Habanero, profiled",
     "posted": {
       "The Heat Guide": {
         "at": "2026-11-04T17:56:00.683139+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziwfset4b2t"
       },
       "Habanero, profiled": {
-        "at": "2026-10-23T17:37:12.417193+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mykpqqoomx25"
+        "at": "2026-11-06T17:52:42.218359+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznx5pzlhl2w"
       },
       "Ghost pepper, profiled": {
         "at": "2026-10-26T17:43:25.650427+00:00",
@@ -294,6 +294,13 @@
       "name": "Handcrafted Hot Sauce — Ghost Pepper",
       "at": "2026-11-06T15:52:46.149536+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznqgtfasb2g"
+    },
+    {
+      "kind": "guide",
+      "slug": "Habanero, profiled",
+      "name": "Habanero, profiled",
+      "at": "2026-11-06T17:52:42.218377+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznx5pzlhl2w"
     }
   ],
   "reader": {

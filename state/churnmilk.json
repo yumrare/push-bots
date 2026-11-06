@@ -77,15 +77,15 @@
     }
   },
   "guide": {
-    "last_label": "The Dairy Storage Chart",
+    "last_label": "The Melting Cheese Guide",
     "posted": {
       "The Dairy Storage Chart": {
         "at": "2026-11-04T17:55:19.747041+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziweldntc2j"
       },
       "The Melting Cheese Guide": {
-        "at": "2026-10-30T17:45:29.885499+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4difirtk2a"
+        "at": "2026-11-06T17:52:00.570614+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznx4icnmg2e"
       },
       "All dairy guides": {
         "at": "2026-11-02T17:58:26.998746+00:00",
@@ -282,6 +282,13 @@
       "name": "Fontina",
       "at": "2026-11-06T15:51:35.463622+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznqeq6wz622"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Melting Cheese Guide",
+      "name": "The Melting Cheese Guide",
+      "at": "2026-11-06T17:52:00.570631+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznx4icnmg2e"
     }
   ],
   "reader": {
