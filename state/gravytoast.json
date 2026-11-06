@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "shrimp-gravy",
+    "last_slug": "crawfish-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -69,6 +69,10 @@
       "shrimp-gravy": {
         "at": "2026-11-04T15:56:57.667152+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzipqiazl42k"
+      },
+      "crawfish-gravy": {
+        "at": "2026-11-06T15:52:10.169746+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznqfs75je2l"
       }
     }
   },
@@ -271,6 +275,13 @@
       "name": "The Gravy Chart",
       "at": "2026-11-04T17:55:40.212976+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziwf6uarr2t"
+    },
+    {
+      "kind": "feature",
+      "slug": "crawfish-gravy",
+      "name": "Crawfish Gravy",
+      "at": "2026-11-06T15:52:10.169752+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznqfs75je2l"
     }
   ],
   "reader": {
@@ -429,6 +440,10 @@
       "feature:shrimp-gravy": {
         "at": "2026-11-04T15:56:43.603139+00:00",
         "id": "117558988197904016"
+      },
+      "feature:crawfish-gravy": {
+        "at": "2026-11-06T15:51:58.253461+00:00",
+        "id": "117570294118942645"
       }
     }
   },
@@ -513,6 +528,10 @@
       "feature:shrimp-gravy": {
         "at": "2026-11-04T15:56:57.667124+00:00",
         "id": "114a83a0e2711ea1bffd35f4e7400b40f593d0a50b31ecf73280f9177cea57c4"
+      },
+      "feature:crawfish-gravy": {
+        "at": "2026-11-06T15:52:10.169719+00:00",
+        "id": "522259609b367c85c216efd352ec410bcd1d89b6b43090c38608752e1ae3ce3d"
       }
     }
   }

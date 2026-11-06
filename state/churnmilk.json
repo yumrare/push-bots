@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "asiago",
+    "last_slug": "fontina",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -69,6 +69,10 @@
       "asiago": {
         "at": "2026-11-04T15:56:22.398644+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzippesha52t"
+      },
+      "fontina": {
+        "at": "2026-11-06T15:51:35.463617+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznqeq6wz622"
       }
     }
   },
@@ -271,6 +275,13 @@
       "name": "The Dairy Storage Chart",
       "at": "2026-11-04T17:55:19.747059+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziweldntc2j"
+    },
+    {
+      "kind": "feature",
+      "slug": "fontina",
+      "name": "Fontina",
+      "at": "2026-11-06T15:51:35.463622+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznqeq6wz622"
     }
   ],
   "reader": {
@@ -429,6 +440,10 @@
       "feature:asiago": {
         "at": "2026-11-04T15:56:09.005401+00:00",
         "id": "117558985938283659"
+      },
+      "feature:fontina": {
+        "at": "2026-11-06T15:51:23.118124+00:00",
+        "id": "117570291808794320"
       }
     }
   },
@@ -513,6 +528,10 @@
       "feature:asiago": {
         "at": "2026-11-04T15:56:22.398620+00:00",
         "id": "55fc1dc7575911cc3c60eeff39da794b4e7f6500c5f4adb265d855a510e29385"
+      },
+      "feature:fontina": {
+        "at": "2026-11-06T15:51:35.463591+00:00",
+        "id": "d3dc51ffc07ac2fd71e10426c7f81157b13b7170204640318396f0025aa9507f"
       }
     }
   }
