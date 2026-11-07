@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "fontina",
+    "last_slug": "taleggio",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -73,6 +73,10 @@
       "fontina": {
         "at": "2026-11-06T15:51:35.463617+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznqeq6wz622"
+      },
+      "taleggio": {
+        "at": "2026-11-07T15:39:07.497396+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzqa5ee46v2e"
       }
     }
   },
@@ -289,6 +293,13 @@
       "name": "The Melting Cheese Guide",
       "at": "2026-11-06T17:52:00.570631+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznx4icnmg2e"
+    },
+    {
+      "kind": "feature",
+      "slug": "taleggio",
+      "name": "Taleggio",
+      "at": "2026-11-07T15:39:07.497403+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzqa5ee46v2e"
     }
   ],
   "reader": {
@@ -455,6 +466,10 @@
       "feature:fontina": {
         "at": "2026-11-06T15:51:23.118124+00:00",
         "id": "117570291808794320"
+      },
+      "feature:taleggio": {
+        "at": "2026-11-07T15:38:55.370411+00:00",
+        "id": "117575905127006474"
       }
     }
   },
@@ -543,6 +558,10 @@
       "feature:fontina": {
         "at": "2026-11-06T15:51:35.463591+00:00",
         "id": "d3dc51ffc07ac2fd71e10426c7f81157b13b7170204640318396f0025aa9507f"
+      },
+      "feature:taleggio": {
+        "at": "2026-11-07T15:39:07.497370+00:00",
+        "id": "3dd2ef8f6c56e054a2762863a41cc9440570858ddf89dbcf77a6fea20409c456"
       }
     }
   }

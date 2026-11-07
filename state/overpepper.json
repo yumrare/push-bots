@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "tonys-ghost-pepper",
+    "last_slug": "il-mig-onima",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -73,6 +73,10 @@
       "tonys-ghost-pepper": {
         "at": "2026-11-06T15:52:46.149530+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznqgtfasb2g"
+      },
+      "il-mig-onima": {
+        "at": "2026-11-07T15:40:14.976490+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzqa7f4pdf2w"
       }
     }
   },
@@ -301,6 +305,13 @@
       "name": "Habanero, profiled",
       "at": "2026-11-06T17:52:42.218377+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznx5pzlhl2w"
+    },
+    {
+      "kind": "feature",
+      "slug": "il-mig-onima",
+      "name": "IL MIG Hot Sauce",
+      "at": "2026-11-07T15:40:14.976497+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzqa7f4pdf2w"
     }
   ],
   "reader": {
@@ -479,6 +490,10 @@
       "feature:tonys-ghost-pepper": {
         "at": "2026-11-06T15:52:34.109308+00:00",
         "id": "117570296470974602"
+      },
+      "feature:il-mig-onima": {
+        "at": "2026-11-07T15:40:03.439201+00:00",
+        "id": "117575909591444202"
       }
     }
   },
@@ -579,6 +594,10 @@
       "feature:tonys-ghost-pepper": {
         "at": "2026-11-06T15:52:46.149505+00:00",
         "id": "0a451fa8ee93ebadf32d57d65fc2bf1a56fd3ec42db0a9c9860349b53f59dc4a"
+      },
+      "feature:il-mig-onima": {
+        "at": "2026-11-07T15:40:14.976466+00:00",
+        "id": "aea7845a9d29340c1af484d1f91e41e90bce81e274cec6f9e0a4ef83e1c082c1"
       }
     }
   }
