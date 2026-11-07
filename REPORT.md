@@ -1,5 +1,5 @@
-# Push-bots fleet report — 2026-11-06 21:17 UTC
+# Push-bots fleet report — 2026-11-07 21:12 UTC
 
-- **churnmilk**: 18 features posted; last Fontina 5h ago — ok; 0 Tumblr mirrors; 21 Mastodon mirrors; 21 Nostr mirrors
-- **gravytoast**: 18 features posted; last Crawfish Gravy 5h ago — ok; 0 Tumblr mirrors; 21 Mastodon mirrors; 21 Nostr mirrors
-- **overpepper**: 18 features posted; last Handcrafted Hot Sauce — Ghost Pepper 5h ago — ok; 0 Tumblr mirrors; 24 Mastodon mirrors; 24 Nostr mirrors
+- **churnmilk**: 19 features posted; last Taleggio 6h ago — ok; 0 Tumblr mirrors; 22 Mastodon mirrors; 22 Nostr mirrors
+- **gravytoast**: 19 features posted; last Chili Gravy (Tex-Mex) 6h ago — ok; 0 Tumblr mirrors; 22 Mastodon mirrors; 22 Nostr mirrors
+- **overpepper**: 19 features posted; last IL MIG Hot Sauce 6h ago — ok; 0 Tumblr mirrors; 25 Mastodon mirrors; 25 Nostr mirrors
