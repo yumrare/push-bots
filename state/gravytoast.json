@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "chili-gravy",
+    "last_slug": "bulldog-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -77,6 +77,10 @@
       "chili-gravy": {
         "at": "2026-11-07T15:39:39.744398+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzqa6ffp6f2h"
+      },
+      "bulldog-gravy": {
+        "at": "2026-11-08T15:39:19.365070+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzsqm3jgdb22"
       }
     }
   },
@@ -300,6 +304,13 @@
       "name": "Chili Gravy (Tex-Mex)",
       "at": "2026-11-07T15:39:39.744405+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzqa6ffp6f2h"
+    },
+    {
+      "kind": "feature",
+      "slug": "bulldog-gravy",
+      "name": "Bulldog Gravy",
+      "at": "2026-11-08T15:39:19.365075+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzsqm3jgdb22"
     }
   ],
   "reader": {
@@ -474,6 +485,10 @@
       "feature:chili-gravy": {
         "at": "2026-11-07T15:39:28.184583+00:00",
         "id": "117575907281815189"
+      },
+      "feature:bulldog-gravy": {
+        "at": "2026-11-08T15:38:47.962420+00:00",
+        "id": "117581566891493319"
       }
     }
   },
@@ -566,6 +581,10 @@
       "feature:chili-gravy": {
         "at": "2026-11-07T15:39:39.744374+00:00",
         "id": "b851e4ce17f35ba8e140d52f5dbedf53a1d9368d4901d8e9db170cf2d126abb4"
+      },
+      "feature:bulldog-gravy": {
+        "at": "2026-11-08T15:39:19.365046+00:00",
+        "id": "b12ea0b50447258b9d46918ae89dcdad1abdf882ee1015698f71e658b0707388"
       }
     }
   }
