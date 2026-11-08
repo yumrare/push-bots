@@ -311,6 +311,13 @@
       "name": "Burrata",
       "at": "2026-11-08T15:38:26.143670+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzsqkhlhpj22"
+    },
+    {
+      "kind": "roundup",
+      "slug": "weekly",
+      "name": "Weekly roundup",
+      "at": "2026-11-08T16:47:51.836029+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzsugnrjjz2u"
     }
   ],
   "reader": {
@@ -489,6 +496,10 @@
       "feature:burrata": {
         "at": "2026-11-08T15:37:54.469095+00:00",
         "id": "117581563450397314"
+      },
+      "roundup:2026-11-08": {
+        "at": "2026-11-08T16:47:20.312361+00:00",
+        "id": "117581836456383884"
       }
     }
   },
