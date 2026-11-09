@@ -89,7 +89,7 @@
     }
   },
   "guide": {
-    "last_label": "Roux & lumps, solved",
+    "last_label": "All gravy guides",
     "posted": {
       "The Gravy Chart": {
         "at": "2026-11-04T17:55:40.212935+00:00",
@@ -100,8 +100,8 @@
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznx54arq72n"
       },
       "All gravy guides": {
-        "at": "2026-11-02T17:58:47.816599+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdvmwtvgi2w"
+        "at": "2026-11-09T17:59:02.915064+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzvivth3ux2p"
       }
     }
   },
@@ -329,6 +329,13 @@
       "name": "Milk Gravy",
       "at": "2026-11-09T16:02:50.582350+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzvcfeoazf2a"
+    },
+    {
+      "kind": "guide",
+      "slug": "All gravy guides",
+      "name": "All gravy guides",
+      "at": "2026-11-09T17:59:02.915079+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzvivth3ux2p"
     }
   ],
   "reader": {

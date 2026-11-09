@@ -89,7 +89,7 @@
     }
   },
   "guide": {
-    "last_label": "The Melting Cheese Guide",
+    "last_label": "All dairy guides",
     "posted": {
       "The Dairy Storage Chart": {
         "at": "2026-11-04T17:55:19.747041+00:00",
@@ -100,8 +100,8 @@
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznx4icnmg2e"
       },
       "All dairy guides": {
-        "at": "2026-11-02T17:58:26.998746+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzdvmcymtz2j"
+        "at": "2026-11-09T17:58:42.255373+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzviv7qmvy2u"
       }
     }
   },
@@ -329,6 +329,13 @@
       "name": "Halloumi",
       "at": "2026-11-09T16:02:07.498041+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzvcdyxajl2e"
+    },
+    {
+      "kind": "guide",
+      "slug": "All dairy guides",
+      "name": "All dairy guides",
+      "at": "2026-11-09T17:58:42.255385+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzviv7qmvy2u"
     }
   ],
   "reader": {

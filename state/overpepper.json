@@ -89,7 +89,7 @@
     }
   },
   "guide": {
-    "last_label": "Habanero, profiled",
+    "last_label": "Ghost pepper, profiled",
     "posted": {
       "The Heat Guide": {
         "at": "2026-11-04T17:56:00.683139+00:00",
@@ -100,8 +100,8 @@
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mznx5pzlhl2w"
       },
       "Ghost pepper, profiled": {
-        "at": "2026-10-26T17:43:25.650427+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mysbilq6th2r"
+        "at": "2026-11-09T17:59:23.563757+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzviwh5bqa2u"
       },
       "Scorpion pepper, profiled": {
         "at": "2026-10-28T17:51:04.303791+00:00",
@@ -341,6 +341,13 @@
       "name": "Morita Chili Sauce",
       "at": "2026-11-09T16:03:38.041765+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzvcgoty4y2k"
+    },
+    {
+      "kind": "guide",
+      "slug": "Ghost pepper, profiled",
+      "name": "Ghost pepper, profiled",
+      "at": "2026-11-09T17:59:23.563768+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzviwh5bqa2u"
     }
   ],
   "reader": {
