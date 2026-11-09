@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "burrata",
+    "last_slug": "halloumi",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -81,6 +81,10 @@
       "burrata": {
         "at": "2026-11-08T15:38:26.143647+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzsqkhlhpj22"
+      },
+      "halloumi": {
+        "at": "2026-11-09T16:02:07.498035+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzvcdyxajl2e"
       }
     }
   },
@@ -318,6 +322,13 @@
       "name": "Weekly roundup",
       "at": "2026-11-08T16:47:51.836029+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzsugnrjjz2u"
+    },
+    {
+      "kind": "feature",
+      "slug": "halloumi",
+      "name": "Halloumi",
+      "at": "2026-11-09T16:02:07.498041+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzvcdyxajl2e"
     }
   ],
   "reader": {
@@ -504,6 +515,10 @@
       "roundup:2026-11-08": {
         "at": "2026-11-08T16:47:20.312361+00:00",
         "id": "117581836456383884"
+      },
+      "feature:halloumi": {
+        "at": "2026-11-09T16:01:44.863781+00:00",
+        "id": "117587319499088948"
       }
     }
   },
@@ -596,6 +611,10 @@
       "feature:taleggio": {
         "at": "2026-11-07T15:39:07.497370+00:00",
         "id": "3dd2ef8f6c56e054a2762863a41cc9440570858ddf89dbcf77a6fea20409c456"
+      },
+      "feature:halloumi": {
+        "at": "2026-11-09T16:02:07.498017+00:00",
+        "id": "b86e0bf7b233d5ad9dded6db6f0e65e09b3440c254c5f84be67338b75af24106"
       }
     }
   }

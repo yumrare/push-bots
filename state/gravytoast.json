@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "bulldog-gravy",
+    "last_slug": "milk-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -81,6 +81,10 @@
       "bulldog-gravy": {
         "at": "2026-11-08T15:39:19.365070+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzsqm3jgdb22"
+      },
+      "milk-gravy": {
+        "at": "2026-11-09T16:02:50.582346+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzvcfeoazf2a"
       }
     }
   },
@@ -318,6 +322,13 @@
       "name": "Weekly roundup",
       "at": "2026-11-08T16:48:36.117535+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzsuiaggkg2w"
+    },
+    {
+      "kind": "feature",
+      "slug": "milk-gravy",
+      "name": "Milk Gravy",
+      "at": "2026-11-09T16:02:50.582350+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzvcfeoazf2a"
     }
   ],
   "reader": {
@@ -504,6 +515,10 @@
       "roundup:2026-11-08": {
         "at": "2026-11-08T16:48:12.955904+00:00",
         "id": "117581839911604793"
+      },
+      "feature:milk-gravy": {
+        "at": "2026-11-09T16:02:28.612750+00:00",
+        "id": "117587322360178981"
       }
     }
   },
@@ -604,6 +619,10 @@
       "roundup:2026-11-08": {
         "at": "2026-11-08T16:48:36.117511+00:00",
         "id": "1d4f710492e55918a83c29456607a1309f289dd3752acf59f4149700c45b6d1e"
+      },
+      "feature:milk-gravy": {
+        "at": "2026-11-09T16:02:50.582331+00:00",
+        "id": "db31c4c1932d08e6b004cb51e8e92e7934d5febd113369f7a1db2b7cca3faac8"
       }
     }
   }
