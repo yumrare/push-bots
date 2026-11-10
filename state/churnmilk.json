@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "halloumi",
+    "last_slug": "paneer",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -85,6 +85,10 @@
       "halloumi": {
         "at": "2026-11-09T16:02:07.498035+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzvcdyxajl2e"
+      },
+      "paneer": {
+        "at": "2026-11-10T15:50:47.561557+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzxs6p6qzt2w"
       }
     }
   },
@@ -336,6 +340,13 @@
       "name": "All dairy guides",
       "at": "2026-11-09T17:58:42.255385+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzviv7qmvy2u"
+    },
+    {
+      "kind": "feature",
+      "slug": "paneer",
+      "name": "Paneer",
+      "at": "2026-11-10T15:50:47.561565+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzxs6p6qzt2w"
     }
   ],
   "reader": {
@@ -530,6 +541,10 @@
       "feature:halloumi": {
         "at": "2026-11-09T16:01:44.863781+00:00",
         "id": "117587319499088948"
+      },
+      "feature:paneer": {
+        "at": "2026-11-10T15:50:26.006749+00:00",
+        "id": "117592937319470756"
       }
     }
   },
@@ -626,6 +641,10 @@
       "feature:halloumi": {
         "at": "2026-11-09T16:02:07.498017+00:00",
         "id": "b86e0bf7b233d5ad9dded6db6f0e65e09b3440c254c5f84be67338b75af24106"
+      },
+      "feature:paneer": {
+        "at": "2026-11-10T15:50:47.561527+00:00",
+        "id": "68f55689d540769bf3e4f40acf655037948dfb7832a3549a0dd52805bb35e6a4"
       }
     }
   }

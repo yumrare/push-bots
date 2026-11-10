@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "milk-gravy",
+    "last_slug": "pepper-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -85,6 +85,10 @@
       "milk-gravy": {
         "at": "2026-11-09T16:02:50.582346+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzvcfeoazf2a"
+      },
+      "pepper-gravy": {
+        "at": "2026-11-10T15:51:32.827656+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzxs7zg55n24"
       }
     }
   },
@@ -336,6 +340,13 @@
       "name": "All gravy guides",
       "at": "2026-11-09T17:59:02.915079+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzvivth3ux2p"
+    },
+    {
+      "kind": "feature",
+      "slug": "pepper-gravy",
+      "name": "Pepper Gravy",
+      "at": "2026-11-10T15:51:32.827662+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzxs7zg55n24"
     }
   ],
   "reader": {
@@ -530,6 +541,10 @@
       "feature:milk-gravy": {
         "at": "2026-11-09T16:02:28.612750+00:00",
         "id": "117587322360178981"
+      },
+      "feature:pepper-gravy": {
+        "at": "2026-11-10T15:51:08.312905+00:00",
+        "id": "117592940089418850"
       }
     }
   },
@@ -634,6 +649,10 @@
       "feature:milk-gravy": {
         "at": "2026-11-09T16:02:50.582331+00:00",
         "id": "db31c4c1932d08e6b004cb51e8e92e7934d5febd113369f7a1db2b7cca3faac8"
+      },
+      "feature:pepper-gravy": {
+        "at": "2026-11-10T15:51:32.827634+00:00",
+        "id": "e89ced4dd5e436517e521d7837802e049bc84582a2c101ba5b804e94b4eabfa5"
       }
     }
   }
