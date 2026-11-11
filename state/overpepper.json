@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "pineapple-habanero-paste",
+    "last_slug": "citrus-mango-habanero-paste",
     "posted": {
       "linghams-chilli-sauce": {
         "at": "2026-10-19T22:22:41.404851+00:00",
@@ -89,6 +89,10 @@
       "pineapple-habanero-paste": {
         "at": "2026-11-10T15:52:17.424263+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzxsbfhrmi2q"
+      },
+      "citrus-mango-habanero-paste": {
+        "at": "2026-11-11T15:55:04.662265+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22cv7lvfe2u"
       }
     }
   },
@@ -359,6 +363,13 @@
       "name": "Pineapple Habanero Chili Paste",
       "at": "2026-11-10T15:52:17.424269+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzxsbfhrmi2q"
+    },
+    {
+      "kind": "feature",
+      "slug": "citrus-mango-habanero-paste",
+      "name": "Citrus Mango Habanero Chili Paste",
+      "at": "2026-11-11T15:55:04.662271+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22cv7lvfe2u"
     }
   ],
   "reader": {
@@ -573,6 +584,10 @@
       "feature:pineapple-habanero-paste": {
         "at": "2026-11-10T15:51:55.940792+00:00",
         "id": "117592943218989917"
+      },
+      "feature:citrus-mango-habanero-paste": {
+        "at": "2026-11-11T15:54:40.637707+00:00",
+        "id": "117598616322409815"
       }
     }
   },
@@ -685,6 +700,10 @@
       "feature:pineapple-habanero-paste": {
         "at": "2026-11-10T15:52:17.424240+00:00",
         "id": "68a28b5388abfd8727d0285a1019a30e6763d36f9fc134327c47560b6c43b6ee"
+      },
+      "feature:citrus-mango-habanero-paste": {
+        "at": "2026-11-11T15:55:04.662246+00:00",
+        "id": "31e25a6c4942fd34f73726864c9118c5152a2f9c2b3545fe56759ecbbb373a05"
       }
     }
   }

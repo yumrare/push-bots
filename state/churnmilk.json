@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "paneer",
+    "last_slug": "queso-fresco",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -89,6 +89,10 @@
       "paneer": {
         "at": "2026-11-10T15:50:47.561557+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzxs6p6qzt2w"
+      },
+      "queso-fresco": {
+        "at": "2026-11-11T15:53:34.191169+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22csjwpij2k"
       }
     }
   },
@@ -347,6 +351,13 @@
       "name": "Paneer",
       "at": "2026-11-10T15:50:47.561565+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzxs6p6qzt2w"
+    },
+    {
+      "kind": "feature",
+      "slug": "queso-fresco",
+      "name": "Queso Fresco",
+      "at": "2026-11-11T15:53:34.191173+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22csjwpij2k"
     }
   ],
   "reader": {
@@ -549,6 +560,10 @@
       "feature:paneer": {
         "at": "2026-11-10T15:50:26.006749+00:00",
         "id": "117592937319470756"
+      },
+      "feature:queso-fresco": {
+        "at": "2026-11-11T15:53:11.962650+00:00",
+        "id": "117598610508049220"
       }
     }
   },
@@ -649,6 +664,10 @@
       "feature:paneer": {
         "at": "2026-11-10T15:50:47.561527+00:00",
         "id": "68f55689d540769bf3e4f40acf655037948dfb7832a3549a0dd52805bb35e6a4"
+      },
+      "feature:queso-fresco": {
+        "at": "2026-11-11T15:53:34.191153+00:00",
+        "id": "12fcd50735d5c401475051c3d105b947f4d291743a7c5e7efe62be6a5c4e71f0"
       }
     }
   }

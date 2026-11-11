@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "pepper-gravy",
+    "last_slug": "bacon-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -89,6 +89,10 @@
       "pepper-gravy": {
         "at": "2026-11-10T15:51:32.827656+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzxs7zg55n24"
+      },
+      "bacon-gravy": {
+        "at": "2026-11-11T15:54:17.074807+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22ctw5rqu25"
       }
     }
   },
@@ -347,6 +351,13 @@
       "name": "Pepper Gravy",
       "at": "2026-11-10T15:51:32.827662+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzxs7zg55n24"
+    },
+    {
+      "kind": "feature",
+      "slug": "bacon-gravy",
+      "name": "Bacon Gravy",
+      "at": "2026-11-11T15:54:17.074811+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22ctw5rqu25"
     }
   ],
   "reader": {
@@ -549,6 +560,10 @@
       "feature:pepper-gravy": {
         "at": "2026-11-10T15:51:08.312905+00:00",
         "id": "117592940089418850"
+      },
+      "feature:bacon-gravy": {
+        "at": "2026-11-11T15:53:55.217190+00:00",
+        "id": "117598613345469179"
       }
     }
   },
@@ -657,6 +672,10 @@
       "feature:pepper-gravy": {
         "at": "2026-11-10T15:51:32.827634+00:00",
         "id": "e89ced4dd5e436517e521d7837802e049bc84582a2c101ba5b804e94b4eabfa5"
+      },
+      "feature:bacon-gravy": {
+        "at": "2026-11-11T15:54:17.074791+00:00",
+        "id": "736bd5f756ce0eb65317966c66084d67e423f6ad61bd96a439fd12a3543d5131"
       }
     }
   }
