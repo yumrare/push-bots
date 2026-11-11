@@ -97,11 +97,11 @@
     }
   },
   "guide": {
-    "last_label": "All dairy guides",
+    "last_label": "The Dairy Storage Chart",
     "posted": {
       "The Dairy Storage Chart": {
-        "at": "2026-11-04T17:55:19.747041+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mziweldntc2j"
+        "at": "2026-11-11T17:57:44.971914+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22jrdzsiy2c"
       },
       "The Melting Cheese Guide": {
         "at": "2026-11-06T17:52:00.570614+00:00",
@@ -358,6 +358,13 @@
       "name": "Queso Fresco",
       "at": "2026-11-11T15:53:34.191173+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22csjwpij2k"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Dairy Storage Chart",
+      "name": "The Dairy Storage Chart",
+      "at": "2026-11-11T17:57:44.971926+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22jrdzsiy2c"
     }
   ],
   "reader": {

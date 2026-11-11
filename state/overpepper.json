@@ -97,7 +97,7 @@
     }
   },
   "guide": {
-    "last_label": "Ghost pepper, profiled",
+    "last_label": "Scorpion pepper, profiled",
     "posted": {
       "The Heat Guide": {
         "at": "2026-11-04T17:56:00.683139+00:00",
@@ -112,8 +112,8 @@
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzviwh5bqa2u"
       },
       "Scorpion pepper, profiled": {
-        "at": "2026-10-28T17:51:04.303791+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3myxcu4uaro2r"
+        "at": "2026-11-11T17:58:26.549056+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22jslopux2a"
       },
       "The Warm shelf": {
         "at": "2026-10-30T17:46:24.709164+00:00",
@@ -370,6 +370,13 @@
       "name": "Citrus Mango Habanero Chili Paste",
       "at": "2026-11-11T15:55:04.662271+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22cv7lvfe2u"
+    },
+    {
+      "kind": "guide",
+      "slug": "Scorpion pepper, profiled",
+      "name": "Scorpion pepper, profiled",
+      "at": "2026-11-11T17:58:26.549072+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22jslopux2a"
     }
   ],
   "reader": {
