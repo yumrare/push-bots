@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "queso-fresco",
+    "last_slug": "cotija",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -93,6 +93,10 @@
       "queso-fresco": {
         "at": "2026-11-11T15:53:34.191169+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22csjwpij2k"
+      },
+      "cotija": {
+        "at": "2026-11-12T16:00:52.453423+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n24tomayvh2n"
       }
     }
   },
@@ -365,6 +369,13 @@
       "name": "The Dairy Storage Chart",
       "at": "2026-11-11T17:57:44.971926+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22jrdzsiy2c"
+    },
+    {
+      "kind": "feature",
+      "slug": "cotija",
+      "name": "Cotija",
+      "at": "2026-11-12T16:00:52.453430+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n24tomayvh2n"
     }
   ],
   "reader": {
@@ -575,6 +586,10 @@
       "feature:queso-fresco": {
         "at": "2026-11-11T15:53:11.962650+00:00",
         "id": "117598610508049220"
+      },
+      "feature:cotija": {
+        "at": "2026-11-12T16:00:30.330416+00:00",
+        "id": "117604301538422947"
       }
     }
   },
@@ -679,6 +694,10 @@
       "feature:queso-fresco": {
         "at": "2026-11-11T15:53:34.191153+00:00",
         "id": "12fcd50735d5c401475051c3d105b947f4d291743a7c5e7efe62be6a5c4e71f0"
+      },
+      "feature:cotija": {
+        "at": "2026-11-12T16:00:52.453395+00:00",
+        "id": "fe53e933e9fecf3c632ea01d1d1d6e8eac0af484e2f9ace8b411ead04c30ad7f"
       }
     }
   }

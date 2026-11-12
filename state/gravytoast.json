@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "bacon-gravy",
+    "last_slug": "coffee-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -93,6 +93,10 @@
       "bacon-gravy": {
         "at": "2026-11-11T15:54:17.074807+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22ctw5rqu25"
+      },
+      "coffee-gravy": {
+        "at": "2026-11-12T16:01:35.856951+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n24tpviopn2l"
       }
     }
   },
@@ -365,6 +369,13 @@
       "name": "The Gravy Chart",
       "at": "2026-11-11T17:58:05.868068+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22jrxxjn72a"
+    },
+    {
+      "kind": "feature",
+      "slug": "coffee-gravy",
+      "name": "Coffee Gravy",
+      "at": "2026-11-12T16:01:35.856958+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n24tpviopn2l"
     }
   ],
   "reader": {
@@ -575,6 +586,10 @@
       "feature:bacon-gravy": {
         "at": "2026-11-11T15:53:55.217190+00:00",
         "id": "117598613345469179"
+      },
+      "feature:coffee-gravy": {
+        "at": "2026-11-12T16:01:13.772574+00:00",
+        "id": "117604304389109733"
       }
     }
   },
@@ -687,6 +702,10 @@
       "feature:bacon-gravy": {
         "at": "2026-11-11T15:54:17.074791+00:00",
         "id": "736bd5f756ce0eb65317966c66084d67e423f6ad61bd96a439fd12a3543d5131"
+      },
+      "feature:coffee-gravy": {
+        "at": "2026-11-12T16:01:35.856927+00:00",
+        "id": "431448a59cd120e97a7cdbe7704cda409c454f13f99f4c67ddbb1a9bc786c9f2"
       }
     }
   }
