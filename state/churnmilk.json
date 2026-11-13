@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "cotija",
+    "last_slug": "oaxaca-cheese",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -97,6 +97,10 @@
       "cotija": {
         "at": "2026-11-12T16:00:52.453423+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n24tomayvh2n"
+      },
+      "oaxaca-cheese": {
+        "at": "2026-11-13T15:51:30.877686+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n27dmr6hzv25"
       }
     }
   },
@@ -376,6 +380,13 @@
       "name": "Cotija",
       "at": "2026-11-12T16:00:52.453430+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n24tomayvh2n"
+    },
+    {
+      "kind": "feature",
+      "slug": "oaxaca-cheese",
+      "name": "Oaxaca Cheese",
+      "at": "2026-11-13T15:51:30.877693+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n27dmr6hzv25"
     }
   ],
   "reader": {
@@ -594,6 +605,10 @@
       "feature:cotija": {
         "at": "2026-11-12T16:00:30.330416+00:00",
         "id": "117604301538422947"
+      },
+      "feature:oaxaca-cheese": {
+        "at": "2026-11-13T15:51:09.061429+00:00",
+        "id": "117609927076288092"
       }
     }
   },
@@ -702,6 +717,10 @@
       "feature:cotija": {
         "at": "2026-11-12T16:00:52.453395+00:00",
         "id": "fe53e933e9fecf3c632ea01d1d1d6e8eac0af484e2f9ace8b411ead04c30ad7f"
+      },
+      "feature:oaxaca-cheese": {
+        "at": "2026-11-13T15:51:30.877663+00:00",
+        "id": "2751af252b39206622072c2da6edd64cb37dcca657eca55a8489b8134ff85840"
       }
     }
   }
