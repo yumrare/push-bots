@@ -101,7 +101,7 @@
     }
   },
   "guide": {
-    "last_label": "Scorpion pepper, profiled",
+    "last_label": "The Warm shelf",
     "posted": {
       "The Heat Guide": {
         "at": "2026-11-04T17:56:00.683139+00:00",
@@ -120,8 +120,8 @@
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22jslopux2a"
       },
       "The Warm shelf": {
-        "at": "2026-10-30T17:46:24.709164+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mz4djmlwiz24"
+        "at": "2026-11-13T17:54:24.410219+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n27kj7pu7x2i"
       },
       "The Overpeppered shelf": {
         "at": "2026-11-02T17:59:28.007989+00:00",
@@ -388,6 +388,13 @@
       "name": "Hot Pepper Sauce",
       "at": "2026-11-12T16:02:22.387476+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n24tr7zoy42r"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Warm shelf",
+      "name": "The Warm shelf",
+      "at": "2026-11-13T17:54:24.410239+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n27kj7pu7x2i"
     }
   ],
   "reader": {
