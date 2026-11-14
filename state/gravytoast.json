@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "sorghum-gravy",
+    "last_slug": "sunday-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -101,6 +101,10 @@
       "sorghum-gravy": {
         "at": "2026-11-13T15:52:13.352654+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n27do3b7hw2c"
+      },
+      "sunday-gravy": {
+        "at": "2026-11-14T15:41:13.499812+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2btjd2kp62n"
       }
     }
   },
@@ -394,6 +398,13 @@
       "name": "Roux & lumps, solved",
       "at": "2026-11-13T17:54:03.964572+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n27kim7vmn2a"
+    },
+    {
+      "kind": "feature",
+      "slug": "sunday-gravy",
+      "name": "Sunday Gravy",
+      "at": "2026-11-14T15:41:13.499818+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2btjd2kp62n"
     }
   ],
   "reader": {
@@ -620,6 +631,10 @@
       "feature:sorghum-gravy": {
         "at": "2026-11-13T15:51:51.761305+00:00",
         "id": "117609929871303367"
+      },
+      "feature:sunday-gravy": {
+        "at": "2026-11-14T15:40:51.383935+00:00",
+        "id": "117615548906819223"
       }
     }
   },
@@ -740,6 +755,10 @@
       "feature:sorghum-gravy": {
         "at": "2026-11-13T15:52:13.352621+00:00",
         "id": "b0c7868ce6c519929b71c3ab184fedcf20ae0fb7bbafefc5d5e492fae852c925"
+      },
+      "feature:sunday-gravy": {
+        "at": "2026-11-14T15:41:13.499785+00:00",
+        "id": "000b5cb57f98fe93b78e3e5f771d3ac1d77b26efbeffb63b27b845ac3d77b793"
       }
     }
   }
