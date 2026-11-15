@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "sunday-gravy",
+    "last_slug": "vegetarian-mushroom-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -105,6 +105,10 @@
       "sunday-gravy": {
         "at": "2026-11-14T15:41:13.499812+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2btjd2kp62n"
+      },
+      "vegetarian-mushroom-gravy": {
+        "at": "2026-11-15T15:42:24.913432+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2ee2nfkr32l"
       }
     }
   },
@@ -405,6 +409,13 @@
       "name": "Sunday Gravy",
       "at": "2026-11-14T15:41:13.499818+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2btjd2kp62n"
+    },
+    {
+      "kind": "feature",
+      "slug": "vegetarian-mushroom-gravy",
+      "name": "Vegetarian Mushroom Gravy",
+      "at": "2026-11-15T15:42:24.913438+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2ee2nfkr32l"
     }
   ],
   "reader": {
@@ -639,6 +650,10 @@
       "feature:sunday-gravy": {
         "at": "2026-11-14T15:40:51.383935+00:00",
         "id": "117615548906819223"
+      },
+      "feature:vegetarian-mushroom-gravy": {
+        "at": "2026-11-15T15:42:13.313730+00:00",
+        "id": "117621216586880675"
       }
     }
   },
@@ -763,6 +778,10 @@
       "feature:sunday-gravy": {
         "at": "2026-11-14T15:41:13.499785+00:00",
         "id": "000b5cb57f98fe93b78e3e5f771d3ac1d77b26efbeffb63b27b845ac3d77b793"
+      },
+      "feature:vegetarian-mushroom-gravy": {
+        "at": "2026-11-15T15:42:24.913400+00:00",
+        "id": "0e888c9a036024bc4ed75354c7cbf3b78d332e7ac6dcf6dd0bd11248ce77c725"
       }
     }
   }

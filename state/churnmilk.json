@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "havarti",
+    "last_slug": "edam",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -105,6 +105,10 @@
       "havarti": {
         "at": "2026-11-14T15:40:30.717965+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2bti2dl5u2i"
+      },
+      "edam": {
+        "at": "2026-11-15T15:41:50.647832+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2edzlv4hw2r"
       }
     }
   },
@@ -405,6 +409,13 @@
       "name": "Havarti",
       "at": "2026-11-14T15:40:30.717970+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2bti2dl5u2i"
+    },
+    {
+      "kind": "feature",
+      "slug": "edam",
+      "name": "Edam",
+      "at": "2026-11-15T15:41:50.647837+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2edzlv4hw2r"
     }
   ],
   "reader": {
@@ -639,6 +650,10 @@
       "feature:havarti": {
         "at": "2026-11-14T15:40:08.886445+00:00",
         "id": "117615546120566406"
+      },
+      "feature:edam": {
+        "at": "2026-11-15T15:41:38.440935+00:00",
+        "id": "117621214302110110"
       }
     }
   },
@@ -755,6 +770,10 @@
       "feature:havarti": {
         "at": "2026-11-14T15:40:30.717942+00:00",
         "id": "e7830a9b5ed16d2dfc6deae01a889b2e7848e59b9916336d1530c12657dc917a"
+      },
+      "feature:edam": {
+        "at": "2026-11-15T15:41:50.647809+00:00",
+        "id": "88eba56ab65d1350d1bb469f50d3e68f54f5eca75e1f3617a93deb9242a34864"
       }
     }
   }
