@@ -416,6 +416,13 @@
       "name": "Edam",
       "at": "2026-11-15T15:41:50.647837+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2edzlv4hw2r"
+    },
+    {
+      "kind": "roundup",
+      "slug": "weekly",
+      "name": "Weekly roundup",
+      "at": "2026-11-15T16:51:55.237873+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2ehwx7ngc2u"
     }
   ],
   "reader": {
@@ -654,6 +661,10 @@
       "feature:edam": {
         "at": "2026-11-15T15:41:38.440935+00:00",
         "id": "117621214302110110"
+      },
+      "roundup:2026-11-15": {
+        "at": "2026-11-15T16:51:43.034186+00:00",
+        "id": "117621489852978901"
       }
     }
   },
@@ -774,6 +785,10 @@
       "feature:edam": {
         "at": "2026-11-15T15:41:50.647809+00:00",
         "id": "88eba56ab65d1350d1bb469f50d3e68f54f5eca75e1f3617a93deb9242a34864"
+      },
+      "roundup:2026-11-15": {
+        "at": "2026-11-15T16:51:55.237845+00:00",
+        "id": "04390c093697fca95521cae04501cd6751f8377d891d2713d528ca02e687a411"
       }
     }
   }

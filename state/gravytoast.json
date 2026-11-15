@@ -416,6 +416,13 @@
       "name": "Vegetarian Mushroom Gravy",
       "at": "2026-11-15T15:42:24.913438+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2ee2nfkr32l"
+    },
+    {
+      "kind": "roundup",
+      "slug": "weekly",
+      "name": "Weekly roundup",
+      "at": "2026-11-15T16:52:27.338380+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2ehxwot262o"
     }
   ],
   "reader": {
@@ -654,6 +661,10 @@
       "feature:vegetarian-mushroom-gravy": {
         "at": "2026-11-15T15:42:13.313730+00:00",
         "id": "117621216586880675"
+      },
+      "roundup:2026-11-15": {
+        "at": "2026-11-15T16:52:15.998495+00:00",
+        "id": "117621492014258016"
       }
     }
   },
@@ -782,6 +793,10 @@
       "feature:vegetarian-mushroom-gravy": {
         "at": "2026-11-15T15:42:24.913400+00:00",
         "id": "0e888c9a036024bc4ed75354c7cbf3b78d332e7ac6dcf6dd0bd11248ce77c725"
+      },
+      "roundup:2026-11-15": {
+        "at": "2026-11-15T16:52:27.338351+00:00",
+        "id": "3ab028711ed1edbbc1ebe851bb75e12d76dd4fb38edc473af2551018b7564dd3"
       }
     }
   }

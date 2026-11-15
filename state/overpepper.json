@@ -395,6 +395,13 @@
       "name": "The Warm shelf",
       "at": "2026-11-13T17:54:24.410239+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n27kj7pu7x2i"
+    },
+    {
+      "kind": "roundup",
+      "slug": "weekly",
+      "name": "Weekly roundup",
+      "at": "2026-11-15T16:53:00.338472+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2ehyv4yjm27"
     }
   ],
   "reader": {
@@ -633,6 +640,10 @@
       "feature:nellys-hot-pepper": {
         "at": "2026-11-12T16:02:00.070053+00:00",
         "id": "117604307429799096"
+      },
+      "roundup:2026-11-15": {
+        "at": "2026-11-15T16:52:48.971738+00:00",
+        "id": "117621494162206843"
       }
     }
   },
@@ -753,6 +764,10 @@
       "feature:nellys-hot-pepper": {
         "at": "2026-11-12T16:02:22.387446+00:00",
         "id": "a72f464bdadddf945ff618b0ff54d61b9c3fafa3f6475410632f5cf4344184e0"
+      },
+      "roundup:2026-11-15": {
+        "at": "2026-11-15T16:53:00.338443+00:00",
+        "id": "98548022c2cba2d080763a5ab37fb7966586bb64bb02dcf0bd82b0cd1c9d104d"
       }
     }
   }
