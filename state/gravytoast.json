@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "vegetarian-mushroom-gravy",
+    "last_slug": "vegan-cashew-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -109,6 +109,10 @@
       "vegetarian-mushroom-gravy": {
         "at": "2026-11-15T15:42:24.913432+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2ee2nfkr32l"
+      },
+      "vegan-cashew-gravy": {
+        "at": "2026-11-16T16:43:31.049655+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2gxwu7p6a2g"
       }
     }
   },
@@ -423,6 +427,13 @@
       "name": "Weekly roundup",
       "at": "2026-11-15T16:52:27.338380+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2ehxwot262o"
+    },
+    {
+      "kind": "feature",
+      "slug": "vegan-cashew-gravy",
+      "name": "Vegan Cashew Gravy",
+      "at": "2026-11-16T16:43:31.049661+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2gxwu7p6a2g"
     }
   ],
   "reader": {
@@ -669,6 +680,10 @@
       "roundup:2026-11-15": {
         "at": "2026-11-15T16:52:15.998495+00:00",
         "id": "117621492014258016"
+      },
+      "feature:vegan-cashew-gravy": {
+        "at": "2026-11-16T16:43:19.213379+00:00",
+        "id": "117627119145753433"
       }
     }
   },
@@ -801,6 +816,10 @@
       "roundup:2026-11-15": {
         "at": "2026-11-15T16:52:27.338351+00:00",
         "id": "3ab028711ed1edbbc1ebe851bb75e12d76dd4fb38edc473af2551018b7564dd3"
+      },
+      "feature:vegan-cashew-gravy": {
+        "at": "2026-11-16T16:43:31.049628+00:00",
+        "id": "2feca8f90141ab886979f4bdace3f4f5554671e2ea25d5793bfcc32409829778"
       }
     }
   }

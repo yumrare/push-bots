@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "edam",
+    "last_slug": "monterey-jack",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -109,6 +109,10 @@
       "edam": {
         "at": "2026-11-15T15:41:50.647832+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2edzlv4hw2r"
+      },
+      "monterey-jack": {
+        "at": "2026-11-16T16:42:58.468433+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2gxvrsqmk2l"
       }
     }
   },
@@ -423,6 +427,13 @@
       "name": "Weekly roundup",
       "at": "2026-11-15T16:51:55.237873+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2ehwx7ngc2u"
+    },
+    {
+      "kind": "feature",
+      "slug": "monterey-jack",
+      "name": "Monterey Jack",
+      "at": "2026-11-16T16:42:58.468440+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2gxvrsqmk2l"
     }
   ],
   "reader": {
@@ -669,6 +680,10 @@
       "roundup:2026-11-15": {
         "at": "2026-11-15T16:51:43.034186+00:00",
         "id": "117621489852978901"
+      },
+      "feature:monterey-jack": {
+        "at": "2026-11-16T16:42:43.333539+00:00",
+        "id": "117627116795405797"
       }
     }
   },
@@ -793,6 +808,10 @@
       "roundup:2026-11-15": {
         "at": "2026-11-15T16:51:55.237845+00:00",
         "id": "04390c093697fca95521cae04501cd6751f8377d891d2713d528ca02e687a411"
+      },
+      "feature:monterey-jack": {
+        "at": "2026-11-16T16:42:58.468406+00:00",
+        "id": "652847eb6b3340992857080492cc56156b4904068583caeae7de7a691ad665a6"
       }
     }
   }
