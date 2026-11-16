@@ -117,7 +117,7 @@
     }
   },
   "guide": {
-    "last_label": "Roux & lumps, solved",
+    "last_label": "All gravy guides",
     "posted": {
       "The Gravy Chart": {
         "at": "2026-11-11T17:58:05.868049+00:00",
@@ -128,8 +128,8 @@
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n27kim7vmn2a"
       },
       "All gravy guides": {
-        "at": "2026-11-09T17:59:02.915064+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3mzvivth3ux2p"
+        "at": "2026-11-16T18:05:19.901447+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2h4jj7af32g"
       }
     }
   },
@@ -434,6 +434,13 @@
       "name": "Vegan Cashew Gravy",
       "at": "2026-11-16T16:43:31.049661+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2gxwu7p6a2g"
+    },
+    {
+      "kind": "guide",
+      "slug": "All gravy guides",
+      "name": "All gravy guides",
+      "at": "2026-11-16T18:05:19.901457+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2h4jj7af32g"
     }
   ],
   "reader": {
