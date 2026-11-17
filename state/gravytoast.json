@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "vegan-cashew-gravy",
+    "last_slug": "gluten-free-gravy",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -113,6 +113,10 @@
       "vegan-cashew-gravy": {
         "at": "2026-11-16T16:43:31.049655+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2gxwu7p6a2g"
+      },
+      "gluten-free-gravy": {
+        "at": "2026-11-17T22:51:40.086698+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2k4y2jnyl2r"
       }
     }
   },
@@ -441,6 +445,13 @@
       "name": "All gravy guides",
       "at": "2026-11-16T18:05:19.901457+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2h4jj7af32g"
+    },
+    {
+      "kind": "feature",
+      "slug": "gluten-free-gravy",
+      "name": "Gluten-Free (Cornstarch) Gravy",
+      "at": "2026-11-17T22:51:40.086703+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2k4y2jnyl2r"
     }
   ],
   "reader": {
@@ -695,6 +706,10 @@
       "feature:vegan-cashew-gravy": {
         "at": "2026-11-16T16:43:19.213379+00:00",
         "id": "117627119145753433"
+      },
+      "feature:gluten-free-gravy": {
+        "at": "2026-11-17T22:51:28.455515+00:00",
+        "id": "117634229095592165"
       }
     }
   },
@@ -831,6 +846,10 @@
       "feature:vegan-cashew-gravy": {
         "at": "2026-11-16T16:43:31.049628+00:00",
         "id": "2feca8f90141ab886979f4bdace3f4f5554671e2ea25d5793bfcc32409829778"
+      },
+      "feature:gluten-free-gravy": {
+        "at": "2026-11-17T22:51:40.086673+00:00",
+        "id": "2fca814e3c31fa42b628f02d1f0440fbf2098041dff50012d564d7a80e5c74fe"
       }
     }
   }

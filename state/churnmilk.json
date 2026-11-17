@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "monterey-jack",
+    "last_slug": "pepper-jack",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -113,6 +113,10 @@
       "monterey-jack": {
         "at": "2026-11-16T16:42:58.468433+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2gxvrsqmk2l"
+      },
+      "pepper-jack": {
+        "at": "2026-11-17T22:51:06.087568+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2k4x2vp3o2o"
       }
     }
   },
@@ -441,6 +445,13 @@
       "name": "All dairy guides",
       "at": "2026-11-16T18:04:59.344469+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2h4ivlynu2o"
+    },
+    {
+      "kind": "feature",
+      "slug": "pepper-jack",
+      "name": "Pepper Jack",
+      "at": "2026-11-17T22:51:06.087572+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2k4x2vp3o2o"
     }
   ],
   "reader": {
@@ -695,6 +706,10 @@
       "feature:monterey-jack": {
         "at": "2026-11-16T16:42:43.333539+00:00",
         "id": "117627116795405797"
+      },
+      "feature:pepper-jack": {
+        "at": "2026-11-17T22:50:54.237656+00:00",
+        "id": "117634226850826506"
       }
     }
   },
@@ -823,6 +838,10 @@
       "feature:monterey-jack": {
         "at": "2026-11-16T16:42:58.468406+00:00",
         "id": "652847eb6b3340992857080492cc56156b4904068583caeae7de7a691ad665a6"
+      },
+      "feature:pepper-jack": {
+        "at": "2026-11-17T22:51:06.087543+00:00",
+        "id": "4f921bce76d3e09e04182e2479a9869c0e7b4bb59ab35faf4c111ac0dcfbb420"
       }
     }
   }
