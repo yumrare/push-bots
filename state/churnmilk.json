@@ -125,11 +125,11 @@
     }
   },
   "guide": {
-    "last_label": "All dairy guides",
+    "last_label": "The Dairy Storage Chart",
     "posted": {
       "The Dairy Storage Chart": {
-        "at": "2026-11-11T17:57:44.971914+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22jrdzsiy2c"
+        "at": "2026-11-18T23:21:56.635643+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mp5itn4d2a"
       },
       "The Melting Cheese Guide": {
         "at": "2026-11-13T17:53:43.503298+00:00",
@@ -463,6 +463,13 @@
       "name": "Colby",
       "at": "2026-11-18T22:33:56.605662+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mmhcg5p62o"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Dairy Storage Chart",
+      "name": "The Dairy Storage Chart",
+      "at": "2026-11-18T23:21:56.635662+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mp5itn4d2a"
     }
   ],
   "reader": {

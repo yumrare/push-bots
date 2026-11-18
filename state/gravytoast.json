@@ -125,11 +125,11 @@
     }
   },
   "guide": {
-    "last_label": "All gravy guides",
+    "last_label": "The Gravy Chart",
     "posted": {
       "The Gravy Chart": {
-        "at": "2026-11-11T17:58:05.868049+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n22jrxxjn72a"
+        "at": "2026-11-18T23:22:17.145838+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mp64fj6f2r"
       },
       "Roux & lumps, solved": {
         "at": "2026-11-13T17:54:03.964553+00:00",
@@ -463,6 +463,13 @@
       "name": "Au Jus",
       "at": "2026-11-18T22:34:32.102403+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mmicj7nb22"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Gravy Chart",
+      "name": "The Gravy Chart",
+      "at": "2026-11-18T23:22:17.145858+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mp64fj6f2r"
     }
   ],
   "reader": {
