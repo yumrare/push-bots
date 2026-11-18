@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "gluten-free-gravy",
+    "last_slug": "au-jus",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -117,6 +117,10 @@
       "gluten-free-gravy": {
         "at": "2026-11-17T22:51:40.086698+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2k4y2jnyl2r"
+      },
+      "au-jus": {
+        "at": "2026-11-18T22:34:32.102397+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mmicj7nb22"
       }
     }
   },
@@ -452,6 +456,13 @@
       "name": "Gluten-Free (Cornstarch) Gravy",
       "at": "2026-11-17T22:51:40.086703+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2k4y2jnyl2r"
+    },
+    {
+      "kind": "feature",
+      "slug": "au-jus",
+      "name": "Au Jus",
+      "at": "2026-11-18T22:34:32.102403+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mmicj7nb22"
     }
   ],
   "reader": {
@@ -714,6 +725,10 @@
       "feature:gluten-free-gravy": {
         "at": "2026-11-17T22:51:28.455515+00:00",
         "id": "117634229095592165"
+      },
+      "feature:au-jus": {
+        "at": "2026-11-18T22:34:20.572300+00:00",
+        "id": "117639824039938991"
       }
     }
   },
@@ -854,6 +869,10 @@
       "feature:gluten-free-gravy": {
         "at": "2026-11-17T22:51:40.086673+00:00",
         "id": "2fca814e3c31fa42b628f02d1f0440fbf2098041dff50012d564d7a80e5c74fe"
+      },
+      "feature:au-jus": {
+        "at": "2026-11-18T22:34:32.102364+00:00",
+        "id": "e7af72a5f9634de7a4b37e983cf799834eadc53f5b3fadbc9790d072ded9af4b"
       }
     }
   }

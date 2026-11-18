@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "pepper-jack",
+    "last_slug": "colby",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -117,6 +117,10 @@
       "pepper-jack": {
         "at": "2026-11-17T22:51:06.087568+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2k4x2vp3o2o"
+      },
+      "colby": {
+        "at": "2026-11-18T22:33:56.605656+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mmhcg5p62o"
       }
     }
   },
@@ -452,6 +456,13 @@
       "name": "Pepper Jack",
       "at": "2026-11-17T22:51:06.087572+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2k4x2vp3o2o"
+    },
+    {
+      "kind": "feature",
+      "slug": "colby",
+      "name": "Colby",
+      "at": "2026-11-18T22:33:56.605662+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mmhcg5p62o"
     }
   ],
   "reader": {
@@ -714,6 +725,10 @@
       "feature:pepper-jack": {
         "at": "2026-11-17T22:50:54.237656+00:00",
         "id": "117634226850826506"
+      },
+      "feature:colby": {
+        "at": "2026-11-18T22:33:45.038619+00:00",
+        "id": "117639821699761894"
       }
     }
   },
@@ -846,6 +861,10 @@
       "feature:pepper-jack": {
         "at": "2026-11-17T22:51:06.087543+00:00",
         "id": "4f921bce76d3e09e04182e2479a9869c0e7b4bb59ab35faf4c111ac0dcfbb420"
+      },
+      "feature:colby": {
+        "at": "2026-11-18T22:33:56.605630+00:00",
+        "id": "a96df15f1e4d2692480a2624aa1ebf974b8c1118ae2c376244e18590eeb0e444"
       }
     }
   }
