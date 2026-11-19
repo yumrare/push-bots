@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "colby",
+    "last_slug": "muenster",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -121,6 +121,10 @@
       "colby": {
         "at": "2026-11-18T22:33:56.605656+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mmhcg5p62o"
+      },
+      "muenster": {
+        "at": "2026-11-19T22:38:59.175898+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2p573wj7o2o"
       }
     }
   },
@@ -470,6 +474,13 @@
       "name": "The Dairy Storage Chart",
       "at": "2026-11-18T23:21:56.635662+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mp5itn4d2a"
+    },
+    {
+      "kind": "feature",
+      "slug": "muenster",
+      "name": "Muenster",
+      "at": "2026-11-19T22:38:59.175903+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2p573wj7o2o"
     }
   ],
   "reader": {
@@ -740,6 +751,10 @@
       "feature:colby": {
         "at": "2026-11-18T22:33:45.038619+00:00",
         "id": "117639821699761894"
+      },
+      "feature:muenster": {
+        "at": "2026-11-19T22:38:44.652809+00:00",
+        "id": "117645503657927838"
       }
     }
   },
@@ -876,6 +891,10 @@
       "feature:colby": {
         "at": "2026-11-18T22:33:56.605630+00:00",
         "id": "a96df15f1e4d2692480a2624aa1ebf974b8c1118ae2c376244e18590eeb0e444"
+      },
+      "feature:muenster": {
+        "at": "2026-11-19T22:38:59.175872+00:00",
+        "id": "1506cf847503d18740d4a12661c98f9aee20b8bd9fc2f144b817d0539f25433c"
       }
     }
   }

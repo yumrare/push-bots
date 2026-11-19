@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "au-jus",
+    "last_slug": "white-toast",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -121,6 +121,10 @@
       "au-jus": {
         "at": "2026-11-18T22:34:32.102397+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mmicj7nb22"
+      },
+      "white-toast": {
+        "at": "2026-11-19T22:39:35.183621+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2p5aapt7i2r"
       }
     }
   },
@@ -470,6 +474,13 @@
       "name": "The Gravy Chart",
       "at": "2026-11-18T23:22:17.145858+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mp64fj6f2r"
+    },
+    {
+      "kind": "feature",
+      "slug": "white-toast",
+      "name": "White Toast",
+      "at": "2026-11-19T22:39:35.183627+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2p5aapt7i2r"
     }
   ],
   "reader": {
@@ -740,6 +751,10 @@
       "feature:au-jus": {
         "at": "2026-11-18T22:34:20.572300+00:00",
         "id": "117639824039938991"
+      },
+      "feature:white-toast": {
+        "at": "2026-11-19T22:39:23.038443+00:00",
+        "id": "117645506174581925"
       }
     }
   },
@@ -884,6 +899,10 @@
       "feature:au-jus": {
         "at": "2026-11-18T22:34:32.102364+00:00",
         "id": "e7af72a5f9634de7a4b37e983cf799834eadc53f5b3fadbc9790d072ded9af4b"
+      },
+      "feature:white-toast": {
+        "at": "2026-11-19T22:39:35.183594+00:00",
+        "id": "ed4ec561dc32b09fdd8c97bceda272d0f5f425ed541fa065c7cf43bd47f57aa4"
       }
     }
   }
