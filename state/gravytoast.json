@@ -133,15 +133,15 @@
     }
   },
   "guide": {
-    "last_label": "The Gravy Chart",
+    "last_label": "Roux & lumps, solved",
     "posted": {
       "The Gravy Chart": {
         "at": "2026-11-18T23:22:17.145838+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mp64fj6f2r"
       },
       "Roux & lumps, solved": {
-        "at": "2026-11-13T17:54:03.964553+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n27kim7vmn2a"
+        "at": "2026-11-20T23:03:42.927185+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rp2qp7jt2b"
       },
       "All gravy guides": {
         "at": "2026-11-16T18:05:19.901447+00:00",
@@ -492,6 +492,13 @@
       "name": "Texas Toast",
       "at": "2026-11-20T22:14:20.446257+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rmbzun5n2b"
+    },
+    {
+      "kind": "guide",
+      "slug": "Roux & lumps, solved",
+      "name": "Roux & lumps, solved",
+      "at": "2026-11-20T23:03:42.927210+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rp2qp7jt2b"
     }
   ],
   "reader": {

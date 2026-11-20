@@ -133,15 +133,15 @@
     }
   },
   "guide": {
-    "last_label": "The Dairy Storage Chart",
+    "last_label": "The Melting Cheese Guide",
     "posted": {
       "The Dairy Storage Chart": {
         "at": "2026-11-18T23:21:56.635643+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mp5itn4d2a"
       },
       "The Melting Cheese Guide": {
-        "at": "2026-11-13T17:53:43.503298+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n27khypkow25"
+        "at": "2026-11-20T23:03:22.301960+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rp24ztpl2j"
       },
       "All dairy guides": {
         "at": "2026-11-16T18:04:59.344457+00:00",
@@ -492,6 +492,13 @@
       "name": "Raclette",
       "at": "2026-11-20T22:13:44.204032+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rmax6f4d2j"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Melting Cheese Guide",
+      "name": "The Melting Cheese Guide",
+      "at": "2026-11-20T23:03:22.301985+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rp24ztpl2j"
     }
   ],
   "reader": {
