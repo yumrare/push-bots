@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "white-toast",
+    "last_slug": "texas-toast",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -125,6 +125,10 @@
       "white-toast": {
         "at": "2026-11-19T22:39:35.183621+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2p5aapt7i2r"
+      },
+      "texas-toast": {
+        "at": "2026-11-20T22:14:20.446252+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rmbzun5n2b"
       }
     }
   },
@@ -481,6 +485,13 @@
       "name": "White Toast",
       "at": "2026-11-19T22:39:35.183627+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2p5aapt7i2r"
+    },
+    {
+      "kind": "feature",
+      "slug": "texas-toast",
+      "name": "Texas Toast",
+      "at": "2026-11-20T22:14:20.446257+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rmbzun5n2b"
     }
   ],
   "reader": {
@@ -759,6 +770,10 @@
       "feature:white-toast": {
         "at": "2026-11-19T22:39:23.038443+00:00",
         "id": "117645506174581925"
+      },
+      "feature:texas-toast": {
+        "at": "2026-11-20T22:14:08.110904+00:00",
+        "id": "117651069204515989"
       }
     }
   },
@@ -907,6 +922,10 @@
       "feature:white-toast": {
         "at": "2026-11-19T22:39:35.183594+00:00",
         "id": "ed4ec561dc32b09fdd8c97bceda272d0f5f425ed541fa065c7cf43bd47f57aa4"
+      },
+      "feature:texas-toast": {
+        "at": "2026-11-20T22:14:20.446233+00:00",
+        "id": "ad14ee71c63996f2be8721ccfa1aae52929dd7ed9c4106293c63f75e42739931"
       }
     }
   }
