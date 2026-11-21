@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "raclette",
+    "last_slug": "limburger",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -129,6 +129,10 @@
       "raclette": {
         "at": "2026-11-20T22:13:44.204028+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rmax6f4d2j"
+      },
+      "limburger": {
+        "at": "2026-11-21T20:52:42.759307+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2ty6yhaes22"
       }
     }
   },
@@ -499,6 +503,13 @@
       "name": "The Melting Cheese Guide",
       "at": "2026-11-20T23:03:22.301985+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rp24ztpl2j"
+    },
+    {
+      "kind": "feature",
+      "slug": "limburger",
+      "name": "Limburger",
+      "at": "2026-11-21T20:52:42.759314+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2ty6yhaes22"
     }
   ],
   "reader": {
@@ -785,6 +796,10 @@
       "feature:raclette": {
         "at": "2026-11-20T22:13:31.665776+00:00",
         "id": "117651066815221005"
+      },
+      "feature:limburger": {
+        "at": "2026-11-21T20:52:30.692531+00:00",
+        "id": "117656410552788766"
       }
     }
   },
@@ -929,6 +944,10 @@
       "feature:raclette": {
         "at": "2026-11-20T22:13:44.204010+00:00",
         "id": "5ffbb0c7a3d77349b3ce44ef08d2c93ea17325fe2dccea6f680c0c12b984547f"
+      },
+      "feature:limburger": {
+        "at": "2026-11-21T20:52:42.759279+00:00",
+        "id": "35e7a0da4c8d6bc49279df92e1422776048704f665ed51f6a7d3e0e707169080"
       }
     }
   }

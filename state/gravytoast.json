@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "texas-toast",
+    "last_slug": "sourdough-toast",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -129,6 +129,10 @@
       "texas-toast": {
         "at": "2026-11-20T22:14:20.446252+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rmbzun5n2b"
+      },
+      "sourdough-toast": {
+        "at": "2026-11-21T20:53:17.754667+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2tya27ajh2b"
       }
     }
   },
@@ -499,6 +503,13 @@
       "name": "Roux & lumps, solved",
       "at": "2026-11-20T23:03:42.927210+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rp2qp7jt2b"
+    },
+    {
+      "kind": "feature",
+      "slug": "sourdough-toast",
+      "name": "Sourdough Toast",
+      "at": "2026-11-21T20:53:17.754673+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2tya27ajh2b"
     }
   ],
   "reader": {
@@ -785,6 +796,10 @@
       "feature:texas-toast": {
         "at": "2026-11-20T22:14:08.110904+00:00",
         "id": "117651069204515989"
+      },
+      "feature:sourdough-toast": {
+        "at": "2026-11-21T20:53:05.624994+00:00",
+        "id": "117656412844542013"
       }
     }
   },
@@ -937,6 +952,10 @@
       "feature:texas-toast": {
         "at": "2026-11-20T22:14:20.446233+00:00",
         "id": "ad14ee71c63996f2be8721ccfa1aae52929dd7ed9c4106293c63f75e42739931"
+      },
+      "feature:sourdough-toast": {
+        "at": "2026-11-21T20:53:17.754644+00:00",
+        "id": "599d3236590f93162c4d097fe2006022f4f531edac4ea8ce1e29fbbf9463ce2f"
       }
     }
   }
