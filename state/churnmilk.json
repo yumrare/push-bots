@@ -510,6 +510,13 @@
       "name": "Limburger",
       "at": "2026-11-21T20:52:42.759314+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2ty6yhaes22"
+    },
+    {
+      "kind": "roundup",
+      "slug": "weekly",
+      "name": "Weekly roundup",
+      "at": "2026-11-22T16:56:23.269173+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2w3he45fr2f"
     }
   ],
   "reader": {
@@ -800,6 +807,10 @@
       "feature:limburger": {
         "at": "2026-11-21T20:52:30.692531+00:00",
         "id": "117656410552788766"
+      },
+      "roundup:2026-11-22": {
+        "at": "2026-11-22T16:56:10.955659+00:00",
+        "id": "117661143574168003"
       }
     }
   },
@@ -948,6 +959,10 @@
       "feature:limburger": {
         "at": "2026-11-21T20:52:42.759279+00:00",
         "id": "35e7a0da4c8d6bc49279df92e1422776048704f665ed51f6a7d3e0e707169080"
+      },
+      "roundup:2026-11-22": {
+        "at": "2026-11-22T16:56:23.269145+00:00",
+        "id": "1640ceeec16c6731d7ef6baf9603975a5a2d08685e8ccfc71509e3bfaa50f008"
       }
     }
   }

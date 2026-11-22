@@ -510,6 +510,13 @@
       "name": "Sourdough Toast",
       "at": "2026-11-21T20:53:17.754673+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2tya27ajh2b"
+    },
+    {
+      "kind": "roundup",
+      "slug": "weekly",
+      "name": "Weekly roundup",
+      "at": "2026-11-22T16:56:56.253786+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2w3iem3a723"
     }
   ],
   "reader": {
@@ -800,6 +807,10 @@
       "feature:sourdough-toast": {
         "at": "2026-11-21T20:53:05.624994+00:00",
         "id": "117656412844542013"
+      },
+      "roundup:2026-11-22": {
+        "at": "2026-11-22T16:56:44.163408+00:00",
+        "id": "117661145761223735"
       }
     }
   },
@@ -956,6 +967,10 @@
       "feature:sourdough-toast": {
         "at": "2026-11-21T20:53:17.754644+00:00",
         "id": "599d3236590f93162c4d097fe2006022f4f531edac4ea8ce1e29fbbf9463ce2f"
+      },
+      "roundup:2026-11-22": {
+        "at": "2026-11-22T16:56:56.253761+00:00",
+        "id": "86093fba87a12915332eb5079ba5e345233e2a28d9628f5a8dc50780d3afec63"
       }
     }
   }
