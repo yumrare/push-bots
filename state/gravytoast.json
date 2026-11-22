@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "sourdough-toast",
+    "last_slug": "whole-wheat-toast",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -133,6 +133,10 @@
       "sourdough-toast": {
         "at": "2026-11-21T20:53:17.754667+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2tya27ajh2b"
+      },
+      "whole-wheat-toast": {
+        "at": "2026-11-22T21:01:41.365402+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2wj5wla5f2j"
       }
     }
   },
@@ -517,6 +521,13 @@
       "name": "Weekly roundup",
       "at": "2026-11-22T16:56:56.253786+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2w3iem3a723"
+    },
+    {
+      "kind": "feature",
+      "slug": "whole-wheat-toast",
+      "name": "Whole Wheat Toast",
+      "at": "2026-11-22T21:01:41.365409+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2wj5wla5f2j"
     }
   ],
   "reader": {
@@ -811,6 +822,10 @@
       "roundup:2026-11-22": {
         "at": "2026-11-22T16:56:44.163408+00:00",
         "id": "117661145761223735"
+      },
+      "feature:whole-wheat-toast": {
+        "at": "2026-11-22T21:01:28.966996+00:00",
+        "id": "117662108093888102"
       }
     }
   },
@@ -971,6 +986,10 @@
       "roundup:2026-11-22": {
         "at": "2026-11-22T16:56:56.253761+00:00",
         "id": "86093fba87a12915332eb5079ba5e345233e2a28d9628f5a8dc50780d3afec63"
+      },
+      "feature:whole-wheat-toast": {
+        "at": "2026-11-22T21:01:41.365367+00:00",
+        "id": "07ee0e5532b3d9070775dfcb008cb56f4d66c0ecef65f9db3ce5f54c38345657"
       }
     }
   }

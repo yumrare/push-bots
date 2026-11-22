@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "limburger",
+    "last_slug": "smoked-gouda",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -133,6 +133,10 @@
       "limburger": {
         "at": "2026-11-21T20:52:42.759307+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2ty6yhaes22"
+      },
+      "smoked-gouda": {
+        "at": "2026-11-22T21:01:05.034997+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2wj4x65h62b"
       }
     }
   },
@@ -517,6 +521,13 @@
       "name": "Weekly roundup",
       "at": "2026-11-22T16:56:23.269173+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2w3he45fr2f"
+    },
+    {
+      "kind": "feature",
+      "slug": "smoked-gouda",
+      "name": "Smoked Gouda",
+      "at": "2026-11-22T21:01:05.035003+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2wj4x65h62b"
     }
   ],
   "reader": {
@@ -811,6 +822,10 @@
       "roundup:2026-11-22": {
         "at": "2026-11-22T16:56:10.955659+00:00",
         "id": "117661143574168003"
+      },
+      "feature:smoked-gouda": {
+        "at": "2026-11-22T21:00:53.422456+00:00",
+        "id": "117662105812761254"
       }
     }
   },
@@ -963,6 +978,10 @@
       "roundup:2026-11-22": {
         "at": "2026-11-22T16:56:23.269145+00:00",
         "id": "1640ceeec16c6731d7ef6baf9603975a5a2d08685e8ccfc71509e3bfaa50f008"
+      },
+      "feature:smoked-gouda": {
+        "at": "2026-11-22T21:01:05.034970+00:00",
+        "id": "6106ce3bce3bb6c178bb0da9c8cfebbac424b2b4fd67926ad9ed4352ae661f2f"
       }
     }
   }
