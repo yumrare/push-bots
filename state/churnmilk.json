@@ -145,7 +145,7 @@
     }
   },
   "guide": {
-    "last_label": "The Melting Cheese Guide",
+    "last_label": "All dairy guides",
     "posted": {
       "The Dairy Storage Chart": {
         "at": "2026-11-18T23:21:56.635643+00:00",
@@ -156,8 +156,8 @@
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rp24ztpl2j"
       },
       "All dairy guides": {
-        "at": "2026-11-16T18:04:59.344457+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2h4ivlynu2o"
+        "at": "2026-11-24T03:18:09.038954+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zoohyhcj22"
       }
     }
   },
@@ -539,6 +539,13 @@
       "name": "Jarlsberg",
       "at": "2026-11-24T02:08:32.083287+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zkrljg252a"
+    },
+    {
+      "kind": "guide",
+      "slug": "All dairy guides",
+      "name": "All dairy guides",
+      "at": "2026-11-24T03:18:09.038975+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zoohyhcj22"
     }
   ],
   "reader": {

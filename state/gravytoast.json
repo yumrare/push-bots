@@ -145,7 +145,7 @@
     }
   },
   "guide": {
-    "last_label": "Roux & lumps, solved",
+    "last_label": "All gravy guides",
     "posted": {
       "The Gravy Chart": {
         "at": "2026-11-18T23:22:17.145838+00:00",
@@ -156,8 +156,8 @@
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rp2qp7jt2b"
       },
       "All gravy guides": {
-        "at": "2026-11-16T18:05:19.901447+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2h4jj7af32g"
+        "at": "2026-11-24T03:18:29.531238+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zop3jwxg2f"
       }
     }
   },
@@ -539,6 +539,13 @@
       "name": "Rye Toast",
       "at": "2026-11-24T02:09:08.237677+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zksmu4a522"
+    },
+    {
+      "kind": "guide",
+      "slug": "All gravy guides",
+      "name": "All gravy guides",
+      "at": "2026-11-24T03:18:29.531257+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zop3jwxg2f"
     }
   ],
   "reader": {
