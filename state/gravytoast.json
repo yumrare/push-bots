@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "rye-toast",
+    "last_slug": "english-muffin",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -141,6 +141,10 @@
       "rye-toast": {
         "at": "2026-11-24T02:09:08.237671+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zksmu4a522"
+      },
+      "english-muffin": {
+        "at": "2026-11-24T23:51:46.960388+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n33tlxldki2q"
       }
     }
   },
@@ -546,6 +550,13 @@
       "name": "All gravy guides",
       "at": "2026-11-24T03:18:29.531257+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zop3jwxg2f"
+    },
+    {
+      "kind": "feature",
+      "slug": "english-muffin",
+      "name": "English Muffin",
+      "at": "2026-11-24T23:51:46.960394+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n33tlxldki2q"
     }
   ],
   "reader": {
@@ -856,6 +867,10 @@
       "feature:rye-toast": {
         "at": "2026-11-24T02:08:55.315650+00:00",
         "id": "117668979355897821"
+      },
+      "feature:english-muffin": {
+        "at": "2026-11-24T23:51:35.022505+00:00",
+        "id": "117674101627734955"
       }
     }
   },
@@ -1024,6 +1039,10 @@
       "feature:rye-toast": {
         "at": "2026-11-24T02:09:08.237646+00:00",
         "id": "e7196b2587e286ec535514c99764142b120461c078255c29992992817b054f16"
+      },
+      "feature:english-muffin": {
+        "at": "2026-11-24T23:51:46.960355+00:00",
+        "id": "3d279a7a0fa4f2e590d8fc4a2f9d7a58ebc6029926c307c9b45ad3e30b171c39"
       }
     }
   }

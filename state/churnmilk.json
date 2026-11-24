@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "jarlsberg",
+    "last_slug": "salted-butter",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -141,6 +141,10 @@
       "jarlsberg": {
         "at": "2026-11-24T02:08:32.083281+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zkrljg252a"
+      },
+      "salted-butter": {
+        "at": "2026-11-24T23:51:11.461958+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n33tkvbwer2r"
       }
     }
   },
@@ -546,6 +550,13 @@
       "name": "All dairy guides",
       "at": "2026-11-24T03:18:09.038975+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zoohyhcj22"
+    },
+    {
+      "kind": "feature",
+      "slug": "salted-butter",
+      "name": "Salted Butter",
+      "at": "2026-11-24T23:51:11.461963+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n33tkvbwer2r"
     }
   ],
   "reader": {
@@ -856,6 +867,10 @@
       "feature:jarlsberg": {
         "at": "2026-11-24T02:08:19.487203+00:00",
         "id": "117668977004011830"
+      },
+      "feature:salted-butter": {
+        "at": "2026-11-24T23:50:59.361713+00:00",
+        "id": "117674099289053754"
       }
     }
   },
@@ -1016,6 +1031,10 @@
       "feature:jarlsberg": {
         "at": "2026-11-24T02:08:32.083258+00:00",
         "id": "fa7d10a9f5d5e7ff7a7dcab3735116c277d077f99ab225ce99a09dd55116e989"
+      },
+      "feature:salted-butter": {
+        "at": "2026-11-24T23:51:11.461932+00:00",
+        "id": "220d20a76ce73a4cccd8bf6a8da65a3b2d9eba020c06fa0344e32362821b754c"
       }
     }
   }
