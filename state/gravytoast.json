@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "whole-wheat-toast",
+    "last_slug": "rye-toast",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -137,6 +137,10 @@
       "whole-wheat-toast": {
         "at": "2026-11-22T21:01:41.365402+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2wj5wla5f2j"
+      },
+      "rye-toast": {
+        "at": "2026-11-24T02:09:08.237671+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zksmu4a522"
       }
     }
   },
@@ -528,6 +532,13 @@
       "name": "Whole Wheat Toast",
       "at": "2026-11-22T21:01:41.365409+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2wj5wla5f2j"
+    },
+    {
+      "kind": "feature",
+      "slug": "rye-toast",
+      "name": "Rye Toast",
+      "at": "2026-11-24T02:09:08.237677+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zksmu4a522"
     }
   ],
   "reader": {
@@ -830,6 +841,10 @@
       "feature:whole-wheat-toast": {
         "at": "2026-11-22T21:01:28.966996+00:00",
         "id": "117662108093888102"
+      },
+      "feature:rye-toast": {
+        "at": "2026-11-24T02:08:55.315650+00:00",
+        "id": "117668979355897821"
       }
     }
   },
@@ -994,6 +1009,10 @@
       "feature:whole-wheat-toast": {
         "at": "2026-11-22T21:01:41.365367+00:00",
         "id": "07ee0e5532b3d9070775dfcb008cb56f4d66c0ecef65f9db3ce5f54c38345657"
+      },
+      "feature:rye-toast": {
+        "at": "2026-11-24T02:09:08.237646+00:00",
+        "id": "e7196b2587e286ec535514c99764142b120461c078255c29992992817b054f16"
       }
     }
   }

@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "smoked-gouda",
+    "last_slug": "jarlsberg",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -137,6 +137,10 @@
       "smoked-gouda": {
         "at": "2026-11-22T21:01:05.034997+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2wj4x65h62b"
+      },
+      "jarlsberg": {
+        "at": "2026-11-24T02:08:32.083281+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zkrljg252a"
       }
     }
   },
@@ -528,6 +532,13 @@
       "name": "Smoked Gouda",
       "at": "2026-11-22T21:01:05.035003+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2wj4x65h62b"
+    },
+    {
+      "kind": "feature",
+      "slug": "jarlsberg",
+      "name": "Jarlsberg",
+      "at": "2026-11-24T02:08:32.083287+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2zkrljg252a"
     }
   ],
   "reader": {
@@ -830,6 +841,10 @@
       "feature:smoked-gouda": {
         "at": "2026-11-22T21:00:53.422456+00:00",
         "id": "117662105812761254"
+      },
+      "feature:jarlsberg": {
+        "at": "2026-11-24T02:08:19.487203+00:00",
+        "id": "117668977004011830"
       }
     }
   },
@@ -986,6 +1001,10 @@
       "feature:smoked-gouda": {
         "at": "2026-11-22T21:01:05.034970+00:00",
         "id": "6106ce3bce3bb6c178bb0da9c8cfebbac424b2b4fd67926ad9ed4352ae661f2f"
+      },
+      "feature:jarlsberg": {
+        "at": "2026-11-24T02:08:32.083258+00:00",
+        "id": "fa7d10a9f5d5e7ff7a7dcab3735116c277d077f99ab225ce99a09dd55116e989"
       }
     }
   }
