@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "english-muffin",
+    "last_slug": "buttermilk-biscuit",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -145,6 +145,10 @@
       "english-muffin": {
         "at": "2026-11-24T23:51:46.960388+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n33tlxldki2q"
+      },
+      "buttermilk-biscuit": {
+        "at": "2026-11-25T23:35:23.973392+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36d5lzfu32z"
       }
     }
   },
@@ -557,6 +561,13 @@
       "name": "English Muffin",
       "at": "2026-11-24T23:51:46.960394+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n33tlxldki2q"
+    },
+    {
+      "kind": "feature",
+      "slug": "buttermilk-biscuit",
+      "name": "Buttermilk Biscuit",
+      "at": "2026-11-25T23:35:23.973398+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36d5lzfu32z"
     }
   ],
   "reader": {
@@ -875,6 +886,10 @@
       "feature:english-muffin": {
         "at": "2026-11-24T23:51:35.022505+00:00",
         "id": "117674101627734955"
+      },
+      "feature:buttermilk-biscuit": {
+        "at": "2026-11-25T23:35:12.379743+00:00",
+        "id": "117679699512329041"
       }
     }
   },
@@ -1047,6 +1062,10 @@
       "feature:english-muffin": {
         "at": "2026-11-24T23:51:46.960355+00:00",
         "id": "3d279a7a0fa4f2e590d8fc4a2f9d7a58ebc6029926c307c9b45ad3e30b171c39"
+      },
+      "feature:buttermilk-biscuit": {
+        "at": "2026-11-25T23:35:23.973364+00:00",
+        "id": "898920a873307ad82178e399374da54eafc58ae9f1b58daf2f7c52fe5fd4e98b"
       }
     }
   }

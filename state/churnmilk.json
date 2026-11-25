@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "salted-butter",
+    "last_slug": "unsalted-butter",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -145,6 +145,10 @@
       "salted-butter": {
         "at": "2026-11-24T23:51:11.461958+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n33tkvbwer2r"
+      },
+      "unsalted-butter": {
+        "at": "2026-11-25T23:34:49.389658+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36d4l2xyt2a"
       }
     }
   },
@@ -557,6 +561,13 @@
       "name": "Salted Butter",
       "at": "2026-11-24T23:51:11.461963+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n33tkvbwer2r"
+    },
+    {
+      "kind": "feature",
+      "slug": "unsalted-butter",
+      "name": "Unsalted Butter",
+      "at": "2026-11-25T23:34:49.389664+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36d4l2xyt2a"
     }
   ],
   "reader": {
@@ -875,6 +886,10 @@
       "feature:salted-butter": {
         "at": "2026-11-24T23:50:59.361713+00:00",
         "id": "117674099289053754"
+      },
+      "feature:unsalted-butter": {
+        "at": "2026-11-25T23:34:37.645318+00:00",
+        "id": "117679697264768079"
       }
     }
   },
@@ -1039,6 +1054,10 @@
       "feature:salted-butter": {
         "at": "2026-11-24T23:51:11.461932+00:00",
         "id": "220d20a76ce73a4cccd8bf6a8da65a3b2d9eba020c06fa0344e32362821b754c"
+      },
+      "feature:unsalted-butter": {
+        "at": "2026-11-25T23:34:49.389637+00:00",
+        "id": "892b1e936717ed752083cd610081c67ed7281e67c2a7d101c4ee5593c5421f13"
       }
     }
   }
