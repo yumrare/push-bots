@@ -153,11 +153,11 @@
     }
   },
   "guide": {
-    "last_label": "All gravy guides",
+    "last_label": "The Gravy Chart",
     "posted": {
       "The Gravy Chart": {
-        "at": "2026-11-18T23:22:17.145838+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mp64fj6f2r"
+        "at": "2026-11-26T00:59:02.669931+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36htl7gaa2i"
       },
       "Roux & lumps, solved": {
         "at": "2026-11-20T23:03:42.927185+00:00",
@@ -568,6 +568,13 @@
       "name": "Buttermilk Biscuit",
       "at": "2026-11-25T23:35:23.973398+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36d5lzfu32z"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Gravy Chart",
+      "name": "The Gravy Chart",
+      "at": "2026-11-26T00:59:02.669952+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36htl7gaa2i"
     }
   ],
   "reader": {

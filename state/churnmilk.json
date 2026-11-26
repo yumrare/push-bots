@@ -153,11 +153,11 @@
     }
   },
   "guide": {
-    "last_label": "All dairy guides",
+    "last_label": "The Dairy Storage Chart",
     "posted": {
       "The Dairy Storage Chart": {
-        "at": "2026-11-18T23:21:56.635643+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2mp5itn4d2a"
+        "at": "2026-11-26T00:58:42.372005+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36hsxtyzg2v"
       },
       "The Melting Cheese Guide": {
         "at": "2026-11-20T23:03:22.301960+00:00",
@@ -568,6 +568,13 @@
       "name": "Unsalted Butter",
       "at": "2026-11-25T23:34:49.389664+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36d4l2xyt2a"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Dairy Storage Chart",
+      "name": "The Dairy Storage Chart",
+      "at": "2026-11-26T00:58:42.372027+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36hsxtyzg2v"
     }
   ],
   "reader": {
