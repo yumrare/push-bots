@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "unsalted-butter",
+    "last_slug": "cultured-butter",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -149,6 +149,10 @@
       "unsalted-butter": {
         "at": "2026-11-25T23:34:49.389658+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36d4l2xyt2a"
+      },
+      "cultured-butter": {
+        "at": "2026-11-26T23:46:11.291616+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3au7rwmwi2b"
       }
     }
   },
@@ -575,6 +579,13 @@
       "name": "The Dairy Storage Chart",
       "at": "2026-11-26T00:58:42.372027+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36hsxtyzg2v"
+    },
+    {
+      "kind": "feature",
+      "slug": "cultured-butter",
+      "name": "Cultured Butter",
+      "at": "2026-11-26T23:46:11.291626+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3au7rwmwi2b"
     }
   ],
   "reader": {
@@ -901,6 +912,10 @@
       "feature:unsalted-butter": {
         "at": "2026-11-25T23:34:37.645318+00:00",
         "id": "117679697264768079"
+      },
+      "feature:cultured-butter": {
+        "at": "2026-11-26T23:45:58.968184+00:00",
+        "id": "117685404224715931"
       }
     }
   },
@@ -1069,6 +1084,10 @@
       "feature:unsalted-butter": {
         "at": "2026-11-25T23:34:49.389637+00:00",
         "id": "892b1e936717ed752083cd610081c67ed7281e67c2a7d101c4ee5593c5421f13"
+      },
+      "feature:cultured-butter": {
+        "at": "2026-11-26T23:46:11.291587+00:00",
+        "id": "a5106bcdc21071c8d14246e0f949e99dbfc6614b0496854b2c00674d4b7b4c73"
       }
     }
   }

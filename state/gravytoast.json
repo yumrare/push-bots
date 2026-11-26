@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "buttermilk-biscuit",
+    "last_slug": "split-top-roll",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -149,6 +149,10 @@
       "buttermilk-biscuit": {
         "at": "2026-11-25T23:35:23.973392+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36d5lzfu32z"
+      },
+      "split-top-roll": {
+        "at": "2026-11-26T23:46:46.847900+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3auaugeba2b"
       }
     }
   },
@@ -575,6 +579,13 @@
       "name": "The Gravy Chart",
       "at": "2026-11-26T00:59:02.669952+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36htl7gaa2i"
+    },
+    {
+      "kind": "feature",
+      "slug": "split-top-roll",
+      "name": "Split-Top Roll",
+      "at": "2026-11-26T23:46:46.847906+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3auaugeba2b"
     }
   ],
   "reader": {
@@ -901,6 +912,10 @@
       "feature:buttermilk-biscuit": {
         "at": "2026-11-25T23:35:12.379743+00:00",
         "id": "117679699512329041"
+      },
+      "feature:split-top-roll": {
+        "at": "2026-11-26T23:46:34.837786+00:00",
+        "id": "117685406577590321"
       }
     }
   },
@@ -1077,6 +1092,10 @@
       "feature:buttermilk-biscuit": {
         "at": "2026-11-25T23:35:23.973364+00:00",
         "id": "898920a873307ad82178e399374da54eafc58ae9f1b58daf2f7c52fe5fd4e98b"
+      },
+      "feature:split-top-roll": {
+        "at": "2026-11-26T23:46:46.847880+00:00",
+        "id": "65ad3b9d7426bc3b5d6b0e48a783c3fcd982376405a04c642304ebc6d0071b47"
       }
     }
   }
