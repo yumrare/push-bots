@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "cultured-butter",
+    "last_slug": "european-style-butter",
     "posted": {
       "cheddar": {
         "at": "2026-10-19T22:21:57.274877+00:00",
@@ -153,6 +153,10 @@
       "cultured-butter": {
         "at": "2026-11-26T23:46:11.291616+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3au7rwmwi2b"
+      },
+      "european-style-butter": {
+        "at": "2026-11-27T23:23:41.149521+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3ddgi2sxp2b"
       }
     }
   },
@@ -586,6 +590,13 @@
       "name": "Cultured Butter",
       "at": "2026-11-26T23:46:11.291626+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3au7rwmwi2b"
+    },
+    {
+      "kind": "feature",
+      "slug": "european-style-butter",
+      "name": "European-Style Butter",
+      "at": "2026-11-27T23:23:41.149527+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3ddgi2sxp2b"
     }
   ],
   "reader": {
@@ -920,6 +931,10 @@
       "feature:cultured-butter": {
         "at": "2026-11-26T23:45:58.968184+00:00",
         "id": "117685404224715931"
+      },
+      "feature:european-style-butter": {
+        "at": "2026-11-27T23:23:28.874895+00:00",
+        "id": "117690978055573772"
       }
     }
   },
@@ -1092,6 +1107,10 @@
       "feature:cultured-butter": {
         "at": "2026-11-26T23:46:11.291587+00:00",
         "id": "a5106bcdc21071c8d14246e0f949e99dbfc6614b0496854b2c00674d4b7b4c73"
+      },
+      "feature:european-style-butter": {
+        "at": "2026-11-27T23:23:41.149495+00:00",
+        "id": "d1dd3634b04023399029456095ec1eaf7ef27b4b595114d83fb4e4c45ecbf0d8"
       }
     }
   }

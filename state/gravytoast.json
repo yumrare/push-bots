@@ -1,6 +1,6 @@
 {
   "feature": {
-    "last_slug": "split-top-roll",
+    "last_slug": "cornbread",
     "posted": {
       "sawmill-gravy": {
         "at": "2026-10-19T22:22:19.281350+00:00",
@@ -153,6 +153,10 @@
       "split-top-roll": {
         "at": "2026-11-26T23:46:46.847900+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3auaugeba2b"
+      },
+      "cornbread": {
+        "at": "2026-11-27T23:24:16.510357+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3ddhk7sip2u"
       }
     }
   },
@@ -586,6 +590,13 @@
       "name": "Split-Top Roll",
       "at": "2026-11-26T23:46:46.847906+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3auaugeba2b"
+    },
+    {
+      "kind": "feature",
+      "slug": "cornbread",
+      "name": "Cornbread",
+      "at": "2026-11-27T23:24:16.510364+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3ddhk7sip2u"
     }
   ],
   "reader": {
@@ -920,6 +931,10 @@
       "feature:split-top-roll": {
         "at": "2026-11-26T23:46:34.837786+00:00",
         "id": "117685406577590321"
+      },
+      "feature:cornbread": {
+        "at": "2026-11-27T23:24:04.556393+00:00",
+        "id": "117690980391441890"
       }
     }
   },
@@ -1100,6 +1115,10 @@
       "feature:split-top-roll": {
         "at": "2026-11-26T23:46:46.847880+00:00",
         "id": "65ad3b9d7426bc3b5d6b0e48a783c3fcd982376405a04c642304ebc6d0071b47"
+      },
+      "feature:cornbread": {
+        "at": "2026-11-27T23:24:16.510333+00:00",
+        "id": "c02be97c0dba08e52f71853ea880d8a82aa578d1ddb9f929cc6a273eb6755ee4"
       }
     }
   }
