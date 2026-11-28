@@ -161,15 +161,15 @@
     }
   },
   "guide": {
-    "last_label": "The Gravy Chart",
+    "last_label": "Roux & lumps, solved",
     "posted": {
       "The Gravy Chart": {
         "at": "2026-11-26T00:59:02.669931+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36htl7gaa2i"
       },
       "Roux & lumps, solved": {
-        "at": "2026-11-20T23:03:42.927185+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rp2qp7jt2b"
+        "at": "2026-11-28T00:31:29.908286+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3dha5vy3k2a"
       },
       "All gravy guides": {
         "at": "2026-11-24T03:18:29.531238+00:00",
@@ -597,6 +597,13 @@
       "name": "Cornbread",
       "at": "2026-11-27T23:24:16.510364+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3ddhk7sip2u"
+    },
+    {
+      "kind": "guide",
+      "slug": "Roux & lumps, solved",
+      "name": "Roux & lumps, solved",
+      "at": "2026-11-28T00:31:29.908314+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3dha5vy3k2a"
     }
   ],
   "reader": {

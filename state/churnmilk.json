@@ -161,15 +161,15 @@
     }
   },
   "guide": {
-    "last_label": "The Dairy Storage Chart",
+    "last_label": "The Melting Cheese Guide",
     "posted": {
       "The Dairy Storage Chart": {
         "at": "2026-11-26T00:58:42.372005+00:00",
         "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n36hsxtyzg2v"
       },
       "The Melting Cheese Guide": {
-        "at": "2026-11-20T23:03:22.301960+00:00",
-        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n2rp24ztpl2j"
+        "at": "2026-11-28T00:31:09.262213+00:00",
+        "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3dh7k7qym23"
       },
       "All dairy guides": {
         "at": "2026-11-24T03:18:09.038954+00:00",
@@ -597,6 +597,13 @@
       "name": "European-Style Butter",
       "at": "2026-11-27T23:23:41.149527+00:00",
       "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3ddgi2sxp2b"
+    },
+    {
+      "kind": "guide",
+      "slug": "The Melting Cheese Guide",
+      "name": "The Melting Cheese Guide",
+      "at": "2026-11-28T00:31:09.262228+00:00",
+      "ref": "at://did:plc:4eixqejus2ulnko4dge6pemv/app.bsky.feed.post/3n3dh7k7qym23"
     }
   ],
   "reader": {
